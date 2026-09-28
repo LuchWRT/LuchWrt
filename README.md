@@ -7,7 +7,7 @@
 Подключитесь к роутеру по SSH от имени `root` и вставьте одну команду:
 
 ```sh
-f=$(mktemp) && wget -T 60 -q -O "$f" 'https://raw.githubusercontent.com/LuchWRT/LuchWrt/e510f39dc7637154c27c35a9c2f354c3e2896a7d/install-v1.2.4.sh' && [ "$(sha256sum "$f" | cut -d ' ' -f 1)" = 'ca7baadcb190925caacdd85f27ffe5038022d268732a2e7c58c15373327526fa' ] && sh "$f"; result=$?; rm -f "$f"; [ $result -eq 0 ]
+f=$(mktemp) && wget -T 60 -q -O "$f" 'https://raw.githubusercontent.com/LuchWRT/LuchWrt/d03b6f6c360d8874f87da9dd119f32aa2e403587/install-v1.2.4.sh' && [ "$(sha256sum "$f" | cut -d ' ' -f 1)" = 'abf4fae42b612503fba22196b6f14e091f2a20665a6892a79c0d786f2cc034fc' ] && sh "$f"; result=$?; rm -f "$f"; [ $result -eq 0 ]
 ```
 
 Установщик определит версию и архитектуру OpenWrt, проверит файлы выпуска и доступное место до изменения сетевых настроек. Нужны работающий HTTPS и **80 МиБ свободного места**. После установки меню откроется само: выберите язык. Позднее меню можно открыть командой `luch`.
