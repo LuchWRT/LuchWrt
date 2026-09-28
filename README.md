@@ -7,7 +7,7 @@
 Подключитесь к роутеру по SSH от имени `root` и вставьте одну команду:
 
 ```sh
-f=$(mktemp) && { u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/f0745fcec9e382f4edfa7234795c49fd2b643c2e/install-v1.2.5.sh'; for n in 1 2 3; do wget -T 60 -q -O "$f" "$u" && break; sleep 2; done; [ "$(sha256sum "$f" | cut -d ' ' -f 1)" = '7585ef93fedbbf8eaeed88940d09c82aae491e94e2a6ca5cff0bfcbb3ada6491' ] && sh "$f"; r=$?; rm -f "$f"; [ "$r" -eq 0 ]; }
+f=$(mktemp) && { u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/9cd421756068402e9c324a758b8f6c9bed3a64fe/install-v1.2.6.sh'; for n in 1 2 3; do wget -T 60 -q -O "$f" "$u" && break; sleep 2; done; [ "$(sha256sum "$f" | cut -d ' ' -f 1)" = 'fac67ecdb1c9d30d56d448ada809c7bfce59111c45fb4c7c626e488b73503c8c' ] && sh "$f"; r=$?; rm -f "$f"; [ "$r" -eq 0 ]; }
 ```
 
 Установщик определит процессор и системные компоненты роутера, проверит подпись выпуска и свободное место до изменения сетевых настроек. Если точное сочетание прошивки и архитектуры не испытано, он попробует совместимую подписанную сборку для семейства процессора. При ошибке покажет причину и путь к временному журналу. Нужны работающий HTTPS и **80 МиБ свободного места**. После установки меню откроется само: выберите язык. Позднее меню можно открыть командой `luch`.
