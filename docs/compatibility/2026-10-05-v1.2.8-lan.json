@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "release": "1.2.8",
+  "kind": "public-release-synthetic-IPv4-two-VM-LAN-qualification",
+  "passed": 2,
+  "generated_utc": "2026-10-05T16:34:46.504067+00:00",
+  "rows": [
+    {
+      "target": "23.05.6-aarch64_generic",
+      "status": "PASS",
+      "release": "1.2.8",
+      "package_kind": "universal",
+      "package": "any-arm64",
+      "firewall": "fw4",
+      "kind": "real-two-VM-LAN-runtime",
+      "checks": [
+        "fixture-LAN-link-ready-before-public-install",
+        "github-one-command-signed-clean-install",
+        "every-installed-artifact-matches-installed-signed-manifest",
+        "production-adapter-pref1-before-foreign-PBR-pref200-with-prerouting-mark-writer",
+        "fixture-LAN-link-and-WAN-endpoint",
+        "actual-LAN-TCP-UDP-DNS-via-installed-Xray-and-foreign-mark-writer-hit",
+        "real-nft-legacy-hook-priority150-to149-migration",
+        "legacy10052-to1-migration-repeat-Ensure-foreign-PBR-preserved",
+        "Disable-removes-only-Luch-policy-preserves-foreign-mark-writer",
+        "real-reboot-and-LAN-TCP-UDP-DNS-from-fixture-init"
+      ],
+      "manifest_sha256": "b2e085ba5e6e7da34aeb3d5a0c32fe13079cd3fac82b749700268994b81d8b32",
+      "manifest_signature_sha256": "1b9a02f3faa6726168f0f6a72163b60a42d538373b047cb2d5ef813db28a819c",
+      "bootstrap_sha256": "e47ebb617d6bb3e7b7df5d1cb3797572bc6666e183f33f7c593c05d6e8ff3adf",
+      "installer_sha256": "05714573571547c370968e904fe2c967632c269acaf622dd9a4c08791cf8397f",
+      "installed_artifacts": [
+        {
+          "name": "luch",
+          "size": 7012512,
+          "sha256": "62bc67ccb63fb9702eba8fd9a9c757d7999bcc83598c50426dbe4cd20981f06d"
+        },
+        {
+          "name": "luch-install",
+          "size": 6684832,
+          "sha256": "05714573571547c370968e904fe2c967632c269acaf622dd9a4c08791cf8397f"
+        },
+        {
+          "name": "xray",
+          "size": 30343292,
+          "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "name": "geosite.dat",
+          "size": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "size": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "size": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "size": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "size": 22597,
+          "sha256": "279d066c9984b3e2bfdf46c14dc098d1f1ba9c4d7bdb8cd50aaa305c9487a2c6"
+        }
+      ],
+      "router_helper_sha256": "7b44730fecf95ed627f7d652131721c16c5f0ac28f2ca5d7883c6d7043ef2b6c",
+      "client_helper_sha256": "c0283a3bcd31414cdf04c07567a8991ce77a6dcdf6e4b80122c82a913eccc175",
+      "public_command_sha256": "962b32c7a5141e19d024095b89859363117f3a03ef048d7d7f35c3accaf95d2d",
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "6a5599213f8700aba045e34ca3e17f73646fc9c6cbcd05dc49044a7d655c67d2",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "sha256": "b5ed1ac919e4096ef7e688734a9f7cfba38ea2b3c6e6a8fc37303c383b7eea18",
+        "kernel_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-kernel.bin",
+        "kernel_sha256": "243159d98fa1b42db9c0b3182386528e3041c41c40066b083f2c1099eca9b358"
+      },
+      "observed_kernel": "5.15.189",
+      "qemu_cpu": "cortex-a72",
+      "router_memory_mib": 512,
+      "client_target": "24.10.8-x86_64",
+      "client_memory_mib": 256,
+      "expanded_disk_mib": 512,
+      "policy_after_legacy_migration": [
+        "0:\tfrom all lookup local",
+        "1:\tfrom all fwmark 0x4c554348 lookup 142",
+        "200:\tfrom all fwmark 0x4300/0xff00 lookup 200",
+        "32766:\tfrom all lookup main",
+        "32767:\tfrom all lookup default"
+      ],
+      "policy_after_disable": [
+        "0:\tfrom all lookup local",
+        "200:\tfrom all fwmark 0x4300/0xff00 lookup 200",
+        "32766:\tfrom all lookup main",
+        "32767:\tfrom all lookup default"
+      ],
+      "strict_no_legacy_pref10052_ipv4": true,
+      "strict_disabled_no_own_policy_ipv4": true,
+      "foreign_PBR_and_mark_writer_preserved_after_disable": true,
+      "boot_id_before": "e1a14491-6e7f-4d9c-955a-e910fc55ab49",
+      "boot_id_after": "e8d79e9f-d3ec-4af1-9b77-2e850b69934f",
+      "boot_id_changed": true,
+      "receipt_name": "23.05.6-aarch64_generic.result.json",
+      "receipt_sha256": "5c09e10508deed1455b3d26934e7e6394cd589ee691e68afbf3b83dc6d68b03f",
+      "router_transcript_sha256": "46d328be5061b921ab49a02b0689b45eda1babd38b28829da6a4692e77054c98",
+      "client_transcript_sha256": "1a80ae9cda5df7855720b299bade8f4d33dc377ac79644387d9ac552e5b9fad4",
+      "harness_sha256": "bda1f7a0a4e7483ca3feac8a4f8d0e609162904d125a1d03daa837681f9315a4"
+    },
+    {
+      "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+      "status": "PASS",
+      "release": "1.2.8",
+      "package_kind": "universal",
+      "package": "any-armv7",
+      "firewall": "fw4",
+      "kind": "real-two-VM-LAN-runtime",
+      "checks": [
+        "fixture-LAN-link-ready-before-public-install",
+        "github-one-command-signed-clean-install",
+        "every-installed-artifact-matches-installed-signed-manifest",
+        "production-adapter-pref1-before-foreign-PBR-pref200-with-prerouting-mark-writer",
+        "fixture-LAN-link-and-WAN-endpoint",
+        "actual-LAN-TCP-UDP-DNS-via-installed-Xray-and-foreign-mark-writer-hit",
+        "real-nft-legacy-hook-priority150-to149-migration",
+        "legacy10052-to1-migration-repeat-Ensure-foreign-PBR-preserved",
+        "Disable-removes-only-Luch-policy-preserves-foreign-mark-writer",
+        "real-reboot-and-LAN-TCP-UDP-DNS-from-fixture-init"
+      ],
+      "manifest_sha256": "85b3a4d3100ca8ca7d9abd822942d68ccf9e88cf029859d5ea49bb79931b96f0",
+      "manifest_signature_sha256": "a368eaf5e6e08a4522b39d1bd2c0f98fc7de5de131cdc645ce41d9caf805dc15",
+      "bootstrap_sha256": "1e509d751025e802ce5adbd26f22a9646400e9981b26e1f5cbaf892c6d64b90c",
+      "installer_sha256": "293e55cd9fe43e8457327cb3364db6967ee66e2122242bd093109811523cfa7e",
+      "installed_artifacts": [
+        {
+          "name": "luch",
+          "size": 7602336,
+          "sha256": "d595856dc55693ce7e102613f4bf97d6b3d79afb0734185bfcdde3c277c9b909"
+        },
+        {
+          "name": "luch-install",
+          "size": 7274656,
+          "sha256": "293e55cd9fe43e8457327cb3364db6967ee66e2122242bd093109811523cfa7e"
+        },
+        {
+          "name": "xray",
+          "size": 30802044,
+          "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "name": "geosite.dat",
+          "size": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "size": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "size": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "size": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "size": 22597,
+          "sha256": "279d066c9984b3e2bfdf46c14dc098d1f1ba9c4d7bdb8cd50aaa305c9487a2c6"
+        }
+      ],
+      "router_helper_sha256": "c2eb7cf8e74c45fdbe307e503ab9652641ecfda24f2e36e1f90593b98d589c8c",
+      "client_helper_sha256": "c0283a3bcd31414cdf04c07567a8991ce77a6dcdf6e4b80122c82a913eccc175",
+      "public_command_sha256": "962b32c7a5141e19d024095b89859363117f3a03ef048d7d7f35c3accaf95d2d",
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "f4fe8375f9b284f1c65b6414ba10bcd8b0d30ce9aed4f31a04833721a5b43056",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "sha256": "34f278f88460c8156f9c91b31f476457685f5463d1e883586d334676302afc7a",
+        "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-kernel.bin",
+        "kernel_sha256": "0dadb3ce2b41787f44094490175496f64c875b45b603e3f53463d74141c08356"
+      },
+      "observed_kernel": "6.12.94",
+      "qemu_cpu": "cortex-a15",
+      "router_memory_mib": 512,
+      "client_target": "24.10.8-x86_64",
+      "client_memory_mib": 256,
+      "expanded_disk_mib": 512,
+      "policy_after_legacy_migration": [
+        "0:\tfrom all lookup local",
+        "1:\tfrom all fwmark 0x4c554348 lookup 142",
+        "200:\tfrom all fwmark 0x4300/0xff00 lookup 200",
+        "32766:\tfrom all lookup main",
+        "32767:\tfrom all lookup default"
+      ],
+      "policy_after_disable": [
+        "0:\tfrom all lookup local",
+        "200:\tfrom all fwmark 0x4300/0xff00 lookup 200",
+        "32766:\tfrom all lookup main",
+        "32767:\tfrom all lookup default"
+      ],
+      "strict_no_legacy_pref10052_ipv4": true,
+      "strict_disabled_no_own_policy_ipv4": true,
+      "foreign_PBR_and_mark_writer_preserved_after_disable": true,
+      "boot_id_before": "9991a50a-227c-4dc9-ad9e-fb5027347bb2",
+      "boot_id_after": "55c372ba-2db8-4fd2-ad9e-a19c1a21468b",
+      "boot_id_changed": true,
+      "receipt_name": "25.12.5-arm_cortex-a15_neon-vfpv4.result.json",
+      "receipt_sha256": "8e96dfbca360e7897b19f7a8aede34f2e2fdc37a50347b32f5453a3a42566783",
+      "router_transcript_sha256": "bf505a0b04c8e9fda075bc67bad8f20411fd040bd5937e57f3c11c4db3e08603",
+      "client_transcript_sha256": "3f529a084cb071f1adcbe38034ef19ecde43612fc41fcc8b0972013d8c484feb",
+      "harness_sha256": "bda1f7a0a4e7483ca3feac8a4f8d0e609162904d125a1d03daa837681f9315a4"
+    }
+  ],
+  "strict_guard_regression_receipt_sha256": "7e69e296571f6252c405db2ee8e9507a66bff3ab78f076dd706278f31b47502f",
+  "limits": [
+    "Each clean router was installed through the actual pinned public GitHub command for v1.2.8, using its signed universal CPU-family package.",
+    "Production firewall adapters were exercised by a test helper; Xray used a synthetic local configuration started by a fixture init service. No personal subscription or external VPN endpoint was used.",
+    "Actual TCP, UDP and DNS from a second VM were tested over IPv4 before and after a router reboot. IPv6 forwarding and a separate explicit DNS-over-TCP case were not qualified.",
+    "The router used 512 MiB RAM, the LAN client used 256 MiB RAM, and both used expanded 512 MiB ext4 disks. Stock flash capacity, physical routers, and minimum hardware requirements were not qualified.",
+    "These are v1.2.8 public release runtime probes, separate from the final 17-target local signed v1.2.9 candidate installation matrix."
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "verified_at": "2026-10-05T16:34:59.154865+00:00",
+  "status": "PASS",
+  "target": {
+    "openwrt": "25.12.5",
+    "package_architecture": "arm_cortex-a15_neon-vfpv4",
+    "kernel": "6.12.94",
+    "qemu_cpu": "cortex-a15",
+    "memory_mib": 512
+  },
+  "official_inputs": {
+    "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/sha256sums",
+    "checksum_sha256": "f4fe8375f9b284f1c65b6414ba10bcd8b0d30ce9aed4f31a04833721a5b43056",
+    "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-ext4-rootfs.img.gz",
+    "sha256": "34f278f88460c8156f9c91b31f476457685f5463d1e883586d334676302afc7a",
+    "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-kernel.bin",
+    "kernel_sha256": "0dadb3ce2b41787f44094490175496f64c875b45b603e3f53463d74141c08356"
+  },
+  "transition": {
+    "from": {
+      "version": "1.2.8",
+      "kind": "CPU-family",
+      "slot": "releases/1.2.8-any-armv7",
+      "installed_from": "Live published GitHub release using its pinned public installation command"
+    },
+    "to": {
+      "version": "1.2.9",
+      "kind": "exact OpenWrt/package architecture",
+      "slot": "releases/1.2.9-25.12.5-arm_cortex-a15_neon-vfpv4",
+      "installed_from": "Locally served final signed candidate, applied by the actually installed v1.2.8 updater; unpublished draft metadata was not fetched through live GitHub"
+    }
+  },
+  "candidate": {
+    "manifest_sha256": "b8ba7adc30fd42f0af710dabf05e07a089f0d9443964e5bdc58c7e50f86065c8",
+    "manifest_signature_sha256": "6329232a445a72254f499e6e68259591051d14f22d897f1349bbe3b07dddb4a0",
+    "all_installed_artifacts_match_signed_manifest": true,
+    "artifacts": [
+      {
+        "name": "luch",
+        "size": 7602336,
+        "sha256": "2d0f8617b6e9ea964cac9fa2d82928045636975f60b0f1dd29eb8c0e84306f50"
+      },
+      {
+        "name": "luch-install",
+        "size": 7274656,
+        "sha256": "2ae05654a91c2896cf342bb57be4da3df6844ffd839cfea1c7014025fff0bcf4"
+      },
+      {
+        "name": "xray",
+        "size": 30802044,
+        "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+      },
+      {
+        "name": "geosite.dat",
+        "size": 67824,
+        "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+      },
+      {
+        "name": "geoip.dat",
+        "size": 2,
+        "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+      },
+      {
+        "name": "luch.init",
+        "size": 679,
+        "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+      },
+      {
+        "name": "luch-xray.init",
+        "size": 692,
+        "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+      },
+      {
+        "name": "THIRD_PARTY_NOTICES.txt",
+        "size": 23287,
+        "sha256": "84c1e0537acd98471fe3ac640d2556934143b22bf9bc2d69137bfee2d501e0eb"
+      }
+    ],
+    "source_snapshot_sha256": "738c3d6e3026c342ae4ea98ed64f3c8b178f3da6b4fc924801805b27a45e08a2",
+    "public_release_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+    "release_base": "https://github.com/LuchWRT/LuchWrt",
+    "new_installed_updater_key_and_base_verified": true
+  },
+  "exact_selection_regression": {
+    "scope": "Two cross-built test helpers use frozen production fetchDeviceLatest, genuine candidate Ed25519-signed metadata, the actual guest OpenWrt target, and an actually installed generic v1.2.8 slot. Only the default HTTP RoundTripper is injected for unpublished metadata. Requested addresses retain the production-pinned HTTPS GitHub base; no TLS options changed.",
+    "before_fix_source_snapshot_sha256": "4268636357dd6bf3bd1ce925b0a38923fd808f9059dfb30f211888f206759451",
+    "before_fix_requested_paths": [
+      "/LuchWRT/LuchWrt/releases/latest/download/openwrt-any-armv7-latest.json"
+    ],
+    "before_fix_any_first_reproduced": true,
+    "after_fix_source_snapshot_sha256": "738c3d6e3026c342ae4ea98ed64f3c8b178f3da6b4fc924801805b27a45e08a2",
+    "after_fix_requested_paths": [
+      "/LuchWRT/LuchWrt/releases/latest/download/openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-latest.json",
+      "/LuchWRT/LuchWrt/releases/latest/download/openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-latest.sig"
+    ],
+    "after_fix_exact_first": true,
+    "after_fix_any_requests": 0,
+    "genuine_exact_latest_sha256": "ae3dc8db7c411d9ae02b541c5cbc2ab02e94b2e621105f028c5b6d07cb8f4d47",
+    "genuine_exact_latest_signature_sha256": "b16ef871e038334b0d0425d170e89e41060fe467ccd3eaf25d4bf6c87a3ca528",
+    "test_helper_sha256": {
+      "preference-before-fix": "2a2c809f3394999ab2b2043c5fa881fbd7567a5cd66cb234b0da7bfde6e97d87",
+      "preference-final": "37000f512146fcb47d14bf45540b0db8e32840f2fb32b3de8514d24ac59e8710"
+    },
+    "fixture_source_sha256": "6c52b4ddce3b15f367dbd64e032479e1291b5053a7240a08991b42b2ab578241",
+    "old_v1_2_8_menu_updater_behavior": "The already installed old v1.2.8 updater retains any-first. While still on generic v1.2.8, run the new v1.2.9 installation command/bootstrap for immediate migration to exact v1.2.9. If the old menu first installs generic v1.2.9, a same-version exact v1.2.9 reinstall remains rejected; migration requires a newer release. Downgrades remain rejected."
+  },
+  "live_public_fallback": {
+    "scope": "The final production updater ran read-only -check-update with its real pinned HTTPS GitHub transport while generic v1.2.8 was installed and exact ARMv7 v1.2.9 was still unpublished.",
+    "status": "PASS",
+    "latest_available_version": "1.2.8",
+    "exact_target_unpublished_in_current_public_release": true,
+    "signed_CPU_family_pointer_accepted": true,
+    "output_language": "ru",
+    "output_text": "Установлена актуальная версия Luch 1.2.8.",
+    "installation_slot_changed": false
+  },
+  "preserved_state": {
+    "HWID_sentinel_unchanged": true,
+    "language": "en",
+    "language_sentinel_unchanged": true,
+    "paused_marker_preserved_through_upgrade_and_first_reboot": true,
+    "old_rollback_slot_retained": true,
+    "old_rollback_binaries_match_public_manifest": {
+      "luch": "d595856dc55693ce7e102613f4bf97d6b3d79afb0734185bfcdde3c277c9b909",
+      "luch-install": "293e55cd9fe43e8457327cb3364db6967ee66e2122242bd093109811523cfa7e"
+    }
+  },
+  "upgrade_reboots": {
+    "paused": {
+      "before": "fc71af84-5675-4152-b0a6-da1ef613feea",
+      "after": "8d3fa3a0-f4aa-4658-af2e-a2384977e456"
+    },
+    "enabled": {
+      "before": "8d3fa3a0-f4aa-4658-af2e-a2384977e456",
+      "after": "68be6b62-107e-49d7-a3c5-fd58c7a98e75"
+    },
+    "enabled_daemon_verified_by_real_procd_PID_and_command": true
+  },
+  "strict_pause_continuation": {
+    "scope": "A new overlay uses the final upgraded disk as immutable backing, then checks pause/resume and two additional real reboots. Explicit if/exit checks reject unexpected autostart, procd running=true, or any luch process; tests do not depend on errexit for negated commands.",
+    "status": "PASS",
+    "parent_upgraded_disk_unchanged": true,
+    "pause_autostart_disabled": true,
+    "pause_no_running_procd_instance": true,
+    "pause_no_luch_process": true,
+    "pause_no_runtime_xray_config": true,
+    "paused_reboot_no_daemon_for_seconds": 30,
+    "paused_reboot_ids": {
+      "before": "8fb5c443-6046-4402-a09d-4ec9db9de341",
+      "after": "c97e51e1-d96e-4e7d-84f8-c867dc4a33bd"
+    },
+    "resume_autostart_enabled": true,
+    "resume_real_procd_daemon_verified": true,
+    "enabled_reboot_ids": {
+      "before": "c97e51e1-d96e-4e7d-84f8-c867dc4a33bd",
+      "after": "a4d94928-8e44-4fb4-b852-83486232964f"
+    },
+    "enabled_reboot_real_daemon_verified": true,
+    "HWID_language_exact_slot_and_rollback_preserved": true
+  },
+  "receipt_sha256": {
+    "upgrade_summary": "0b8503461f498c3c098f38af82b400f7dc6d703995ed83a6c755a7106ea77242",
+    "upgrade_transcript": "2dc3b626e1e5219be1f8904d0c0a30863e43395e78b2333494ee61954ae71453",
+    "strict_pause_summary": "41c295f5be87930a1b73b22ebfa612db1f1f0ed1a16ae9cb5570fc125797e35d",
+    "strict_pause_transcript": "dd78e3b81ff490d9db9c352bc1e1ac5dace04d7987f34afb82fbe8794d87ae14",
+    "upgrade_harness": "dc79798d84a0b5a6d0ecb6eba28cd98e1be402573a056edda7002ac34784a8e3",
+    "strict_pause_harness": "836134e7e2387ec9413b20a27036ef4c21a8eaec555027f9f4770f003c106293",
+    "helper_pin_proof": "7acde448b33d34bcfe27f36671df06786bc91bbddfab16d11e49faac03485d4a",
+    "unchanged_runtime_source": "0e46d84e71f21659c743921934ccec44b154059a1a005038d5aabde570d4f193",
+    "independent_exact_preference_review": "327df849fdd0c8a6f678160e08e01149ba7d500ebd24787692ac03ddc74089b0"
+  },
+  "limits": {
+    "live_subscription_used": false,
+    "private_signing_keys_in_guest": false,
+    "live_public_GitHub_v1_2_9_installation_verified": false,
+    "physical_router_low_RAM_or_flash_verified": false
+  },
+  "fixture_failures_preserved": [
+    {
+      "reason": "Go test helper initially used executable main.* linker variable names; its pin guard rejected the fixture before metadata lookup. Corrected package-qualified variables were checked on host before repeating a clean guest.",
+      "receipt_sha256": "643ea4613d8ac509cf1bbc05fc0d7d682388a17f55417ac0ba1216d870daac42"
+    },
+    {
+      "reason": "Optional standalone production updater probe initially lacked an execute bit after download. Corrected chmod in the test harness; real production installer already sets executable modes.",
+      "receipt_sha256": "d898a194d3df5cac8b085d22f3ad7850cef6f6ef6e75b3e8ac831c3ce9f505ed"
+    }
+  ]
+}
