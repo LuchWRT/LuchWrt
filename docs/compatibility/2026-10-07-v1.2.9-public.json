@@ -1,0 +1,1743 @@
+{
+  "schema_version": 1,
+  "kind": "published-github-one-command-exact-release-qualification",
+  "status": "PASS",
+  "release": "1.2.9",
+  "release_url": "https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.9",
+  "expected_exact_targets": 17,
+  "completed": 17,
+  "passed": 17,
+  "missing": [],
+  "failed": [],
+  "generated_utc": "2026-10-07T10:48:35.190252+00:00",
+  "source_snapshot_sha256": "738c3d6e3026c342ae4ea98ed64f3c8b178f3da6b4fc924801805b27a45e08a2",
+  "dist_assets_sha256": "eff3e98aa651ddeed428ba91341859c29b5e11b865a558854b5af5cda0be72d9",
+  "build_inputs_sha256": "b27a4d736d5e065203f310c98eb37bdc8fc2708d38bc1eda5f0bcacecaeeaaf7",
+  "dispatcher": {
+    "filename": "install-9c4a4b0c1d3596bb4ebbb09a56eb72c2f7490e28d9db3a2e79af1bae7a4ad5d5.sh",
+    "sha256": "9c4a4b0c1d3596bb4ebbb09a56eb72c2f7490e28d9db3a2e79af1bae7a4ad5d5",
+    "targets": 25,
+    "exact": 17,
+    "fallback": 8
+  },
+  "public_readme_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+  "public_readme_verification": {
+    "observed_utc": "2026-10-07T10:48:09.054971+00:00",
+    "public_readme_sha256": "d093063244ebe7347d08cb7a13e2a29ad8d0e22ebc4d4272b47ebc4d50054d60",
+    "command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+    "command_present": true,
+    "mentions_version": true,
+    "observed_main_commit": "4074496c4afd725da17ec39e15d81d056b79260f"
+  },
+  "initial_merged_readme_observation": {
+    "public_readme_sha256": "d093063244ebe7347d08cb7a13e2a29ad8d0e22ebc4d4272b47ebc4d50054d60",
+    "command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+    "command_present": true,
+    "mentions_version": true,
+    "merged_commit": "27d65190d2b762f0f9b882c9369d2e340288903d"
+  },
+  "public_readme_command_source": "https://raw.githubusercontent.com/LuchWRT/LuchWrt/a6eae8e6883061968606c1c91f98545b8b912759/install-v1.2.9.sh",
+  "signature_verification": "Production bootstrap verified its installer hash; production installer verified published latest and bundle signatures before installation.",
+  "signing_public_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+  "official_catalogs_rechecked": {
+    "status": "PASS",
+    "count": 17,
+    "rows": [
+      {
+        "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "f4fe8375f9b284f1c65b6414ba10bcd8b0d30ce9aed4f31a04833721a5b43056",
+        "checked_utc": "2026-10-07T10:35:52.945979+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "0f69f8b6dadd4ef714cff6a37031119f3035862bd947668991a40172a2bdec54",
+        "checked_utc": "2026-10-07T10:35:53.323429+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "23.05.6-aarch64_generic",
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "6a5599213f8700aba045e34ca3e17f73646fc9c6cbcd05dc49044a7d655c67d2",
+        "checked_utc": "2026-10-07T10:35:53.324243+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "25.12.5-i386_pentium4",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/generic/sha256sums",
+        "checksum_sha256": "e18f5784006d34c5693efc1bfe51a69de4a9d9b371673dc45afe49adca6416e4",
+        "checked_utc": "2026-10-07T10:35:52.945183+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "24.10.8-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/sha256sums",
+        "checksum_sha256": "5c1d5d6a7fc1acd34fd5ed8014cc28039b122569a87161889a1fa23b03a03df8",
+        "checked_utc": "2026-10-07T10:35:52.887717+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "22.03.7-aarch64_cortex-a53",
+        "checksum_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/sha256sums",
+        "checksum_sha256": "77dd1b150429b108be72279b1649cbb0e689bb53280c210cc4d7bcba709de1bb",
+        "checked_utc": "2026-10-07T10:35:53.008871+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "17.01.7-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/17.01.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "7436b5681e5b1db634ebf2e054133427a9946893a3930dc6a70524e71f4adb63",
+        "checked_utc": "2026-10-07T10:35:53.061942+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "18.06.9-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/18.06.9/targets/x86/64/sha256sums",
+        "checksum_sha256": "4f815f6682417cc8032a7a36f12f80f0e4093b365e4d3a10aeb53e25ff353dce",
+        "checked_utc": "2026-10-07T10:35:53.359147+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "19.07.10-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/19.07.10/targets/x86/64/sha256sums",
+        "checksum_sha256": "914075ce0626680455e9469748f6adeecf7fbafd477d48013384fe93cc61b35c",
+        "checked_utc": "2026-10-07T10:35:53.322476+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "21.02.7-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "260c0dc424645173f047329a8ea8db63ae2a81b30f8e5c766a346b6a52dc042c",
+        "checked_utc": "2026-10-07T10:35:53.321681+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "22.03.7-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/22.03.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "15656345e423b9436e046dea656e75116160115306b2992bceae3af819970e9f",
+        "checked_utc": "2026-10-07T10:35:53.594805+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "23.05.6-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/x86/64/sha256sums",
+        "checksum_sha256": "b9901e6e08539fcc5f0411fa805b053733875a3744ba3b16cc4784d88832360a",
+        "checked_utc": "2026-10-07T10:35:53.579867+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "25.12.5-x86_64",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/64/sha256sums",
+        "checksum_sha256": "0787db220cdc4a2e2d0ba8c19e8e28f2ee88e67d464a159e78974e323824d5b5",
+        "checked_utc": "2026-10-07T10:35:53.568447+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "24.10.8-aarch64_generic",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "108da481773a0c4fdb09642272f4a207358101423af26b67166c9347f12fb33e",
+        "checked_utc": "2026-10-07T10:35:53.595666+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "d4f969ac2272d47709b5c4f82c91a37562350734c53d48578afc3a9fa4f8f67d",
+        "checked_utc": "2026-10-07T10:35:53.585255+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "25.12.5-aarch64_generic",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "2ba9c990e6f05b9875aa54992171f6a2cd447ab01c64ed11b02c6c7116cc31ec",
+        "checked_utc": "2026-10-07T10:35:53.613704+00:00",
+        "status": "PASS"
+      },
+      {
+        "target": "24.10.8-i386_pentium4",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/generic/sha256sums",
+        "checksum_sha256": "802f799bd228e3aa9628550f89218cc5656cc91903949b137af7ae269ed5c0f4",
+        "checked_utc": "2026-10-07T10:35:53.906791+00:00",
+        "status": "PASS"
+      }
+    ]
+  },
+  "terminal_fixture_helpers": {
+    "runtime-helper-386": "34ceb293e7d5a53fc1289c5e7f616691e0a8020a9fcfd21f123a33430b0a13e3",
+    "runtime-helper-amd64": "176b27af9e57a3e59fdcc8a2b85a8a56cfc91fa6c9a93a8cbf3a961fecc0f97f",
+    "runtime-helper-arm64": "dfec7b1032d028c03d241d5fea3a493091059c426ca2ab238053fe18f693cca3",
+    "runtime-helper-armv7": "2e8c9de318db188727f97ce691389ca270e04edc051b3945cf2069239d85a10f"
+  },
+  "rows": [
+    {
+      "target": "17.01.7-x86_64",
+      "status": "PASS",
+      "openwrt": "17.01.7",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-17.01.7-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "12662abfc1e01cf5230eb014873b2020dba1300b500f6a54651ceaec2c9bf8a3",
+      "manifest_signature_sha256": "f32c916e0104574d191bbf874e176bc97af8df0095ba0df1a8e4005ae3aa93fa",
+      "bootstrap_sha256": "51f43132f77b4e6d942668b884b9d42df1dc8e2db0784ddd6ea2be0fb006e2d3",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23268,
+          "sha256": "1f922f6f3bc2534914cc72de62a74ad9b998d3dfcadfffa9419a7ac7a4b8caad"
+        }
+      ],
+      "official_sources": {
+        "sha256": "2dc896cd0f690994854311ccf6202cf703e636b63fdaad3738e9bb17c124d2e7",
+        "checksum_url": "https://downloads.openwrt.org/releases/17.01.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "7436b5681e5b1db634ebf2e054133427a9946893a3930dc6a70524e71f4adb63",
+        "source_url": "https://downloads.openwrt.org/releases/17.01.7/targets/x86/64/lede-17.01.7-x86-64-combined-ext4.img.gz"
+      },
+      "observed_kernel": "4.4.182",
+      "observed_target": "x86\\/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "a8351ae2-c135-4c59-a633-81167ea0a209",
+      "boot_id_after": "23b79845-353d-403f-8c6e-f8130ff55e95",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "2953",
+      "daemon_pid_after_reboot": "1312",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "17.01.7-x86_64.json",
+      "receipt_sha256": "8b09dfe92c619ced14e7050bb887fd44798dcb5183343c3f216043e610a6392f",
+      "transcript_name": "17.01.7-x86_64.log",
+      "transcript_sha256": "a42bb17df78ea2054a21562aa5ebfb7daba95eb7819a0f27960477af820ae15b",
+      "started_utc": "2026-10-07T10:40:18.101808+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "18.06.9-x86_64",
+      "status": "PASS",
+      "openwrt": "18.06.9",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-18.06.9-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "d5adaf90e4fc635244812f9be521eb393257377c310586d04e051b77f1bc759a",
+      "manifest_signature_sha256": "4f777cb08ee0c238bd59f22da45350a39ea00be51a4592b0b6c11dd7717acf92",
+      "bootstrap_sha256": "4a1002db572e5db6e5ead920a23f833c697d12a5dde50aa798254a269f61c58f",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23268,
+          "sha256": "140b12978a44b131c7725866d38a394f09196aa6c6a92b055a20f802fb1ba3f6"
+        }
+      ],
+      "official_sources": {
+        "sha256": "483a38be503b2ce8d90bba973a46b0e89771532bb12c74ce39d9037046824311",
+        "checksum_url": "https://downloads.openwrt.org/releases/18.06.9/targets/x86/64/sha256sums",
+        "checksum_sha256": "4f815f6682417cc8032a7a36f12f80f0e4093b365e4d3a10aeb53e25ff353dce",
+        "source_url": "https://downloads.openwrt.org/releases/18.06.9/targets/x86/64/openwrt-18.06.9-x86-64-combined-ext4.img.gz"
+      },
+      "observed_kernel": "4.14.206",
+      "observed_target": "x86\\/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "0fc27056-6e2d-49f4-8456-37f015fc5d9f",
+      "boot_id_after": "96fc88ff-fc0e-4779-bb59-e9f564fc2a00",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3247",
+      "daemon_pid_after_reboot": "1684",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "18.06.9-x86_64.json",
+      "receipt_sha256": "caf5c3ce297db93d9bf4ed3377e7d4cb0a0f15a295b0e97217c0795542544955",
+      "transcript_name": "18.06.9-x86_64.log",
+      "transcript_sha256": "92056147a6e3409dce3e7424dca2e600cd0714a5679c4f34eaf9fda3c85be229",
+      "started_utc": "2026-10-07T10:40:49.417111+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "19.07.10-x86_64",
+      "status": "PASS",
+      "openwrt": "19.07.10",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-19.07.10-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "8215b9e4db0a0162e129a49e6c6ff93499d5313cb29c3ef3e741391c0035918b",
+      "manifest_signature_sha256": "777e41ec5b8ef79200842c84abdd4b7086b791eb0b36a656b670ef8c42532711",
+      "bootstrap_sha256": "dcd14f0b25b29c86c90dfaa2cf351ddbbd2f2a79cc10e5efcb1d8cab1ea6ebb1",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23269,
+          "sha256": "f77f5f562fddcfa3f2248ae0e6785910021244d1b6ee7074e50a76cc0ed977a6"
+        }
+      ],
+      "official_sources": {
+        "sha256": "b27750176d9c91b8624c9a5f37b627c40efe65ece7779f54fd917ba8c8e028c3",
+        "checksum_url": "https://downloads.openwrt.org/releases/19.07.10/targets/x86/64/sha256sums",
+        "checksum_sha256": "914075ce0626680455e9469748f6adeecf7fbafd477d48013384fe93cc61b35c",
+        "source_url": "https://downloads.openwrt.org/releases/19.07.10/targets/x86/64/openwrt-19.07.10-x86-64-combined-ext4.img.gz"
+      },
+      "observed_kernel": "4.14.275",
+      "observed_target": "x86/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "fc1a83de-0f2a-4374-8c3f-1d4b63efa4a8",
+      "boot_id_after": "0fee3cfc-f6fb-46cb-8532-f4912dad0370",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3565",
+      "daemon_pid_after_reboot": "1820",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "19.07.10-x86_64.json",
+      "receipt_sha256": "f476daee30eb0d793d6f5c3d212fb61da6b897825e70c31d0f794c62e1815618",
+      "transcript_name": "19.07.10-x86_64.log",
+      "transcript_sha256": "3ee78b2b42b7318b2868360172fe4db57e8bb77342b69ecec58454b3102409c7",
+      "started_utc": "2026-10-07T10:40:52.649553+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "21.02.7-x86_64",
+      "status": "PASS",
+      "openwrt": "21.02.7",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-21.02.7-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "ad2706f30ef51189d56f992722fb5d6779693b2fbc1a76dca6b68fa0e608a9f9",
+      "manifest_signature_sha256": "7bc420246dd2e57fcf470d5dcd52ca40b493cb8da37c8e22ff0eac5794260c77",
+      "bootstrap_sha256": "4f90f48ebf93ffab98860e2b267e8fc36a9074ac379edccc52e6f23119586bc4",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23268,
+          "sha256": "afd2c654257564c80d8248b0514e7eb9c7e327e8ba3ef9e3375ef9a6ffc9c17f"
+        }
+      ],
+      "official_sources": {
+        "sha256": "39f8e1f629cfe1db985809639c2cd1de88db119544144740d968d0b6784a9d6f",
+        "checksum_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "260c0dc424645173f047329a8ea8db63ae2a81b30f8e5c766a346b6a52dc042c",
+        "source_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/openwrt-21.02.7-x86-64-generic-ext4-combined.img.gz"
+      },
+      "observed_kernel": "5.4.238",
+      "observed_target": "x86/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "b70088b8-4c79-461c-b227-35104320c781",
+      "boot_id_after": "2f4af8ba-9855-4a7a-9a1b-2ddda2229077",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "4716",
+      "daemon_pid_after_reboot": "2636",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "21.02.7-x86_64.json",
+      "receipt_sha256": "15582c1847eaabc5169a6c3303d2ed50e545bba0a2ccbf4c71a4993572fe8196",
+      "transcript_name": "21.02.7-x86_64.log",
+      "transcript_sha256": "4e2a962ba60049a2241a06d179534e219cb53227801c117a02c9f31625dcf11c",
+      "started_utc": "2026-10-07T10:41:08.361392+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "22.03.7-aarch64_cortex-a53",
+      "status": "PASS",
+      "openwrt": "22.03.7",
+      "package_arch": "aarch64_cortex-a53",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-22.03.7-aarch64_cortex-a53",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "026520e57c2fc3ce42bc55daabfa69d0745116fa5e50f36a080f7c940e6c16b2",
+      "manifest_signature_sha256": "06f01e59e58e7d02f6a352e6bf34ef2626a02ab4d9bd2bf13f59c8a447fe138b",
+      "bootstrap_sha256": "e9dfe0b3380f97eb28e6a1250fb0788863cf386159c22787d530528681246a6b",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7012512,
+          "sha256": "6f3cac4016acba1431c82152d85e506355d321503f05ec808a0b5550e7464070"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 6684832,
+          "sha256": "e8088053f3acb30285f5b63aa84700f976b86ba95a44f3f7308bd6ad7df94868"
+        },
+        {
+          "name": "xray",
+          "bytes": 30343292,
+          "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23280,
+          "sha256": "7b777b635ee62e9a774bc77251f8132e2a1bf9a4ed81d7d67f6958c3dc2b6c54"
+        }
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/sha256sums",
+        "checksum_sha256": "77dd1b150429b108be72279b1649cbb0e689bb53280c210cc4d7bcba709de1bb",
+        "source_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/openwrt-22.03.7-armvirt-64-rootfs-ext4.img.gz",
+        "sha256": "ba068d60c3155e3eebd0d5eabcca4c5d0026a416f4384f78fbabb12699646cea",
+        "kernel_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/openwrt-22.03.7-armvirt-64-Image",
+        "kernel_sha256": "a932a389ce820cbaea01060b2fba07bcd38a4600aa80b72bec3a67f2ad451bdf"
+      },
+      "observed_kernel": "5.10.221",
+      "observed_target": "armvirt/64",
+      "qemu_cpu": "cortex-a53",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "c6db1229-e33a-44b7-94b7-3cdf57933887",
+      "boot_id_after": "759ab16f-513d-47dd-937d-5c075e76c133",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3950",
+      "daemon_pid_after_reboot": "2232",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/arm64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "22.03.7-aarch64_cortex-a53.json",
+      "receipt_sha256": "729c0b74fae3bfdb4c449609273a96960146480cb57c7e2f6d9fae697849520a",
+      "transcript_name": "22.03.7-aarch64_cortex-a53.log",
+      "transcript_sha256": "d10bb2eef06c06607f7f5ee9c0ceb9d6fc9faa1360f5e7b89d7b35b3b0cf5861",
+      "started_utc": "2026-10-07T10:37:41.528237+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "22.03.7-x86_64",
+      "status": "PASS",
+      "openwrt": "22.03.7",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-22.03.7-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "b7949928b7d6d3cd7cd3d147d5a3b6985a61c2aa5878fb15576d0b124c498b6c",
+      "manifest_signature_sha256": "45050918686888cb363e4e02ab3f4c321b102bb44638a99c1ff275fdb12ab498",
+      "bootstrap_sha256": "e75ed2773dd2d4cb8f076109f4614566c00b4293fad5ec9f1e2ddb9a0f50d7b8",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23268,
+          "sha256": "567b1607d1aced34068ece4e1437ae4c2d8dfaa4c867f751ee127a0b4439df0e"
+        }
+      ],
+      "official_sources": {
+        "sha256": "e83d2091a836693ef421de7048bd58a568eeacf1e09ba46c4245c50deb377c0c",
+        "checksum_url": "https://downloads.openwrt.org/releases/22.03.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "15656345e423b9436e046dea656e75116160115306b2992bceae3af819970e9f",
+        "source_url": "https://downloads.openwrt.org/releases/22.03.7/targets/x86/64/openwrt-22.03.7-x86-64-generic-ext4-combined.img.gz"
+      },
+      "observed_kernel": "5.10.221",
+      "observed_target": "x86/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "29622ac0-d31f-404a-93b6-e100df279143",
+      "boot_id_after": "b299c216-0a90-4661-85ae-9b7938aab8c1",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "4233",
+      "daemon_pid_after_reboot": "2596",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "22.03.7-x86_64.json",
+      "receipt_sha256": "366fba00bce75875a8e6a4469f12624a3cbf913150ded410e790882d81df785d",
+      "transcript_name": "22.03.7-x86_64.log",
+      "transcript_sha256": "84bcfd2fef7948fd4ba8556bd4a77fd496082cb551c7e1a3d10a54a8ee0ef6f4",
+      "started_utc": "2026-10-07T10:41:22.109880+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "23.05.6-aarch64_generic",
+      "status": "PASS",
+      "openwrt": "23.05.6",
+      "package_arch": "aarch64_generic",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-23.05.6-aarch64_generic",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "c84b3b55627faa24a647906553b0ae82d29d3436575ab81c72ae0a7496027528",
+      "manifest_signature_sha256": "0e2927e77abcdff136deff8a350e0185d9767027520b365c05f2c512aed44054",
+      "bootstrap_sha256": "f9dc3e1cb8eec1caa09b6e268648959e67c7bc6695d2dd8c703fddce2d5b5bb9",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7012512,
+          "sha256": "6f3cac4016acba1431c82152d85e506355d321503f05ec808a0b5550e7464070"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 6684832,
+          "sha256": "e8088053f3acb30285f5b63aa84700f976b86ba95a44f3f7308bd6ad7df94868"
+        },
+        {
+          "name": "xray",
+          "bytes": 30343292,
+          "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23277,
+          "sha256": "7adf2bc237b04c201b66b05ee6e442de163f889db9c0266b759a3dc3d044d0bb"
+        }
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "6a5599213f8700aba045e34ca3e17f73646fc9c6cbcd05dc49044a7d655c67d2",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "sha256": "b5ed1ac919e4096ef7e688734a9f7cfba38ea2b3c6e6a8fc37303c383b7eea18",
+        "kernel_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-kernel.bin",
+        "kernel_sha256": "243159d98fa1b42db9c0b3182386528e3041c41c40066b083f2c1099eca9b358"
+      },
+      "observed_kernel": "5.15.189",
+      "observed_target": "armsr/armv8",
+      "qemu_cpu": "cortex-a72",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "52997740-f150-462c-8d4a-f2cc5f42247f",
+      "boot_id_after": "48b746af-02f0-4b8f-a2da-f732d4851c30",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3970",
+      "daemon_pid_after_reboot": "2519",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/arm64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "23.05.6-aarch64_generic.json",
+      "receipt_sha256": "20018128d66e625515b6d3b179b618e04c4a8ba9b6ad4335132818e71afba344",
+      "transcript_name": "23.05.6-aarch64_generic.log",
+      "transcript_sha256": "6e99968b80158e57dc76babb99591f1aec9a52b0a9d50c8ebfb3cf0fe44f8fa8",
+      "started_utc": "2026-10-07T10:37:41.527341+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+      "status": "PASS",
+      "openwrt": "23.05.6",
+      "package_arch": "arm_cortex-a15_neon-vfpv4",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-23.05.6-arm_cortex-a15_neon-vfpv4",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "7433268f6281a6908e47b7ea6d29a508009faf326381c2045de6ce024360d482",
+      "manifest_signature_sha256": "5226a6d559ca42855280c8146a21c1f73ba53956a409312e9a981df5e4f7c1f3",
+      "bootstrap_sha256": "176b5d29f2caf745e2e747b7a3b629be55519375ec0e0a0b00e66e3b22a82c30",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7602336,
+          "sha256": "2d0f8617b6e9ea964cac9fa2d82928045636975f60b0f1dd29eb8c0e84306f50"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "2ae05654a91c2896cf342bb57be4da3df6844ffd839cfea1c7014025fff0bcf4"
+        },
+        {
+          "name": "xray",
+          "bytes": 30802044,
+          "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23287,
+          "sha256": "0d15e64c76dee6b44c8eb3cd1fae809f8c1d1987a0383fc7982a9f0d37725ae6"
+        }
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "0f69f8b6dadd4ef714cff6a37031119f3035862bd947668991a40172a2bdec54",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/openwrt-23.05.6-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "sha256": "e9a1245c9f0eddf3ac514c7e684cc53feb28d0f16bd47dc096c0e52eb3046925",
+        "kernel_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/openwrt-23.05.6-armsr-armv7-generic-kernel.bin",
+        "kernel_sha256": "b14e20a17a3a450f08091570bb44d76a987cf1ac30638074c225f3729e829889"
+      },
+      "observed_kernel": "5.15.189",
+      "observed_target": "armsr/armv7",
+      "qemu_cpu": "cortex-a15",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "46ee376c-b2dd-4bbf-b2ed-0885ccfd9eb0",
+      "boot_id_after": "75b4f392-20cb-48ba-a951-107daefa55cc",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3546",
+      "daemon_pid_after_reboot": "2077",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/arm)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "23.05.6-arm_cortex-a15_neon-vfpv4.json",
+      "receipt_sha256": "3966b1e1de2e5fc48e3c2dda32bfaa0a9d6c51483573e4fa51695cd8833f0050",
+      "transcript_name": "23.05.6-arm_cortex-a15_neon-vfpv4.log",
+      "transcript_sha256": "d8667784ff09e8fe0b70ebabbf3064b44a4ea88318d5c1ec328f7d2149df649e",
+      "started_utc": "2026-10-07T10:37:41.526819+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "23.05.6-x86_64",
+      "status": "PASS",
+      "openwrt": "23.05.6",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-23.05.6-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "ae47bc0d2546be30dc228e7bba87e192cffa328b23202bf6e5089e1b559bf553",
+      "manifest_signature_sha256": "4bc8148d47dcf8f0a47e7c92db649a3d0f721f3a2db2e912723b4afc36962346",
+      "bootstrap_sha256": "4370e34011c4a9b454ae55b30de3d4343b8ff3be16f9708856f0cadfc9e74615",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23268,
+          "sha256": "d25a110a59ceca860839bbf1a2d19566f8277a542f2e2579c0af2d94c278a731"
+        }
+      ],
+      "official_sources": {
+        "sha256": "c6e22b6f58ba721f15f3ccdbc26d4a85da64b7e3c564cd5bc70676eb91eeec51",
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/x86/64/sha256sums",
+        "checksum_sha256": "b9901e6e08539fcc5f0411fa805b053733875a3744ba3b16cc4784d88832360a",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/x86/64/openwrt-23.05.6-x86-64-generic-ext4-combined.img.gz"
+      },
+      "observed_kernel": "5.15.189",
+      "observed_target": "x86/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "39ecdc0c-3a1c-47ac-9693-62e06d2851c8",
+      "boot_id_after": "8027d096-84e7-428d-beaa-4452fbe095b9",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3575",
+      "daemon_pid_after_reboot": "2150",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "23.05.6-x86_64.json",
+      "receipt_sha256": "17a48206941a652c04bad50eda18216544efa48a11b6bcc765c5912f37eb97de",
+      "transcript_name": "23.05.6-x86_64.log",
+      "transcript_sha256": "bead491d4f6dfbb3e161a39c54cab9ea1e8d439f24ddd4217c90f08aa4844b53",
+      "started_utc": "2026-10-07T10:41:37.536156+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "24.10.8-aarch64_generic",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "aarch64_generic",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-24.10.8-aarch64_generic",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "a0fe52ea460413acf2b991927891a857d65c67e3d99ba51a0a62f4859abad30e",
+      "manifest_signature_sha256": "5184e3ee85fe4ff447e0dd6da160ea0e2e304a340f7d8051a3bdf6a9ec5b065c",
+      "bootstrap_sha256": "2426ae4c22656ec9d1e055cb6998287013414dab23b4784978ea194b9c2b6c74",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7012512,
+          "sha256": "6f3cac4016acba1431c82152d85e506355d321503f05ec808a0b5550e7464070"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 6684832,
+          "sha256": "e8088053f3acb30285f5b63aa84700f976b86ba95a44f3f7308bd6ad7df94868"
+        },
+        {
+          "name": "xray",
+          "bytes": 30343292,
+          "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23277,
+          "sha256": "420ac0fb989c5032e9bf6ee6a2239a3ffd261ca8d26f50497fb01a1d210fa749"
+        }
+      ],
+      "official_sources": {
+        "sha256": "1d829b6087d561f9e278679a5525ae4fdd68716d8d2a4e1525500b247d99aada",
+        "kernel_sha256": "ccc97f1598224e73a5f75fb1612c284db037f02fa050d1a18b5b2ee93631e37e",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "108da481773a0c4fdb09642272f4a207358101423af26b67166c9347f12fb33e",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv8/openwrt-24.10.8-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "kernel_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv8/openwrt-24.10.8-armsr-armv8-generic-kernel.bin"
+      },
+      "observed_kernel": "6.6.144",
+      "observed_target": "armsr/armv8",
+      "qemu_cpu": "cortex-a72",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "a1ba6893-8487-4f94-8eb8-b3fd161fe208",
+      "boot_id_after": "5afb8e28-c55d-4b19-9945-d04ea4b4af92",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "4261",
+      "daemon_pid_after_reboot": "2933",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/arm64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "24.10.8-aarch64_generic.json",
+      "receipt_sha256": "50fd3f028f21740a059695419c170bff58d1f3e3956145f7a1bd5d8e4e3716fb",
+      "transcript_name": "24.10.8-aarch64_generic.log",
+      "transcript_sha256": "40612f78741dae35b967908105f6dc5df9aa8b1fdf3586e32bcfd1e4dbe11b55",
+      "started_utc": "2026-10-07T10:43:45.497958+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "arm_cortex-a15_neon-vfpv4",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-24.10.8-arm_cortex-a15_neon-vfpv4",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "f8af7e42e3447ee40d5969675e4e34241bc67635425d77302da4db9d1ff2c473",
+      "manifest_signature_sha256": "1a6f799408aa0600a4d57a34219d6b794ffff16e08b394d8c1ed91770495194a",
+      "bootstrap_sha256": "2eeb3b54ab8b3b73fd14bb11996e4246a3fe890a00a60ec3ea0d23a5e1299ab2",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7602336,
+          "sha256": "2d0f8617b6e9ea964cac9fa2d82928045636975f60b0f1dd29eb8c0e84306f50"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "2ae05654a91c2896cf342bb57be4da3df6844ffd839cfea1c7014025fff0bcf4"
+        },
+        {
+          "name": "xray",
+          "bytes": 30802044,
+          "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23287,
+          "sha256": "3885097aa133688cd36403a8336a011bdf4d7f15401c6b99f30244844c46cba5"
+        }
+      ],
+      "official_sources": {
+        "sha256": "3d4ffdc4cbc3188525b69ad5d905cc8a4a68aa768692d521e9ccc2f5085dafbe",
+        "kernel_sha256": "6b91c8b0d7edd47594a243eb1fa52018c61ab7bd998f568065e6cbee08ca0138",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "d4f969ac2272d47709b5c4f82c91a37562350734c53d48578afc3a9fa4f8f67d",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv7/openwrt-24.10.8-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "kernel_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv7/openwrt-24.10.8-armsr-armv7-generic-kernel.bin"
+      },
+      "observed_kernel": "6.6.144",
+      "observed_target": "armsr/armv7",
+      "qemu_cpu": "cortex-a15",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "1ca916c4-be30-4532-8c4f-19444656137a",
+      "boot_id_after": "af5c14a4-317f-40fe-9b33-ce6b4d5ddbcc",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3842",
+      "daemon_pid_after_reboot": "2449",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/arm)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "24.10.8-arm_cortex-a15_neon-vfpv4.json",
+      "receipt_sha256": "14fb4fb3010df52d80fb119cf381cdd44b4ff5013074ac66bc15a47db245987d",
+      "transcript_name": "24.10.8-arm_cortex-a15_neon-vfpv4.log",
+      "transcript_sha256": "c874e26a53e1767b78b0d7940030fb67a878fd7696977f323bbd5d0defdd82ed",
+      "started_utc": "2026-10-07T10:44:02.027692+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "24.10.8-i386_pentium4",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "i386_pentium4",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-24.10.8-i386_pentium4",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "c1956d7ea811d7dc73ec758194861eec16fddf7d95ce3fb743cf2d1343ed083d",
+      "manifest_signature_sha256": "f09505216fc0e2c82c62ee6d7c7f854076bce49a08fa093396d071920b305d98",
+      "bootstrap_sha256": "e16af9324a94027e51f93bf37304a21e406865833a644c2e1b7a4c6265128320",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7446688,
+          "sha256": "542f1029c9acf10d49e3d7ae69a686c29791c06e93c2dd7fd763cd0859120d78"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7106720,
+          "sha256": "b933e4ab70da2d4c609fc61b167a67f97bba7e5fed878f530fbf24237f22440b"
+        },
+        {
+          "name": "xray",
+          "bytes": 30584956,
+          "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23273,
+          "sha256": "ae3b7badd0f5fb0a3096b4236e2440ac23631d675aa8906accc361572e198a7a"
+        }
+      ],
+      "official_sources": {
+        "sha256": "3f06519a0ede0c050b43ec02032d345922d274e53f0a28a1935245d3e3f21595",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/generic/sha256sums",
+        "checksum_sha256": "802f799bd228e3aa9628550f89218cc5656cc91903949b137af7ae269ed5c0f4",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/generic/openwrt-24.10.8-x86-generic-generic-ext4-combined.img.gz"
+      },
+      "observed_kernel": "6.6.144",
+      "observed_target": "x86/generic",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "6fb735fe-8aed-4078-b254-017cfa90766f",
+      "boot_id_after": "b1725d3a-103b-44a5-b259-834fb0ba8b89",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "4962",
+      "daemon_pid_after_reboot": "2453",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/386)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "24.10.8-i386_pentium4.json",
+      "receipt_sha256": "a894f4f17be3c0437f6de33867a848f82be6e4581f3bca1d9332085390199426",
+      "transcript_name": "24.10.8-i386_pentium4.log",
+      "transcript_sha256": "efc42bb0cf72019ad5f2a2d2d7003c954661cea3bb6b4dd78451b58c15122bfb",
+      "started_utc": "2026-10-07T10:45:11.703613+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "24.10.8-x86_64",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-24.10.8-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "c1e3fcabc842b111af0b6465b90ae2de9931bd3e30d98f7523a7ee3ed367af9f",
+      "manifest_signature_sha256": "4f2dc23be72cac99d4408602a210328e34ae36e22c5bfe1cdbd4b5036a905bba",
+      "bootstrap_sha256": "ac16759fed3cc80984104eaa334b208a4edc5826cd82b7dcb48d140377dcc4af",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23268,
+          "sha256": "2d586cd9d5148732f668003671b1d7e9b456ad240f6b81c3671583869d7767c0"
+        }
+      ],
+      "official_sources": {
+        "sha256": "23872c64fdb66d0765e0d17f71453a66e7a91e9ecb10606d5f738e6d166e14ae",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/sha256sums",
+        "checksum_sha256": "5c1d5d6a7fc1acd34fd5ed8014cc28039b122569a87161889a1fa23b03a03df8",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/openwrt-24.10.8-x86-64-generic-ext4-combined.img.gz"
+      },
+      "observed_kernel": "6.6.144",
+      "observed_target": "x86/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "81920d97-c296-45b1-8912-bda716526d21",
+      "boot_id_after": "74929f42-b95a-44dc-8220-0ab31732f40e",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "4030",
+      "daemon_pid_after_reboot": "2684",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "24.10.8-x86_64.json",
+      "receipt_sha256": "bbc420c99b9f17855a43401c5477b61b88420a8c9c712f7b83736e17075489c1",
+      "transcript_name": "24.10.8-x86_64.log",
+      "transcript_sha256": "80ce0b58f14b4c865c9c4779ced15ed685bb955da69519a5b084b24b42b2e5ce",
+      "started_utc": "2026-10-07T10:37:41.528110+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "25.12.5-aarch64_generic",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "aarch64_generic",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-25.12.5-aarch64_generic",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "2986c13aa1e304d97e1704f8b5fd827d04af3a75d367ca849ab84f04c7874b65",
+      "manifest_signature_sha256": "fab4811f326765b56bc0e7a2ce9fc6c057fc896fc37b64272818a2b43f212aaa",
+      "bootstrap_sha256": "26682816ef60295f8a585744d2bdd6c6bf87dc13acb14bad7d7cc21235448baf",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7012512,
+          "sha256": "6f3cac4016acba1431c82152d85e506355d321503f05ec808a0b5550e7464070"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 6684832,
+          "sha256": "e8088053f3acb30285f5b63aa84700f976b86ba95a44f3f7308bd6ad7df94868"
+        },
+        {
+          "name": "xray",
+          "bytes": 30343292,
+          "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23277,
+          "sha256": "b0e6044d3925b91437bb21cd87ea696c8fcf07acebe4d272b41e4fbfbf5db2c1"
+        }
+      ],
+      "official_sources": {
+        "sha256": "03172dd9a91e7cb477ab73bcb5de544bfe19f42698d7f66d9b2bb80ca692eaa6",
+        "kernel_sha256": "8cf43c4901efae72b0a04bb655158e03335067e8757926bca4c81d5c952aca51",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "2ba9c990e6f05b9875aa54992171f6a2cd447ab01c64ed11b02c6c7116cc31ec",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/openwrt-25.12.5-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/openwrt-25.12.5-armsr-armv8-generic-kernel.bin"
+      },
+      "observed_kernel": "6.12.94",
+      "observed_target": "armsr/armv8",
+      "qemu_cpu": "cortex-a72",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "2cbeb939-0e0c-4328-82e8-2090776ad598",
+      "boot_id_after": "47c70219-f912-42f6-9fa6-fd30f5283646",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3975",
+      "daemon_pid_after_reboot": "2985",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/arm64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "25.12.5-aarch64_generic.json",
+      "receipt_sha256": "06bea4ec9c3f06ba6d59b4876128f5b467cd5195512dfbc59e8ba886757e762c",
+      "transcript_name": "25.12.5-aarch64_generic.log",
+      "transcript_sha256": "e66d3b4a8e883d4602831983e13d26088b1a6186a1336873a72266a3d4fc8c9c",
+      "started_utc": "2026-10-07T10:44:03.522408+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "arm_cortex-a15_neon-vfpv4",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-25.12.5-arm_cortex-a15_neon-vfpv4",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "b8ba7adc30fd42f0af710dabf05e07a089f0d9443964e5bdc58c7e50f86065c8",
+      "manifest_signature_sha256": "6329232a445a72254f499e6e68259591051d14f22d897f1349bbe3b07dddb4a0",
+      "bootstrap_sha256": "7a31d3932fbad64527a7fdd67aaba241110fbae9dde662cd448dfd7f59f3c149",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7602336,
+          "sha256": "2d0f8617b6e9ea964cac9fa2d82928045636975f60b0f1dd29eb8c0e84306f50"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "2ae05654a91c2896cf342bb57be4da3df6844ffd839cfea1c7014025fff0bcf4"
+        },
+        {
+          "name": "xray",
+          "bytes": 30802044,
+          "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23287,
+          "sha256": "84c1e0537acd98471fe3ac640d2556934143b22bf9bc2d69137bfee2d501e0eb"
+        }
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "f4fe8375f9b284f1c65b6414ba10bcd8b0d30ce9aed4f31a04833721a5b43056",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "sha256": "34f278f88460c8156f9c91b31f476457685f5463d1e883586d334676302afc7a",
+        "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-kernel.bin",
+        "kernel_sha256": "0dadb3ce2b41787f44094490175496f64c875b45b603e3f53463d74141c08356"
+      },
+      "observed_kernel": "6.12.94",
+      "observed_target": "armsr/armv7",
+      "qemu_cpu": "cortex-a15",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "da016df8-a596-429b-9d40-f1e4047db5c2",
+      "boot_id_after": "254120bb-3f5e-4889-804f-9b365be06c59",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3487",
+      "daemon_pid_after_reboot": "2411",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/arm)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "25.12.5-arm_cortex-a15_neon-vfpv4.json",
+      "receipt_sha256": "502421d216baffeb396e66a7bde581cd1976aea4bd637fe344ea8075a79a48b5",
+      "transcript_name": "25.12.5-arm_cortex-a15_neon-vfpv4.log",
+      "transcript_sha256": "2ec825344e6cd5c1ff045e37564c3a27e12300df4332f7fc8d669b3a1a5e656e",
+      "started_utc": "2026-10-07T10:37:41.527858+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "25.12.5-i386_pentium4",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "i386_pentium4",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-25.12.5-i386_pentium4",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "f1fba48d22cb72120da9a5261e47f1084fbb5001ea21bb90ee00b1e7d81fcd5d",
+      "manifest_signature_sha256": "b930c7bf2ffbf5259d431cb51812cb90afa5fcc2bb1ea466a7203b5dc32a92ac",
+      "bootstrap_sha256": "da4ede2d0225b5b1d45ac4ce771a34e7db4e39962c96fca1dcdecc6aa08729d2",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7446688,
+          "sha256": "542f1029c9acf10d49e3d7ae69a686c29791c06e93c2dd7fd763cd0859120d78"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7106720,
+          "sha256": "b933e4ab70da2d4c609fc61b167a67f97bba7e5fed878f530fbf24237f22440b"
+        },
+        {
+          "name": "xray",
+          "bytes": 30584956,
+          "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23273,
+          "sha256": "429abe186254fa1f34985d75e3a1f31be495b11848a1d4e3ccd744aea15a1acf"
+        }
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/generic/sha256sums",
+        "checksum_sha256": "e18f5784006d34c5693efc1bfe51a69de4a9d9b371673dc45afe49adca6416e4",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/generic/openwrt-25.12.5-x86-generic-generic-ext4-combined.img.gz",
+        "sha256": "f20d8a508907d6447a84fd8336c3b4db725ff0c396492addaf5fc1bc5e9b79f1"
+      },
+      "observed_kernel": "6.12.94",
+      "observed_target": "x86/generic",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "8287f3bb-27f0-4d01-b6e2-dc02935b30a1",
+      "boot_id_after": "ef48ff3a-c4e3-4338-a52a-52be8932ed0a",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "4008",
+      "daemon_pid_after_reboot": "2623",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/386)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "25.12.5-i386_pentium4.json",
+      "receipt_sha256": "8cd7faaaf6a9d019ee490f9f35928698e8b798540a6e18d95a0a4db0c53825b5",
+      "transcript_name": "25.12.5-i386_pentium4.log",
+      "transcript_sha256": "4a7d62889e1377ee26602dc81ac2cfceea086800670c379567289a8c60657918",
+      "started_utc": "2026-10-07T10:37:41.527432+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    },
+    {
+      "target": "25.12.5-x86_64",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "x86_64",
+      "release": "1.2.9",
+      "package_kind": "exact",
+      "installed_slot": "releases/1.2.9-25.12.5-x86_64",
+      "installed_target_matches": true,
+      "final_candidate_artifacts_match": true,
+      "manifest_sha256": "9a15d7d9a66a2e129d249f9f7dec15fd6236ee73b109042b6a5457349ac87690",
+      "manifest_signature_sha256": "8a3fef7d21cc746e0620f3dd4e64234cb928fcb4112b572476b64d8462193e0d",
+      "bootstrap_sha256": "acd65bf25b1a16b2db582e29eff1674c4ceed61960160dcf451c5184c70fa25c",
+      "artifacts": [
+        {
+          "name": "luch",
+          "bytes": 7647392,
+          "sha256": "df33c5e406b4588c7135c6c5d021eab0e1461adc797643935de0a3992f1f9524"
+        },
+        {
+          "name": "luch-install",
+          "bytes": 7274656,
+          "sha256": "4d38bc68d647a195b674286e75d61d0436b16529788becd4a7a07a8ee92a128a"
+        },
+        {
+          "name": "xray",
+          "bytes": 32534652,
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "geosite.dat",
+          "bytes": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "bytes": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "bytes": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "bytes": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "bytes": 23268,
+          "sha256": "0f05707ec22ed545a8b4a193a846c65948171aaa8b6c2eb085b2061a8f44dc5b"
+        }
+      ],
+      "official_sources": {
+        "sha256": "23e2538e8ab0eb52dfed1c65d608ecdb71ffd432dd54885da138ae67cd9e4461",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/64/sha256sums",
+        "checksum_sha256": "0787db220cdc4a2e2d0ba8c19e8e28f2ee88e67d464a159e78974e323824d5b5",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/64/openwrt-25.12.5-x86-64-generic-ext4-combined.img.gz"
+      },
+      "observed_kernel": "6.12.94",
+      "observed_target": "x86/64",
+      "qemu_cpu": "default x86 pc",
+      "memory_mib": 512,
+      "emulated_disk_mib": 512,
+      "rootfs": "ext4 expanded within disk",
+      "boot_id_before": "24e478a4-5edf-4aed-bf35-a83e78139925",
+      "boot_id_after": "392db160-bb4f-457c-af76-af462bdd31d7",
+      "boot_id_changed": true,
+      "daemon_pid_before_reboot": "3607",
+      "daemon_pid_after_reboot": "2716",
+      "xray_version": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0-luch1.2.8 (go1.27.1 linux/amd64)",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "receipt_name": "25.12.5-x86_64.json",
+      "receipt_sha256": "3b72cb229a97fa05f327720157b27ee894e2797cc73fbd71f268d106792baad4",
+      "transcript_name": "25.12.5-x86_64.log",
+      "transcript_sha256": "5712341f5d6b53c1dc97a145c71310af818ea04176b251ad2f69ca7e5bc3fc87",
+      "started_utc": "2026-10-07T10:43:18.393357+00:00",
+      "harness_sha256": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+      "error_kind": null
+    }
+  ],
+  "scope": {
+    "real_github_https_transport": true,
+    "live_subscription": false,
+    "physical_router_test": false,
+    "custom_installed_router_packages": false,
+    "ipv6": false
+  }
+}

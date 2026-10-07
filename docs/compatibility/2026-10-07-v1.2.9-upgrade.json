@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "verified_at": "2026-10-07T10:47:07.230515+00:00",
+  "status": "PASS",
+  "release": {
+    "version": "1.2.9",
+    "url": "https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.9",
+    "published_at": "2026-10-07T10:36:18Z",
+    "draft": false
+  },
+  "target": {
+    "openwrt": "25.12.5",
+    "package_architecture": "arm_cortex-a15_neon-vfpv4",
+    "kernel": "6.12.94",
+    "qemu_cpu": "cortex-a15",
+    "memory_mib": 512
+  },
+  "official_inputs": {
+    "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/sha256sums",
+    "checksum_sha256": "f4fe8375f9b284f1c65b6414ba10bcd8b0d30ce9aed4f31a04833721a5b43056",
+    "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-ext4-rootfs.img.gz",
+    "sha256": "34f278f88460c8156f9c91b31f476457685f5463d1e883586d334676302afc7a",
+    "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-kernel.bin",
+    "kernel_sha256": "0dadb3ce2b41787f44094490175496f64c875b45b603e3f53463d74141c08356"
+  },
+  "transition": {
+    "from": {
+      "version": "1.2.8",
+      "kind": "CPU-family",
+      "slot": "releases/1.2.8-any-armv7",
+      "installation_scope": "Authentic immutable signed files from previously published GitHub v1.2.8, served locally and verified by the real v1.2.8 updater. The old latest endpoint was already v1.2.9; an old live bootstrap therefore could not install v1.2.8.",
+      "manifest_sha256": "85b3a4d3100ca8ca7d9abd822942d68ccf9e88cf029859d5ea49bb79931b96f0",
+      "manifest_signature_sha256": "a368eaf5e6e08a4522b39d1bd2c0f98fc7de5de131cdc645ce41d9caf805dc15",
+      "artifacts": [
+        {
+          "name": "luch",
+          "size": 7602336,
+          "sha256": "d595856dc55693ce7e102613f4bf97d6b3d79afb0734185bfcdde3c277c9b909"
+        },
+        {
+          "name": "luch-install",
+          "size": 7274656,
+          "sha256": "293e55cd9fe43e8457327cb3364db6967ee66e2122242bd093109811523cfa7e"
+        },
+        {
+          "name": "xray",
+          "size": 30802044,
+          "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "name": "geosite.dat",
+          "size": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "size": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "size": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "size": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "size": 22597,
+          "sha256": "279d066c9984b3e2bfdf46c14dc098d1f1ba9c4d7bdb8cd50aaa305c9487a2c6"
+        }
+      ],
+      "all_initial_artifacts_and_metadata_match_live_public_GitHub_asset_digests": true
+    },
+    "to": {
+      "version": "1.2.9",
+      "kind": "exact OpenWrt/package architecture",
+      "slot": "releases/1.2.9-25.12.5-arm_cortex-a15_neon-vfpv4",
+      "installation_scope": "Actual new public pinned command fetched its dispatcher, exact bootstrap, latest metadata, signature, manifest, and all package files through real HTTPS GitHub. No injected transport, custom TLS setting, or locally served v1.2.9 package.",
+      "public_command_sha256": "660f7892687f740e524106b4fa3b5d29126daa5644d290d431476bb61c2b95fa",
+      "pinned_command_commit": "a6eae8e6883061968606c1c91f98545b8b912759",
+      "manifest_sha256": "b8ba7adc30fd42f0af710dabf05e07a089f0d9443964e5bdc58c7e50f86065c8",
+      "manifest_signature_sha256": "6329232a445a72254f499e6e68259591051d14f22d897f1349bbe3b07dddb4a0",
+      "artifacts": [
+        {
+          "name": "luch",
+          "size": 7602336,
+          "sha256": "2d0f8617b6e9ea964cac9fa2d82928045636975f60b0f1dd29eb8c0e84306f50"
+        },
+        {
+          "name": "luch-install",
+          "size": 7274656,
+          "sha256": "2ae05654a91c2896cf342bb57be4da3df6844ffd839cfea1c7014025fff0bcf4"
+        },
+        {
+          "name": "xray",
+          "size": 30802044,
+          "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "name": "geosite.dat",
+          "size": 67824,
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "geoip.dat",
+          "size": 2,
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "luch.init",
+          "size": 679,
+          "sha256": "2a171538b45a43d28b1ca4ff0c67b44a5d7b694efa32ccf8c1034d0e77e972ef"
+        },
+        {
+          "name": "luch-xray.init",
+          "size": 692,
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "THIRD_PARTY_NOTICES.txt",
+          "size": 23287,
+          "sha256": "84c1e0537acd98471fe3ac640d2556934143b22bf9bc2d69137bfee2d501e0eb"
+        }
+      ],
+      "all_installed_artifacts_match_signed_manifest": true,
+      "all_installed_artifacts_match_published_GitHub_asset_digest": true
+    }
+  },
+  "new_client_source_snapshot_sha256": "738c3d6e3026c342ae4ea98ed64f3c8b178f3da6b4fc924801805b27a45e08a2",
+  "installed_new_updater_pins_verified": {
+    "public_release_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+    "release_base": "https://github.com/LuchWRT/LuchWrt",
+    "status": "PASS"
+  },
+  "preserved_state": {
+    "HWID_sentinel_unchanged": true,
+    "language": "en",
+    "language_sentinel_unchanged": true,
+    "paused_marker_preserved_through_upgrade_and_first_reboot": true,
+    "old_rollback_slot_retained": true,
+    "old_rollback_binary_sha256_matches_public_manifest": {
+      "luch": "d595856dc55693ce7e102613f4bf97d6b3d79afb0734185bfcdde3c277c9b909",
+      "luch-install": "293e55cd9fe43e8457327cb3364db6967ee66e2122242bd093109811523cfa7e"
+    }
+  },
+  "strict_pause_checks": {
+    "negative_assertion_policy": "Explicit if/exit checks reject unexpected procd instance, process, and autostart; no reliance on errexit for negated commands",
+    "pause_no_running_procd_instance": true,
+    "pause_no_luch_process": true,
+    "pause_no_runtime_xray_configuration": true,
+    "pause_autostart_disabled": true,
+    "paused_reboot_no_daemon_seconds": 30,
+    "paused_reboot_ids": {
+      "before": "14907f53-213d-41ef-9a58-4029695c24da",
+      "after": "458ee941-0d16-43f5-96c8-d45acddfb756"
+    },
+    "resume_autostart_enabled": true,
+    "resume_actual_procd_daemon_verified": true,
+    "enabled_reboot_ids": {
+      "before": "458ee941-0d16-43f5-96c8-d45acddfb756",
+      "after": "7614113c-87de-4c76-9dd8-81832333206d"
+    },
+    "enabled_reboot_actual_daemon_PID_and_command_verified": true
+  },
+  "checks": [
+    "verified-official-clean-guest-WAN-clock-DNS",
+    "public-signed-v1.2.8-generic-installed-all-artifacts-match-signed-manifest",
+    "old-generic-user-pause-isolated-HWID-english-language-no-process-no-autostart",
+    "new-pinned-command-real-HTTPS-GitHub-upgrade-completed-zero-exit",
+    "public-exact-slot-all-eight-artifact-SHA-key-base-and-old-rollback-preserved",
+    "public-upgrade-preserves-HWID-language-pause-no-process-no-autostart",
+    "real-paused-reboot-preserves-HWID-language-and-no-daemon-30-seconds",
+    "new-public-exact-menu-resume-enables-autostart-and-actual-procd-daemon",
+    "real-enabled-reboot-exact-slot-autostart-procd-daemon-HWID-language-rollback"
+  ],
+  "receipt_sha256": {
+    "summary": "3aa53d618a98b71d3a83536273c1b6102a38608da36e3460fc0d76be1909c77e",
+    "transcript": "234d756ea68760ad757d2cc3725a2691dbe28dcb2779fb0a7fd451d1d4ae2030",
+    "harness": "3b3ea7e00a2cd087b32bfaf68824d944b8ae987f25bd449f9f4db836f021cd53",
+    "shared_harness": "aba70d2984bfd0962b9efbbb904e04db93551d5715483f081df2ce20f7bc3591",
+    "published_release_verification": "29ae3557ab4d29f8b77f11f5f0c5ca36c5acfe19afeb2b6b018bee614c5d0d75",
+    "old_public_release_origin_verification": "37c722a2f16370b0cfec9bf82c98b95cad76dc519a449b0c91d85c5feb7703db",
+    "qemu_arguments": "1c22d10c0ca3cf507dc2bcb68971fe65fa354a85387136c5a64b558b405d3193"
+  },
+  "limits": {
+    "live_subscription_used": false,
+    "private_signing_keys_in_guest": false,
+    "physical_router_low_RAM_or_flash_verified": false
+  },
+  "fixture_failures_preserved": [
+    {
+      "reason": "Initial harness expected the first-install phrase while a real upgrade correctly printed \"Клиент обновлён до версии 1.2.9.\". Its text assertion stopped before state checks. Corrected the assertion and repeated the entire transition on a fresh VM; no release package changed.",
+      "summary_sha256": "6a1f60fe0c7db31c5e4c832ee7737d11bb686c52cfc79ffc19d08bde35b9f89d",
+      "harness_sha256": "6d07ec9bed61d37356d9f3d3b010412d6030abf0183e7a62ab671f7b46466eb6"
+    }
+  ]
+}
