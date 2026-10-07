@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "date": "2026-10-05",
+  "published_release": "v1.2.8",
+  "rootfs_mib": 512,
+  "scope": "Official QEMU images, fresh installation from the pinned public GitHub command; synthetic Xray configuration; no live subscription or physical router. CPU family bundle selection is recorded separately from the tested firmware/architecture.",
+  "targets": [
+    {
+      "openwrt": "22.03.7",
+      "architecture": "aarch64_cortex-a53",
+      "kernel": "5.10.221",
+      "tested_release": "v1.2.8",
+      "result": "PASS",
+      "memory_mib": 512,
+      "selected_bundle": "any-arm64",
+      "selected_bundle_kind": "universal",
+      "manifest_sha256": "b2e085ba5e6e7da34aeb3d5a0c32fe13079cd3fac82b749700268994b81d8b32",
+      "installed_artifacts_sha256": {
+        "bootstrap_sha256": "e47ebb617d6bb3e7b7df5d1cb3797572bc6666e183f33f7c593c05d6e8ff3adf",
+        "installer_sha256": "05714573571547c370968e904fe2c967632c269acaf622dd9a4c08791cf8397f",
+        "client_sha256": "62bc67ccb63fb9702eba8fd9a9c757d7999bcc83598c50426dbe4cd20981f06d",
+        "xray_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+      },
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/sha256sums",
+        "checksum_sha256": "77dd1b150429b108be72279b1649cbb0e689bb53280c210cc4d7bcba709de1bb",
+        "source_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/openwrt-22.03.7-armvirt-64-rootfs-ext4.img.gz",
+        "sha256": "ba068d60c3155e3eebd0d5eabcca4c5d0026a416f4384f78fbabb12699646cea",
+        "kernel_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/openwrt-22.03.7-armvirt-64-Image",
+        "kernel_sha256": "a932a389ce820cbaea01060b2fba07bcd38a4600aa80b72bec3a67f2ad451bdf"
+      },
+      "boot_id_before": "0586def0-903f-4715-869e-2526bcbd60ac",
+      "boot_id_after": "04551824-f617-4b90-8095-64e40974b10d",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "receipt_sha256": "eeff48cfdea3196a3bde2dfe85798f2ba54d1eb7bf1689ddb1d34afa752f4743",
+      "transcript_sha256": "7dd88ff1cd9ce4a28df2e8c5e82705b6e7d4d642d4e950f5264c3c6347991f1c",
+      "qemu_cpu": "cortex-a72"
+    },
+    {
+      "openwrt": "23.05.6",
+      "architecture": "aarch64_generic",
+      "kernel": "5.15.189",
+      "tested_release": "v1.2.8",
+      "result": "PASS",
+      "memory_mib": 512,
+      "selected_bundle": "any-arm64",
+      "selected_bundle_kind": "universal",
+      "manifest_sha256": "b2e085ba5e6e7da34aeb3d5a0c32fe13079cd3fac82b749700268994b81d8b32",
+      "installed_artifacts_sha256": {
+        "bootstrap_sha256": "e47ebb617d6bb3e7b7df5d1cb3797572bc6666e183f33f7c593c05d6e8ff3adf",
+        "installer_sha256": "05714573571547c370968e904fe2c967632c269acaf622dd9a4c08791cf8397f",
+        "client_sha256": "62bc67ccb63fb9702eba8fd9a9c757d7999bcc83598c50426dbe4cd20981f06d",
+        "xray_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+      },
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "6a5599213f8700aba045e34ca3e17f73646fc9c6cbcd05dc49044a7d655c67d2",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "sha256": "b5ed1ac919e4096ef7e688734a9f7cfba38ea2b3c6e6a8fc37303c383b7eea18",
+        "kernel_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-kernel.bin",
+        "kernel_sha256": "243159d98fa1b42db9c0b3182386528e3041c41c40066b083f2c1099eca9b358"
+      },
+      "boot_id_before": "7a95cf04-8cda-401b-a577-6c5dd4ea2553",
+      "boot_id_after": "bc0178b8-7649-47db-bd88-772d904b3006",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "receipt_sha256": "7958827ad449ac722e8eb644e283ae41e8f3071eb0c04b078412aeb8c2cb7c2e",
+      "transcript_sha256": "7186a03741e056ff9c70cc09286e030fd50971afcb42db3ad43e88f6a91f4f58",
+      "qemu_cpu": "cortex-a72"
+    },
+    {
+      "openwrt": "23.05.6",
+      "architecture": "arm_cortex-a15_neon-vfpv4",
+      "kernel": "5.15.189",
+      "tested_release": "v1.2.8",
+      "result": "PASS",
+      "memory_mib": 512,
+      "selected_bundle": "any-armv7",
+      "selected_bundle_kind": "universal",
+      "manifest_sha256": "85b3a4d3100ca8ca7d9abd822942d68ccf9e88cf029859d5ea49bb79931b96f0",
+      "installed_artifacts_sha256": {
+        "bootstrap_sha256": "1e509d751025e802ce5adbd26f22a9646400e9981b26e1f5cbaf892c6d64b90c",
+        "installer_sha256": "293e55cd9fe43e8457327cb3364db6967ee66e2122242bd093109811523cfa7e",
+        "client_sha256": "d595856dc55693ce7e102613f4bf97d6b3d79afb0734185bfcdde3c277c9b909",
+        "xray_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+      },
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "0f69f8b6dadd4ef714cff6a37031119f3035862bd947668991a40172a2bdec54",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/openwrt-23.05.6-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "sha256": "e9a1245c9f0eddf3ac514c7e684cc53feb28d0f16bd47dc096c0e52eb3046925",
+        "kernel_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/openwrt-23.05.6-armsr-armv7-generic-kernel.bin",
+        "kernel_sha256": "b14e20a17a3a450f08091570bb44d76a987cf1ac30638074c225f3729e829889"
+      },
+      "boot_id_before": "ec6a1d5f-9af7-423a-8b2b-7f7adb20c638",
+      "boot_id_after": "c640390c-cfc3-437c-a971-6db3d139ed41",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "receipt_sha256": "cd5acdd46202efa709a2005a106ad2148235d375c352c6b54336d4a9e80f0968",
+      "transcript_sha256": "ef36bf32ba6fc165f6cccc873e52ce8ff34ef82f55f9aa1c343f8f23a74fd788",
+      "qemu_cpu": "cortex-a15"
+    },
+    {
+      "openwrt": "25.12.5",
+      "architecture": "arm_cortex-a15_neon-vfpv4",
+      "kernel": "6.12.94",
+      "tested_release": "v1.2.8",
+      "result": "PASS",
+      "memory_mib": 512,
+      "selected_bundle": "any-armv7",
+      "selected_bundle_kind": "universal",
+      "manifest_sha256": "85b3a4d3100ca8ca7d9abd822942d68ccf9e88cf029859d5ea49bb79931b96f0",
+      "installed_artifacts_sha256": {
+        "bootstrap_sha256": "1e509d751025e802ce5adbd26f22a9646400e9981b26e1f5cbaf892c6d64b90c",
+        "installer_sha256": "293e55cd9fe43e8457327cb3364db6967ee66e2122242bd093109811523cfa7e",
+        "client_sha256": "d595856dc55693ce7e102613f4bf97d6b3d79afb0734185bfcdde3c277c9b909",
+        "xray_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+      },
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "f4fe8375f9b284f1c65b6414ba10bcd8b0d30ce9aed4f31a04833721a5b43056",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "sha256": "34f278f88460c8156f9c91b31f476457685f5463d1e883586d334676302afc7a",
+        "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-kernel.bin",
+        "kernel_sha256": "0dadb3ce2b41787f44094490175496f64c875b45b603e3f53463d74141c08356"
+      },
+      "boot_id_before": "bf78bcf8-982e-4f26-878a-966689fbe1ad",
+      "boot_id_after": "f7d339aa-6b18-4f7c-984b-aa18d622071f",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "receipt_sha256": "e28a993c22a6d9ded4b2102932671f5d9b42bf08ed4527352064d705027df46f",
+      "transcript_sha256": "74ea0b1bc2d5ae3d1778c4bbf9cd66826508a8a7e3997da2a5884af5ff1b9777",
+      "qemu_cpu": "cortex-a15"
+    },
+    {
+      "openwrt": "25.12.5",
+      "architecture": "i386_pentium4",
+      "kernel": "6.12.94",
+      "tested_release": "v1.2.8",
+      "result": "PASS",
+      "memory_mib": 512,
+      "selected_bundle": "any-386",
+      "selected_bundle_kind": "universal",
+      "manifest_sha256": "4d1716b548d3300561c2f9a3da6ad817d8584993a62f2907fdf66aebb7a14404",
+      "installed_artifacts_sha256": {
+        "bootstrap_sha256": "c11857a7d139c156c8f5a30fa263fae7e1b423a0af6ad78502867b18b97c693c",
+        "installer_sha256": "6b88166ec570d1cedce00e93bdb048241a5cd12677bf9dd8464b9448ec90ad99",
+        "client_sha256": "d67966cf988666f16815cb04e31abe5e6815e6d60e4c765a1f259f03238c338a",
+        "xray_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+      },
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/generic/sha256sums",
+        "checksum_sha256": "e18f5784006d34c5693efc1bfe51a69de4a9d9b371673dc45afe49adca6416e4",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/generic/openwrt-25.12.5-x86-generic-generic-ext4-combined.img.gz",
+        "sha256": "f20d8a508907d6447a84fd8336c3b4db725ff0c396492addaf5fc1bc5e9b79f1"
+      },
+      "boot_id_before": "c5517425-c143-42c1-907c-581b497204eb",
+      "boot_id_after": "d053b511-32fa-4c15-933b-8ce03098c730",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "receipt_sha256": "bce277a8708539cf42a2dbde5e1c8deadbc9fd18a129915ee3c2a95b4030efcd",
+      "transcript_sha256": "bd7286b5ad7979a5a1308dc51728b18fb621c2082635ef061f31d74b73b721b2",
+      "qemu_cpu": "default"
+    }
+  ]
+}
