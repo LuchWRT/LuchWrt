@@ -49,33 +49,33 @@ case "$(uname -m):$arch" in
 esac
 
 case "$release:$arch" in
-    17.01.7:x86_64) digest='1f7d97143683b6757fd389b954341a6fd000822648a04674e0b453cd5fc92a51' ;;
-    18.06.9:x86_64) digest='a03603d22e6f6215548115714c972e2a1e9c791e89ca3ed87749882da67fbecc' ;;
-    19.07.10:x86_64) digest='93849b8b90afb14e669e04b57458b64c671d6d088c97e695e5004fbc21999379' ;;
-    21.02.7:x86_64) digest='908d79a25dc8ab7ec0e26f4cbaa0990d13caaa716b7e43de8bf7684c435aa851' ;;
-    22.03.7:x86_64) digest='e567d02842860b859aa62a5802b878008d83fcd1fea80319e01ec7badaa8e80f' ;;
-    22.03.7:aarch64_cortex-a53) digest='90f90dc2179e9bb45b0d55fd3ca395e0b08a71d78229b0a3b4aee56c53153afb' ;;
-    23.05.6:x86_64) digest='a84c3fbb401efe598e0b3f8dc65b94fd15fe1501f5c1af7d97b50304fc772205' ;;
-    23.05.6:aarch64_generic) digest='d01a5958fbc6696dbeb855aa7054785690bbc13fc7c18df914ebbff4b1e3dfd3' ;;
-    23.05.6:arm_cortex-a15_neon-vfpv4) digest='92d7ec271ac732fece9e8febe20c8bfbc2980a9c472f5802e07448154d6d5418' ;;
-    24.10.8:x86_64) digest='3cdb582d87d4c5c7805e2fd8d128443038b94bba7e303aeabaf28ee05f17bc74' ;;
-    24.10.8:i386_pentium4) digest='a224ffd6d70ac0a4192649f6c595bf93a747708b01793a8efd73919ddb67873a' ;;
-    24.10.8:aarch64_generic) digest='95ae159e21018baa7dbc9d08da91a7b80b4a63e8a58f07b94016e0e097a94e6f' ;;
-    24.10.8:arm_cortex-a15_neon-vfpv4) digest='0dd02612f88ef10223877fe516da2aaa7440add74f87a5d3a328809c95bcc0c0' ;;
-    25.12.5:x86_64) digest='79c0d0c220e4449316bd0ad1b84927f9fdfbeab053da4c54ccd598ac9e3e31c7' ;;
-    25.12.5:aarch64_generic) digest='ef0b21eefc3c8d16db2420e07f58dc621c346ded909e76414fb57c5306b7c7af' ;;
-    25.12.5:arm_cortex-a15_neon-vfpv4) digest='8fe06e2d3452aa65681cbab9da6cf10cbd35d0459235be79cf4b5fe37ed12c50' ;;
-    25.12.5:i386_pentium4) digest='c9e98d80445fb2b128c1458c673f1b0eeecacb81d2a328af057a8b4d966eccd2' ;;
+    17.01.7:x86_64) digest='54424714f74f1ecf9daffa1a33c4b83dd4f2aaa912839cf6d34c98919b34fba7' ;;
+    18.06.9:x86_64) digest='e92d64262fba2b27e73f80c9ba36f6955a5fa5ec11b12b784bbf31e7d7d50cd4' ;;
+    19.07.10:x86_64) digest='c14280c62a3c7685a5df082444892b4defef166561984964bb0281eb6eff6771' ;;
+    21.02.7:x86_64) digest='bb88dd5a780bf5d5524fb5912733920c2d9ea380f53c92ca697424e7840cb85c' ;;
+    22.03.7:x86_64) digest='c90cbf5deee6d6b5de2adfde003850a6bb4912b60252be58c86b35916aaaa23b' ;;
+    22.03.7:aarch64_cortex-a53) digest='bb588311a7eb45abca95782d75f8c1d77e20c56d29ca2445301409ffaf46e848' ;;
+    23.05.6:x86_64) digest='983694174e8418004f1bd908e1f2b79e9773de38ae777bf1cf2cf52d89336967' ;;
+    23.05.6:aarch64_generic) digest='a885ce800be199d22b814bf156d616f37a477d6ce59dff7b4320804cb378f6fb' ;;
+    23.05.6:arm_cortex-a15_neon-vfpv4) digest='384ccd6cbc2a5572ecd1950b2f3f296c8ed7bbce120ede8e447db6cb12ade053' ;;
+    24.10.8:x86_64) digest='4be85823e7373831c1115198a327fa4b624a4b77fddeb6d5d4b7b9f2bb20f1a9' ;;
+    24.10.8:i386_pentium4) digest='d81f1aa17969f785408434d76ad49fb7ab650cf39a4601e8197f343e5c5dc6b4' ;;
+    24.10.8:aarch64_generic) digest='834e3667b759e5305e3004c965fcb43ed3d51247a696f9814b8b5a20c861b912' ;;
+    24.10.8:arm_cortex-a15_neon-vfpv4) digest='e24627486ba98f213e92ca5fd6404b8b09f928bada1e38d174164f3b774e0180' ;;
+    25.12.5:x86_64) digest='642e6c6fb62509853a9f60580058a30db1e9e6cd325a379ad42739d5d60de649' ;;
+    25.12.5:aarch64_generic) digest='73b29e5d02f8a8ff184e6e8b22b3a4fb88e0a6580fbf5b952e7733e661f01152' ;;
+    25.12.5:arm_cortex-a15_neon-vfpv4) digest='39e496d32b30718c8d5c0d36717255dedf47081e9110b8e9e4c526f54ded11bc' ;;
+    25.12.5:i386_pentium4) digest='f687d342f6639fe09bf24afb1cc597053c5e3639807befdb4fe50610ca1fcb5c' ;;
     *)
         case "$(uname -m):$arch" in
-        x86_64:x86_64|x86_64:amd64) digest='b69e00f23a0c9e2ed18ebcdb6097cc88583316aad7b38be69d2d4d3224373f91' ;;
-        aarch64:aarch64_*|aarch64:aarch64|aarch64:arm64) digest='da613d9a07e9d23781013b4dc2d76bf294e2a51916829f3799120defa1111164' ;;
-        armv[78]*:arm_cortex-a*|armv[78]*:armv7) digest='4195ae8b46949909eb897119d028bf2296de2bda1ba4fea0644214f26716bf52' ;;
-        armv[678]*:arm_arm1176*|armv[678]*:arm_mpcore*|armv[678]*:armv6) digest='1d821236c0290aa4b7f01b1b3f9b8d8f480aed5778442fd28beeb7016e8fffb4' ;;
-        armv[5-8]*:arm_arm926*|armv[5-8]*:arm_xscale*|armv[5-8]*:arm_fa526*|armv[5-8]*:armv5) digest='01fd6395b655164393e1720f644fa024c5223c8212ad0944602a79fb99de4b8e' ;;
-        i?86:i386*|i?86:386|i?86:x86|x86_64:i386*|x86_64:386|x86_64:x86) digest='e98c2eaf3b4d50a8fa72913607aa331da6a349b2c175091b150a1bfbcf8dd87b' ;;
-        mips*:mips_*|mips*:mips) digest='c51e796f55b797deb4cc9af8e81ac739c5361b0e1395b10fb5b7a8e66994981c' ;;
-        mips*:mipsel_*|mips*:mipsle) digest='c367db54f8f9fb69ac2469889ed9e36e374351d3eaecd441ac5bfe612869f9bf' ;;
+        x86_64:x86_64|x86_64:amd64) digest='5885cd87134337c07e275bb550970cb9e42213bb522ca30aa1fe72783df4cd6e' ;;
+        aarch64:aarch64_*|aarch64:aarch64|aarch64:arm64) digest='c2ed75052b55e5dc136a6ff156caa1207c6ac9218c531b2238980cde37332fcf' ;;
+        armv[78]*:arm_cortex-a*|armv[78]*:armv7) digest='04dc43eb95f63f9b65e1dbabba94a0da1e7518805edeb07a6505af4540c413e0' ;;
+        armv[678]*:arm_arm1176*|armv[678]*:arm_mpcore*|armv[678]*:armv6) digest='73ec274dc0564a0d009f94e7fe6cc5ec0f7804c6a211d0547dc45b4cb1f1608b' ;;
+        armv[5-8]*:arm_arm926*|armv[5-8]*:arm_xscale*|armv[5-8]*:arm_fa526*|armv[5-8]*:armv5) digest='6ca00239ca2250a3851ff603e07d7bcace0b6118d887d21e467bd48b557f8274' ;;
+        i?86:i386*|i?86:386|i?86:x86|x86_64:i386*|x86_64:386|x86_64:x86) digest='44f6c664fc3e595341efb5020564aa15def26d6bc6ca8ce8eb8ed94123f4f67d' ;;
+        mips*:mips_*|mips*:mips) digest='af554f740afb1b9ffb42360078b5924c939afdba3eb6845ee75de6ee9fd741b3' ;;
+        mips*:mipsel_*|mips*:mipsle) digest='6e5b2cff9c5c243897e4ffea9b0ad53237c427d87566a57122668e57c81cb6b6' ;;
         *) fail 'для процессора этого роутера пока нет подписанной сборки Luch' ;;
         esac ;;
 esac

@@ -1,0 +1,2396 @@
+{
+  "schema_version": 1,
+  "kind": "signed-release-build-verification",
+  "status": "PASS",
+  "release": "1.2.10",
+  "source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+  "build_inputs_sha256": "009b3cc79b9c13db80647df7bab4a91674da2e023f22d7c96c379548ba6b180c",
+  "dist_assets_sha256": "4ddefee5ee8a94804a3a4b96588e74d559cdec1cb1cfde99cb4580b3632e4b87",
+  "toolchain": "go version go1.27.1 darwin/arm64",
+  "native_tests": {
+    "go_test": "PASS",
+    "go_test_race": "PASS",
+    "go_vet": "PASS"
+  },
+  "all_bundle_latest_signatures_verified": true,
+  "public_release_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+  "exact_targets": 17,
+  "fallback_targets": 8,
+  "dispatcher": {
+    "exact": 17,
+    "fallback": 8,
+    "filename": "install-528bb5d1ca49d36f535efd2e116a50c3443506d2921dae6d794c155c94f29ae9.sh",
+    "sha256": "528bb5d1ca49d36f535efd2e116a50c3443506d2921dae6d794c155c94f29ae9",
+    "targets": 25
+  },
+  "binaries": [
+    {
+      "family": "386",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GO386": "softfloat",
+        "GOARCH": "386",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 7639200,
+          "name": "luch",
+          "sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57"
+        },
+        {
+          "bytes": 7332000,
+          "name": "luch-install",
+          "sha256": "06243398b8816f22ce6e116a54cd5edf5953fa889b0949007797fe198a320dea"
+        }
+      ]
+    },
+    {
+      "family": "amd64",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOAMD64": "v1",
+        "GOARCH": "amd64",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 7864480,
+          "name": "luch",
+          "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+        },
+        {
+          "bytes": 7504032,
+          "name": "luch-install",
+          "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+        }
+      ]
+    },
+    {
+      "family": "arm64",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOARCH": "arm64",
+        "GOARM64": "v8.0",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 7274656,
+          "name": "luch",
+          "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+        },
+        {
+          "bytes": 6946976,
+          "name": "luch-install",
+          "sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da"
+        }
+      ]
+    },
+    {
+      "family": "armv5",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOARCH": "arm",
+        "GOARM": "5,softfloat",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 7798944,
+          "name": "luch",
+          "sha256": "238484d613b57844eca853642bb9d7e2b240fd8c475b9a22643f95647256bab7"
+        },
+        {
+          "bytes": 7471264,
+          "name": "luch-install",
+          "sha256": "6fb79e42a0d692ae197f6a5d4d2ee760a3b0f82a2595ed7b209750be927cf483"
+        }
+      ]
+    },
+    {
+      "family": "armv6",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOARCH": "arm",
+        "GOARM": "6,softfloat",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 7798944,
+          "name": "luch",
+          "sha256": "21e1a685ca6ac7ba8e06ff8621814a34bed65429e99eef85ba71ca58a09a5fea"
+        },
+        {
+          "bytes": 7471264,
+          "name": "luch-install",
+          "sha256": "a4ecf7f50295720d2eda305430f4046ea5b7c7d1c721856fb0a3d3dc0554795c"
+        }
+      ]
+    },
+    {
+      "family": "armv7",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOARCH": "arm",
+        "GOARM": "7,softfloat",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 7733408,
+          "name": "luch",
+          "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+        },
+        {
+          "bytes": 7471264,
+          "name": "luch-install",
+          "sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c"
+        }
+      ]
+    },
+    {
+      "family": "mips",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOARCH": "mips",
+        "GOMIPS": "softfloat",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 8716479,
+          "name": "luch",
+          "sha256": "64001a4248afc8b3c2ff56fa1d6c7390e25c276e2efeff3ea99afd9e68d9de90"
+        },
+        {
+          "bytes": 8323263,
+          "name": "luch-install",
+          "sha256": "002173b14a056bf84db6850006b88430bd0e2088eea609cdfe43b3a4a082926d"
+        }
+      ]
+    },
+    {
+      "family": "mipsle",
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOARCH": "mipsle",
+        "GOMIPS": "softfloat",
+        "GOOS": "linux"
+      },
+      "files": [
+        {
+          "bytes": 8716479,
+          "name": "luch",
+          "sha256": "fec7c954762cdc13f1cf97356db4524e55c4e2a738074a4907e0440b2cd3b2f9"
+        },
+        {
+          "bytes": 8323263,
+          "name": "luch-install",
+          "sha256": "3b287b71abd11da693a41d2394d07814905c727859b0690399a74596772ee7dc"
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "candidate_manifest_sha256": "733ce0eccdc40dc12d37f316c79103105f178f9536d16a68480e8620b45faf7c",
+      "candidate_signature_sha256": "76af960907d77852341c10b877afd7bbbd8e44a647227dea653513fe06428b28",
+      "kind": "exact",
+      "target": "17.01.7-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "1b74b2f7c56d5dd7c870b2375da225771f816e67c38a509fadac665a81f8fe71",
+      "candidate_signature_sha256": "97af081a931025d0ac83a63255ee77c5ba086166f1ac27518877bd93527e4438",
+      "kind": "exact",
+      "target": "18.06.9-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "80dfe9b243e0f339cd761e2e6d0b7490b59df26ae5516036fe0f0dab9152b21c",
+      "candidate_signature_sha256": "ab875f830db20ba3e2379f7714f0b62c6d279dabd33debf51964a8111a13afb3",
+      "kind": "exact",
+      "target": "19.07.10-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "d4749cf1bf7d8918bc000e08c0172258052f06dcba2dbc7d6c1e87cb89ede768",
+      "candidate_signature_sha256": "e7b781078552dfb422190f769b5cec5e107a72c5a72d581d8d9f19f7b782e962",
+      "kind": "exact",
+      "target": "21.02.7-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "9f8165e12b93edf6fd973648bbf05ab949c2609649149c0ba52246d180b4e37d",
+      "candidate_signature_sha256": "8250bc587a5f27c2b48c7a3eeb0557001bbbe98d559b7f5e24f5f853d0561345",
+      "kind": "exact",
+      "target": "22.03.7-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "1525f5dd5b04c5fe4207930ebe9c332015c6578bb3214ad5d50165ca0bea36b0",
+      "candidate_signature_sha256": "4f80efb2ff36384f2154016f16248bb4f2bfd029dbeaf2c57efcc45f119584ed",
+      "kind": "exact",
+      "target": "22.03.7-aarch64_cortex-a53"
+    },
+    {
+      "candidate_manifest_sha256": "28e2bb0a08f62049269877f6b884312bf469316e7542e1b2a0d05a0045fabfdd",
+      "candidate_signature_sha256": "8b90d7984fdeff5f588522f1890664560dbd342f0097c91101f57f4ad43c6325",
+      "kind": "exact",
+      "target": "23.05.6-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "b000cd8d531852cf7fd1655901a7f6552e07ec7a1120899cef97a4abe3278d59",
+      "candidate_signature_sha256": "2aa8318c3759a37bf5acd63a2355256c25e6d6bb1e02863ef3f3a3941911beb0",
+      "kind": "exact",
+      "target": "23.05.6-aarch64_generic"
+    },
+    {
+      "candidate_manifest_sha256": "3ad44f26074917fab8a65425ce18dea4bb1c721e91f224e5b65e0ce840e23a3a",
+      "candidate_signature_sha256": "81e912d68aee318614765360ea360da5940ca1220a0df5ac5446f2420de4e191",
+      "kind": "exact",
+      "target": "23.05.6-arm_cortex-a15_neon-vfpv4"
+    },
+    {
+      "candidate_manifest_sha256": "4a89c0b918489fc51aefbc5d7ff340152cf4d211c21eba8880477ce79069f286",
+      "candidate_signature_sha256": "6d36edb440743a9c1cdc3a24e5bf56fb86972fd7a6752fbacdc2ef557ecf15d2",
+      "kind": "exact",
+      "target": "24.10.8-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "852ddf536fe83540c5b7e57ca39a3b95b1f679c1133190353d8ac842b79da87f",
+      "candidate_signature_sha256": "44c862665a3fa0e437c1908993055a176085eab4dd5198c921875782cbdb677c",
+      "kind": "exact",
+      "target": "24.10.8-i386_pentium4"
+    },
+    {
+      "candidate_manifest_sha256": "2bbd37f64d60a5c241b29f5245a28797d4ae8e5d5a808ff5703a9a1bdeed07b1",
+      "candidate_signature_sha256": "b17fd93552d3920905dc67b737747fa388a1006ef6ca47949b607068c538ba89",
+      "kind": "exact",
+      "target": "24.10.8-aarch64_generic"
+    },
+    {
+      "candidate_manifest_sha256": "f66bb1b61bc99edf34495f5da2e512e8ce4d2a9e89431e3ee125b82d0e229b9d",
+      "candidate_signature_sha256": "fd6b391cb83a3f9c6eacd7b3e0183ae5eada944307c410023a0abb0fe3d9c7d5",
+      "kind": "exact",
+      "target": "24.10.8-arm_cortex-a15_neon-vfpv4"
+    },
+    {
+      "candidate_manifest_sha256": "acf761e791a9758b60a622e30df1286591fb7bd57ac2071a61878e4c6e3eddfd",
+      "candidate_signature_sha256": "1355f61695bfcc408963ecd92075c26400380750c9ca1c9c5a797d95c580cd2e",
+      "kind": "exact",
+      "target": "25.12.5-x86_64"
+    },
+    {
+      "candidate_manifest_sha256": "e0213a57462637edc29a76102a9467868077cb7efb6a40f47214a5542f841a1e",
+      "candidate_signature_sha256": "b8a68b949d73c73d0341f8be287ec9135845df045d271603f32969dd5eef8b9b",
+      "kind": "exact",
+      "target": "25.12.5-aarch64_generic"
+    },
+    {
+      "candidate_manifest_sha256": "a3379e0b515718493cae41e382f89d6fd13e9b0293412c912a57948241b2b9b8",
+      "candidate_signature_sha256": "d435725ab8873524126622e0152f2102911cd2fe86c672de8bcc41a8d06dbb5d",
+      "kind": "exact",
+      "target": "25.12.5-arm_cortex-a15_neon-vfpv4"
+    },
+    {
+      "candidate_manifest_sha256": "fc7e6f4db5edbdd128acbacf028be528d8016fb8dae1b5c3569bb0353d6921cb",
+      "candidate_signature_sha256": "b367178b5681883d802ce9f31bf706ee54dee2e139246dc41ed86cb70bf5bb25",
+      "kind": "exact",
+      "target": "25.12.5-i386_pentium4"
+    },
+    {
+      "candidate_manifest_sha256": "c13dcac7cdd63331f75add7da3e2f806451b60ee212df1e2a07235dd538e9d30",
+      "candidate_signature_sha256": "dccdc8a330857e175f68f718f393d4f66d371cbfc56950749ff3c20535bdeb6c",
+      "kind": "fallback",
+      "target": "any-amd64"
+    },
+    {
+      "candidate_manifest_sha256": "bbb8d657310ed35e86e2f722655b68dd82af7c1c8ebeff90b6c3633898707de7",
+      "candidate_signature_sha256": "1daa8fb6d9617b179c44aa53d5fdb574fabf85b20caf8fa83dd2e21c76f8ec7d",
+      "kind": "fallback",
+      "target": "any-arm64"
+    },
+    {
+      "candidate_manifest_sha256": "5ef8d0463ffe9e8580793b58db5363cd84cbeb69891df8ff4f9757180ca58f3b",
+      "candidate_signature_sha256": "b360aea1457e994d9ef67c24ad5bbf9399acb1ff1632b4e651ec8e780dea86bd",
+      "kind": "fallback",
+      "target": "any-armv7"
+    },
+    {
+      "candidate_manifest_sha256": "c2a8c6785c9e085f3dea76f5c0908b3cd12050f39286f0637f9d248e4e478a12",
+      "candidate_signature_sha256": "b7609ce0feaa03a8f4ae98a90efe51640f9e1c6173e1bc720b3172bf1e4978de",
+      "kind": "fallback",
+      "target": "any-armv6"
+    },
+    {
+      "candidate_manifest_sha256": "e83e949e9f7024431bb434b1f50c0dcd0f4aa2bba155e211c5a56f16dd6bb5ba",
+      "candidate_signature_sha256": "9327eee18160bcb00c84b5cd37568e60ee6dce442f0b5e6f133d20231dce8b79",
+      "kind": "fallback",
+      "target": "any-armv5"
+    },
+    {
+      "candidate_manifest_sha256": "477798999919c9ece8041aa388e0b127f48e2c2ec8fd48909ce28b1d1d09efca",
+      "candidate_signature_sha256": "f3030623874eea62eeee04d427592ea3faeebbbfc7f63299e2327b739d477033",
+      "kind": "fallback",
+      "target": "any-386"
+    },
+    {
+      "candidate_manifest_sha256": "4c1e4ec1d8ac65c1183220694ef77fba9256f1eb4294ae346ac2fecb85f0263e",
+      "candidate_signature_sha256": "fe0aefb51dcba86c424384bfecb187b897c9f82d2633880387f68da2bccfad7b",
+      "kind": "fallback",
+      "target": "any-mips"
+    },
+    {
+      "candidate_manifest_sha256": "aab1ce8d8f9ca6fbc4d96b0f66aa7336b628bf634125cf2bdb9a2b54a8a7952a",
+      "candidate_signature_sha256": "5e560690124ba7e4b6e756c77b2c07723c77344f729e2b9a7c9f9030cbd2f854",
+      "kind": "fallback",
+      "target": "any-mipsle"
+    }
+  ],
+  "assets": {
+    "bootstrap-04dc43eb95f63f9b65e1dbabba94a0da1e7518805edeb07a6505af4540c413e0.sh": {
+      "bytes": 10076,
+      "sha256": "04dc43eb95f63f9b65e1dbabba94a0da1e7518805edeb07a6505af4540c413e0"
+    },
+    "bootstrap-384ccd6cbc2a5572ecd1950b2f3f296c8ed7bbce120ede8e447db6cb12ade053.sh": {
+      "bytes": 10068,
+      "sha256": "384ccd6cbc2a5572ecd1950b2f3f296c8ed7bbce120ede8e447db6cb12ade053"
+    },
+    "bootstrap-39e496d32b30718c8d5c0d36717255dedf47081e9110b8e9e4c526f54ded11bc.sh": {
+      "bytes": 10068,
+      "sha256": "39e496d32b30718c8d5c0d36717255dedf47081e9110b8e9e4c526f54ded11bc"
+    },
+    "bootstrap-44f6c664fc3e595341efb5020564aa15def26d6bc6ca8ce8eb8ed94123f4f67d.sh": {
+      "bytes": 10098,
+      "sha256": "44f6c664fc3e595341efb5020564aa15def26d6bc6ca8ce8eb8ed94123f4f67d"
+    },
+    "bootstrap-4be85823e7373831c1115198a327fa4b624a4b77fddeb6d5d4b7b9f2bb20f1a9.sh": {
+      "bytes": 10011,
+      "sha256": "4be85823e7373831c1115198a327fa4b624a4b77fddeb6d5d4b7b9f2bb20f1a9"
+    },
+    "bootstrap-54424714f74f1ecf9daffa1a33c4b83dd4f2aaa912839cf6d34c98919b34fba7.sh": {
+      "bytes": 10011,
+      "sha256": "54424714f74f1ecf9daffa1a33c4b83dd4f2aaa912839cf6d34c98919b34fba7"
+    },
+    "bootstrap-5885cd87134337c07e275bb550970cb9e42213bb522ca30aa1fe72783df4cd6e.sh": {
+      "bytes": 10063,
+      "sha256": "5885cd87134337c07e275bb550970cb9e42213bb522ca30aa1fe72783df4cd6e"
+    },
+    "bootstrap-642e6c6fb62509853a9f60580058a30db1e9e6cd325a379ad42739d5d60de649.sh": {
+      "bytes": 10011,
+      "sha256": "642e6c6fb62509853a9f60580058a30db1e9e6cd325a379ad42739d5d60de649"
+    },
+    "bootstrap-6ca00239ca2250a3851ff603e07d7bcace0b6118d887d21e467bd48b557f8274.sh": {
+      "bytes": 10121,
+      "sha256": "6ca00239ca2250a3851ff603e07d7bcace0b6118d887d21e467bd48b557f8274"
+    },
+    "bootstrap-6e5b2cff9c5c243897e4ffea9b0ad53237c427d87566a57122668e57c81cb6b6.sh": {
+      "bytes": 10065,
+      "sha256": "6e5b2cff9c5c243897e4ffea9b0ad53237c427d87566a57122668e57c81cb6b6"
+    },
+    "bootstrap-73b29e5d02f8a8ff184e6e8b22b3a4fb88e0a6580fbf5b952e7733e661f01152.sh": {
+      "bytes": 10038,
+      "sha256": "73b29e5d02f8a8ff184e6e8b22b3a4fb88e0a6580fbf5b952e7733e661f01152"
+    },
+    "bootstrap-73ec274dc0564a0d009f94e7fe6cc5ec0f7804c6a211d0547dc45b4cb1f1608b.sh": {
+      "bytes": 10100,
+      "sha256": "73ec274dc0564a0d009f94e7fe6cc5ec0f7804c6a211d0547dc45b4cb1f1608b"
+    },
+    "bootstrap-834e3667b759e5305e3004c965fcb43ed3d51247a696f9814b8b5a20c861b912.sh": {
+      "bytes": 10038,
+      "sha256": "834e3667b759e5305e3004c965fcb43ed3d51247a696f9814b8b5a20c861b912"
+    },
+    "bootstrap-983694174e8418004f1bd908e1f2b79e9773de38ae777bf1cf2cf52d89336967.sh": {
+      "bytes": 10011,
+      "sha256": "983694174e8418004f1bd908e1f2b79e9773de38ae777bf1cf2cf52d89336967"
+    },
+    "bootstrap-a885ce800be199d22b814bf156d616f37a477d6ce59dff7b4320804cb378f6fb.sh": {
+      "bytes": 10038,
+      "sha256": "a885ce800be199d22b814bf156d616f37a477d6ce59dff7b4320804cb378f6fb"
+    },
+    "bootstrap-af554f740afb1b9ffb42360078b5924c939afdba3eb6845ee75de6ee9fd741b3.sh": {
+      "bytes": 10059,
+      "sha256": "af554f740afb1b9ffb42360078b5924c939afdba3eb6845ee75de6ee9fd741b3"
+    },
+    "bootstrap-bb588311a7eb45abca95782d75f8c1d77e20c56d29ca2445301409ffaf46e848.sh": {
+      "bytes": 10047,
+      "sha256": "bb588311a7eb45abca95782d75f8c1d77e20c56d29ca2445301409ffaf46e848"
+    },
+    "bootstrap-bb88dd5a780bf5d5524fb5912733920c2d9ea380f53c92ca697424e7840cb85c.sh": {
+      "bytes": 10011,
+      "sha256": "bb88dd5a780bf5d5524fb5912733920c2d9ea380f53c92ca697424e7840cb85c"
+    },
+    "bootstrap-c14280c62a3c7685a5df082444892b4defef166561984964bb0281eb6eff6771.sh": {
+      "bytes": 10014,
+      "sha256": "c14280c62a3c7685a5df082444892b4defef166561984964bb0281eb6eff6771"
+    },
+    "bootstrap-c2ed75052b55e5dc136a6ff156caa1207c6ac9218c531b2238980cde37332fcf.sh": {
+      "bytes": 10084,
+      "sha256": "c2ed75052b55e5dc136a6ff156caa1207c6ac9218c531b2238980cde37332fcf"
+    },
+    "bootstrap-c90cbf5deee6d6b5de2adfde003850a6bb4912b60252be58c86b35916aaaa23b.sh": {
+      "bytes": 10011,
+      "sha256": "c90cbf5deee6d6b5de2adfde003850a6bb4912b60252be58c86b35916aaaa23b"
+    },
+    "bootstrap-d81f1aa17969f785408434d76ad49fb7ab650cf39a4601e8197f343e5c5dc6b4.sh": {
+      "bytes": 10032,
+      "sha256": "d81f1aa17969f785408434d76ad49fb7ab650cf39a4601e8197f343e5c5dc6b4"
+    },
+    "bootstrap-e24627486ba98f213e92ca5fd6404b8b09f928bada1e38d174164f3b774e0180.sh": {
+      "bytes": 10068,
+      "sha256": "e24627486ba98f213e92ca5fd6404b8b09f928bada1e38d174164f3b774e0180"
+    },
+    "bootstrap-e92d64262fba2b27e73f80c9ba36f6955a5fa5ec11b12b784bbf31e7d7d50cd4.sh": {
+      "bytes": 10011,
+      "sha256": "e92d64262fba2b27e73f80c9ba36f6955a5fa5ec11b12b784bbf31e7d7d50cd4"
+    },
+    "bootstrap-f687d342f6639fe09bf24afb1cc597053c5e3639807befdb4fe50610ca1fcb5c.sh": {
+      "bytes": 10032,
+      "sha256": "f687d342f6639fe09bf24afb1cc597053c5e3639807befdb4fe50610ca1fcb5c"
+    },
+    "install-528bb5d1ca49d36f535efd2e116a50c3443506d2921dae6d794c155c94f29ae9.sh": {
+      "bytes": 10531,
+      "sha256": "528bb5d1ca49d36f535efd2e116a50c3443506d2921dae6d794c155c94f29ae9"
+    },
+    "openwrt-17.01.7-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23299,
+      "sha256": "989bfad72085df723d7ac2a9dd8628af88b36b025b5f275313a2f7611e206570"
+    },
+    "openwrt-17.01.7-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-17.01.7-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-17.01.7-x86_64-latest.json": {
+      "bytes": 174,
+      "sha256": "aa82cb94c9f0ae0ba41d22eb5a42f27d3a88b85039109496d1223dcdd608c7f8"
+    },
+    "openwrt-17.01.7-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "31a35af63b9a31c9f4c2b02a9531ced5f95887391f87c607217c331a3cf01f04"
+    },
+    "openwrt-17.01.7-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-17.01.7-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-17.01.7-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-17.01.7-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-17.01.7-x86_64-manifest.json": {
+      "bytes": 1340,
+      "sha256": "733ce0eccdc40dc12d37f316c79103105f178f9536d16a68480e8620b45faf7c"
+    },
+    "openwrt-17.01.7-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "76af960907d77852341c10b877afd7bbbd8e44a647227dea653513fe06428b28"
+    },
+    "openwrt-17.01.7-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-18.06.9-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23299,
+      "sha256": "99d75ebb827e63edbf987c7f695f6e11c5e6f348731e791a1c359a70b70dddb3"
+    },
+    "openwrt-18.06.9-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-18.06.9-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-18.06.9-x86_64-latest.json": {
+      "bytes": 174,
+      "sha256": "358c80c007ea576992341383349c1705566ad84e17d510b9f49f3a3e29f24fd4"
+    },
+    "openwrt-18.06.9-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "a103ea8776292a6a8a69a185421abd0a36df23cae8c87f27257542a90d178426"
+    },
+    "openwrt-18.06.9-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-18.06.9-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-18.06.9-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-18.06.9-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-18.06.9-x86_64-manifest.json": {
+      "bytes": 1340,
+      "sha256": "1b74b2f7c56d5dd7c870b2375da225771f816e67c38a509fadac665a81f8fe71"
+    },
+    "openwrt-18.06.9-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "97af081a931025d0ac83a63255ee77c5ba086166f1ac27518877bd93527e4438"
+    },
+    "openwrt-18.06.9-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-19.07.10-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23300,
+      "sha256": "0573f3f878f0ef394d1d8cd40a05b14c42025ac80772ef5e34718e2343ae3e6e"
+    },
+    "openwrt-19.07.10-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-19.07.10-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-19.07.10-x86_64-latest.json": {
+      "bytes": 175,
+      "sha256": "2428844cb8c926da8183a8e3b2f71061abb0bbc988bc56aa95be7a329d004b84"
+    },
+    "openwrt-19.07.10-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "4abe961f87e7fb0650149a621908ff14c82bf11758cc8d9abc2c6d4b6eef01be"
+    },
+    "openwrt-19.07.10-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-19.07.10-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-19.07.10-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-19.07.10-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-19.07.10-x86_64-manifest.json": {
+      "bytes": 1341,
+      "sha256": "80dfe9b243e0f339cd761e2e6d0b7490b59df26ae5516036fe0f0dab9152b21c"
+    },
+    "openwrt-19.07.10-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "ab875f830db20ba3e2379f7714f0b62c6d279dabd33debf51964a8111a13afb3"
+    },
+    "openwrt-19.07.10-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-21.02.7-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23299,
+      "sha256": "89e80b73224fee5d18f620c17a86a8c8204cda88c53e95dfc36ad8d5bad804a0"
+    },
+    "openwrt-21.02.7-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-21.02.7-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-21.02.7-x86_64-latest.json": {
+      "bytes": 174,
+      "sha256": "15f3ecb70c7417e95051bb2ed7defab4d34dd5e6c2078347d4596b752fd67a98"
+    },
+    "openwrt-21.02.7-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "f77da19f6ca8435561515a1202f517aa9c3f1beeb71fc1c23aecddfafc4727b3"
+    },
+    "openwrt-21.02.7-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-21.02.7-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-21.02.7-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-21.02.7-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-21.02.7-x86_64-manifest.json": {
+      "bytes": 1340,
+      "sha256": "d4749cf1bf7d8918bc000e08c0172258052f06dcba2dbc7d6c1e87cb89ede768"
+    },
+    "openwrt-21.02.7-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "e7b781078552dfb422190f769b5cec5e107a72c5a72d581d8d9f19f7b782e962"
+    },
+    "openwrt-21.02.7-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23311,
+      "sha256": "f01058c700bb1da2f13272aa4650e243d61836f854bed345d2d8c59ebd96c787"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-latest.json": {
+      "bytes": 186,
+      "sha256": "40944441383c3b9a973ef16db5f66ea0ea023f9f774100b3e04ec97e85c08630"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-latest.sig": {
+      "bytes": 64,
+      "sha256": "908d9694a3e066d16393c2ce1f2c2eac789afc6fc1a65c8acb97a685419ee83a"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-luch": {
+      "bytes": 7274656,
+      "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-luch-install": {
+      "bytes": 6946976,
+      "sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-manifest.json": {
+      "bytes": 1352,
+      "sha256": "1525f5dd5b04c5fe4207930ebe9c332015c6578bb3214ad5d50165ca0bea36b0"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-manifest.sig": {
+      "bytes": 64,
+      "sha256": "4f80efb2ff36384f2154016f16248bb4f2bfd029dbeaf2c57efcc45f119584ed"
+    },
+    "openwrt-22.03.7-aarch64_cortex-a53-xray": {
+      "bytes": 30343292,
+      "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+    },
+    "openwrt-22.03.7-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23299,
+      "sha256": "1779f50e1abd81490f06d851b206487bba9f5fac914aec6b05ea0a9573f26a99"
+    },
+    "openwrt-22.03.7-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-22.03.7-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-22.03.7-x86_64-latest.json": {
+      "bytes": 174,
+      "sha256": "cad06a68b8064339cbfe0dbc104e21593ba251b1f79247d9ccf7a8c0b14222f6"
+    },
+    "openwrt-22.03.7-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "82741cfa043960d1a13cb7d088df5510940b59ba27b3ec7ac37e241fbb99bc84"
+    },
+    "openwrt-22.03.7-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-22.03.7-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-22.03.7-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-22.03.7-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-22.03.7-x86_64-manifest.json": {
+      "bytes": 1340,
+      "sha256": "9f8165e12b93edf6fd973648bbf05ab949c2609649149c0ba52246d180b4e37d"
+    },
+    "openwrt-22.03.7-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "8250bc587a5f27c2b48c7a3eeb0557001bbbe98d559b7f5e24f5f853d0561345"
+    },
+    "openwrt-22.03.7-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-23.05.6-aarch64_generic-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23308,
+      "sha256": "e09f4ff33862e83a1e8bd6210302de7f053ed0ae9797aad703b57541dd77b30a"
+    },
+    "openwrt-23.05.6-aarch64_generic-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-23.05.6-aarch64_generic-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-23.05.6-aarch64_generic-latest.json": {
+      "bytes": 183,
+      "sha256": "3a56ff1b0a3b9bc89e00a51a7faadd3897a07e5854bb4051b351c181790f5bab"
+    },
+    "openwrt-23.05.6-aarch64_generic-latest.sig": {
+      "bytes": 64,
+      "sha256": "55cdb42715c57c2f00ef6c94b664bc1142105077aa0aa96c16e320e77f694cfe"
+    },
+    "openwrt-23.05.6-aarch64_generic-luch": {
+      "bytes": 7274656,
+      "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+    },
+    "openwrt-23.05.6-aarch64_generic-luch-install": {
+      "bytes": 6946976,
+      "sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da"
+    },
+    "openwrt-23.05.6-aarch64_generic-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-23.05.6-aarch64_generic-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-23.05.6-aarch64_generic-manifest.json": {
+      "bytes": 1349,
+      "sha256": "b000cd8d531852cf7fd1655901a7f6552e07ec7a1120899cef97a4abe3278d59"
+    },
+    "openwrt-23.05.6-aarch64_generic-manifest.sig": {
+      "bytes": 64,
+      "sha256": "2aa8318c3759a37bf5acd63a2355256c25e6d6bb1e02863ef3f3a3941911beb0"
+    },
+    "openwrt-23.05.6-aarch64_generic-xray": {
+      "bytes": 30343292,
+      "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23318,
+      "sha256": "5b843dc69f93cd69be3c73b102ce89071581aed2c5d4cb801d0fd2be05770244"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-latest.json": {
+      "bytes": 193,
+      "sha256": "8aa7d1af33f49d93cb40603c6247f441367b119fcd79ba0b7da11a932623f0a0"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-latest.sig": {
+      "bytes": 64,
+      "sha256": "4fee4d4d62b54c2e225171e244815667af94d705c6ce5d03710ab29bbed2e35a"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-luch": {
+      "bytes": 7733408,
+      "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-luch-install": {
+      "bytes": 7471264,
+      "sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-manifest.json": {
+      "bytes": 1359,
+      "sha256": "3ad44f26074917fab8a65425ce18dea4bb1c721e91f224e5b65e0ce840e23a3a"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-manifest.sig": {
+      "bytes": 64,
+      "sha256": "81e912d68aee318614765360ea360da5940ca1220a0df5ac5446f2420de4e191"
+    },
+    "openwrt-23.05.6-arm_cortex-a15_neon-vfpv4-xray": {
+      "bytes": 30802044,
+      "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+    },
+    "openwrt-23.05.6-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23299,
+      "sha256": "15f518400a7af832afb18f1856f93f30917dc44fadfa536b9977802e1ddf066b"
+    },
+    "openwrt-23.05.6-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-23.05.6-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-23.05.6-x86_64-latest.json": {
+      "bytes": 174,
+      "sha256": "ca87097e7003755f628ac03d93203fab11fc2ba86a641663341853baa7aafc90"
+    },
+    "openwrt-23.05.6-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "accfc640e2c29099d6c051031f5b83bee83dbac0d3de5aa551f32a49720c3706"
+    },
+    "openwrt-23.05.6-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-23.05.6-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-23.05.6-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-23.05.6-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-23.05.6-x86_64-manifest.json": {
+      "bytes": 1340,
+      "sha256": "28e2bb0a08f62049269877f6b884312bf469316e7542e1b2a0d05a0045fabfdd"
+    },
+    "openwrt-23.05.6-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "8b90d7984fdeff5f588522f1890664560dbd342f0097c91101f57f4ad43c6325"
+    },
+    "openwrt-23.05.6-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-24.10.8-aarch64_generic-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23308,
+      "sha256": "5da575e483a2bf5c9ab50f79416b8db95269ec4fff95621e3e776178cfe96fa1"
+    },
+    "openwrt-24.10.8-aarch64_generic-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-24.10.8-aarch64_generic-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-24.10.8-aarch64_generic-latest.json": {
+      "bytes": 183,
+      "sha256": "ef2054f141c0cb266ad173e534283f5c42bf0a974d65ca59b60489572ee7c366"
+    },
+    "openwrt-24.10.8-aarch64_generic-latest.sig": {
+      "bytes": 64,
+      "sha256": "5d572e863da00b0bba16f0f229cf4aefde1e0bc91df43357a12c777b3f7d775a"
+    },
+    "openwrt-24.10.8-aarch64_generic-luch": {
+      "bytes": 7274656,
+      "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+    },
+    "openwrt-24.10.8-aarch64_generic-luch-install": {
+      "bytes": 6946976,
+      "sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da"
+    },
+    "openwrt-24.10.8-aarch64_generic-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-24.10.8-aarch64_generic-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-24.10.8-aarch64_generic-manifest.json": {
+      "bytes": 1349,
+      "sha256": "2bbd37f64d60a5c241b29f5245a28797d4ae8e5d5a808ff5703a9a1bdeed07b1"
+    },
+    "openwrt-24.10.8-aarch64_generic-manifest.sig": {
+      "bytes": 64,
+      "sha256": "b17fd93552d3920905dc67b737747fa388a1006ef6ca47949b607068c538ba89"
+    },
+    "openwrt-24.10.8-aarch64_generic-xray": {
+      "bytes": 30343292,
+      "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23318,
+      "sha256": "78da6cf70733be3ef04cdd50c1c06a875d55268e833aafeed8baf7ef8b254fba"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-latest.json": {
+      "bytes": 193,
+      "sha256": "ef8c082097c03be71121fcb90f420aa88b20608ce44fb5fd09d13868497f700b"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-latest.sig": {
+      "bytes": 64,
+      "sha256": "12365e9b32b711f1bf00451140aef27ecc9a3aa49ed05faadbeecdab50f71445"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-luch": {
+      "bytes": 7733408,
+      "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-luch-install": {
+      "bytes": 7471264,
+      "sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-manifest.json": {
+      "bytes": 1359,
+      "sha256": "f66bb1b61bc99edf34495f5da2e512e8ce4d2a9e89431e3ee125b82d0e229b9d"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-manifest.sig": {
+      "bytes": 64,
+      "sha256": "fd6b391cb83a3f9c6eacd7b3e0183ae5eada944307c410023a0abb0fe3d9c7d5"
+    },
+    "openwrt-24.10.8-arm_cortex-a15_neon-vfpv4-xray": {
+      "bytes": 30802044,
+      "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+    },
+    "openwrt-24.10.8-i386_pentium4-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23304,
+      "sha256": "fbf57a564c35f98cbb85850d328dcf0bff07dd072b5dd62b8fc7e19cbeebf8e4"
+    },
+    "openwrt-24.10.8-i386_pentium4-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-24.10.8-i386_pentium4-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-24.10.8-i386_pentium4-latest.json": {
+      "bytes": 181,
+      "sha256": "8b6f3f1827cec38bdcdd2254e7cb7af2fa2f0678684e5c832aaaf0275be83caf"
+    },
+    "openwrt-24.10.8-i386_pentium4-latest.sig": {
+      "bytes": 64,
+      "sha256": "32d8deee92ea2d39821381c2a2e37c13f05b06727a7dd9ba74dbd9d9110bee5b"
+    },
+    "openwrt-24.10.8-i386_pentium4-luch": {
+      "bytes": 7639200,
+      "sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57"
+    },
+    "openwrt-24.10.8-i386_pentium4-luch-install": {
+      "bytes": 7332000,
+      "sha256": "06243398b8816f22ce6e116a54cd5edf5953fa889b0949007797fe198a320dea"
+    },
+    "openwrt-24.10.8-i386_pentium4-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-24.10.8-i386_pentium4-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-24.10.8-i386_pentium4-manifest.json": {
+      "bytes": 1347,
+      "sha256": "852ddf536fe83540c5b7e57ca39a3b95b1f679c1133190353d8ac842b79da87f"
+    },
+    "openwrt-24.10.8-i386_pentium4-manifest.sig": {
+      "bytes": 64,
+      "sha256": "44c862665a3fa0e437c1908993055a176085eab4dd5198c921875782cbdb677c"
+    },
+    "openwrt-24.10.8-i386_pentium4-xray": {
+      "bytes": 30584956,
+      "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+    },
+    "openwrt-24.10.8-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23299,
+      "sha256": "311e8651c84b03e90270c20f35470a42e23169dd064936bee2cec5fb73ce140b"
+    },
+    "openwrt-24.10.8-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-24.10.8-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-24.10.8-x86_64-latest.json": {
+      "bytes": 174,
+      "sha256": "b6497392e5340b37f3996ae041a620eb7e2b1b1c417cfe9770a13e73f131a70f"
+    },
+    "openwrt-24.10.8-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "033c4d58a823fc332e580c2789401e7b820d269353be52b2df314fd4b1463a6b"
+    },
+    "openwrt-24.10.8-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-24.10.8-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-24.10.8-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-24.10.8-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-24.10.8-x86_64-manifest.json": {
+      "bytes": 1340,
+      "sha256": "4a89c0b918489fc51aefbc5d7ff340152cf4d211c21eba8880477ce79069f286"
+    },
+    "openwrt-24.10.8-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "6d36edb440743a9c1cdc3a24e5bf56fb86972fd7a6752fbacdc2ef557ecf15d2"
+    },
+    "openwrt-24.10.8-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-25.12.5-aarch64_generic-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23308,
+      "sha256": "18d143254ae4ab8468cfaeb47d32a55b18a763efb4fc06c653767f2656845b8b"
+    },
+    "openwrt-25.12.5-aarch64_generic-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-25.12.5-aarch64_generic-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-25.12.5-aarch64_generic-latest.json": {
+      "bytes": 183,
+      "sha256": "00d04ed04be12f005e8444172bf5e965bf2f5815aef5f97ef0c0475a8e9c6d25"
+    },
+    "openwrt-25.12.5-aarch64_generic-latest.sig": {
+      "bytes": 64,
+      "sha256": "5ce1a940603131c41a0605cfb3fba6c19571b85bc8d0f9ccf6e7c8306f0c009b"
+    },
+    "openwrt-25.12.5-aarch64_generic-luch": {
+      "bytes": 7274656,
+      "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+    },
+    "openwrt-25.12.5-aarch64_generic-luch-install": {
+      "bytes": 6946976,
+      "sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da"
+    },
+    "openwrt-25.12.5-aarch64_generic-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-25.12.5-aarch64_generic-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-25.12.5-aarch64_generic-manifest.json": {
+      "bytes": 1349,
+      "sha256": "e0213a57462637edc29a76102a9467868077cb7efb6a40f47214a5542f841a1e"
+    },
+    "openwrt-25.12.5-aarch64_generic-manifest.sig": {
+      "bytes": 64,
+      "sha256": "b8a68b949d73c73d0341f8be287ec9135845df045d271603f32969dd5eef8b9b"
+    },
+    "openwrt-25.12.5-aarch64_generic-xray": {
+      "bytes": 30343292,
+      "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23318,
+      "sha256": "72d8110f894b00f72c432dbe890c995655eae3b740a86cdc2c4a5cdf94a21a8a"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-latest.json": {
+      "bytes": 193,
+      "sha256": "3086a0941532e4d35d617075ccd3fa54573ab8eec3536810716300c80d3797fe"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-latest.sig": {
+      "bytes": 64,
+      "sha256": "65526352efb72b679c63cc363d170543fa002292ac9dc8ce7bede0686be7b8e2"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-luch": {
+      "bytes": 7733408,
+      "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-luch-install": {
+      "bytes": 7471264,
+      "sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-manifest.json": {
+      "bytes": 1359,
+      "sha256": "a3379e0b515718493cae41e382f89d6fd13e9b0293412c912a57948241b2b9b8"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-manifest.sig": {
+      "bytes": 64,
+      "sha256": "d435725ab8873524126622e0152f2102911cd2fe86c672de8bcc41a8d06dbb5d"
+    },
+    "openwrt-25.12.5-arm_cortex-a15_neon-vfpv4-xray": {
+      "bytes": 30802044,
+      "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+    },
+    "openwrt-25.12.5-i386_pentium4-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23304,
+      "sha256": "1f0ca7a7f93ce0aff68b31d4945df8cf8bb6c5b807f9bc4f4a9f7dc21318a1bc"
+    },
+    "openwrt-25.12.5-i386_pentium4-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-25.12.5-i386_pentium4-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-25.12.5-i386_pentium4-latest.json": {
+      "bytes": 181,
+      "sha256": "a22254304d08b656f2dd046edb9a746f8fa941510e882d9eb53a7104579f3ce7"
+    },
+    "openwrt-25.12.5-i386_pentium4-latest.sig": {
+      "bytes": 64,
+      "sha256": "73cfb2326b2a8cdcac7f2388b4c40cd23d22cb55609db14392dce572e7bbb658"
+    },
+    "openwrt-25.12.5-i386_pentium4-luch": {
+      "bytes": 7639200,
+      "sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57"
+    },
+    "openwrt-25.12.5-i386_pentium4-luch-install": {
+      "bytes": 7332000,
+      "sha256": "06243398b8816f22ce6e116a54cd5edf5953fa889b0949007797fe198a320dea"
+    },
+    "openwrt-25.12.5-i386_pentium4-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-25.12.5-i386_pentium4-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-25.12.5-i386_pentium4-manifest.json": {
+      "bytes": 1347,
+      "sha256": "fc7e6f4db5edbdd128acbacf028be528d8016fb8dae1b5c3569bb0353d6921cb"
+    },
+    "openwrt-25.12.5-i386_pentium4-manifest.sig": {
+      "bytes": 64,
+      "sha256": "b367178b5681883d802ce9f31bf706ee54dee2e139246dc41ed86cb70bf5bb25"
+    },
+    "openwrt-25.12.5-i386_pentium4-xray": {
+      "bytes": 30584956,
+      "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+    },
+    "openwrt-25.12.5-x86_64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23299,
+      "sha256": "52614786c8c612d8ee3068203170a5e1d2ba4dcd9cc4695cc1875fca5a68a9c2"
+    },
+    "openwrt-25.12.5-x86_64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-25.12.5-x86_64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-25.12.5-x86_64-latest.json": {
+      "bytes": 174,
+      "sha256": "1a8d30595fbea4f7cf069179858948424d7eeb99491048a2f3f925044dd68648"
+    },
+    "openwrt-25.12.5-x86_64-latest.sig": {
+      "bytes": 64,
+      "sha256": "b7e477bb09522e85d3b84a6ed18be86d785b21919c28e9e9d201ccefdf98306e"
+    },
+    "openwrt-25.12.5-x86_64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-25.12.5-x86_64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-25.12.5-x86_64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-25.12.5-x86_64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-25.12.5-x86_64-manifest.json": {
+      "bytes": 1340,
+      "sha256": "acf761e791a9758b60a622e30df1286591fb7bd57ac2071a61878e4c6e3eddfd"
+    },
+    "openwrt-25.12.5-x86_64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "1355f61695bfcc408963ecd92075c26400380750c9ca1c9c5a797d95c580cd2e"
+    },
+    "openwrt-25.12.5-x86_64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-any-386-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23290,
+      "sha256": "a971011c961fd814306fa42c5e47e904a1cb85f60d196dc594039d6c7aeba849"
+    },
+    "openwrt-any-386-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-386-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-386-latest.json": {
+      "bytes": 167,
+      "sha256": "35e90828eba1b2dac5f99a4a0e1b9a3cb1e3e3571558ebfabd4de1f191b52b62"
+    },
+    "openwrt-any-386-latest.sig": {
+      "bytes": 64,
+      "sha256": "b4c90274754d3da127768662375ac9e20a6660a890ebedbf2632894b8a4b98b7"
+    },
+    "openwrt-any-386-luch": {
+      "bytes": 7639200,
+      "sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57"
+    },
+    "openwrt-any-386-luch-install": {
+      "bytes": 7332000,
+      "sha256": "06243398b8816f22ce6e116a54cd5edf5953fa889b0949007797fe198a320dea"
+    },
+    "openwrt-any-386-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-386-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-386-manifest.json": {
+      "bytes": 1333,
+      "sha256": "477798999919c9ece8041aa388e0b127f48e2c2ec8fd48909ce28b1d1d09efca"
+    },
+    "openwrt-any-386-manifest.sig": {
+      "bytes": 64,
+      "sha256": "f3030623874eea62eeee04d427592ea3faeebbbfc7f63299e2327b739d477033"
+    },
+    "openwrt-any-386-xray": {
+      "bytes": 30584956,
+      "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+    },
+    "openwrt-any-amd64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23294,
+      "sha256": "437302c2463699d29dacce5de1d2d499d5079b067f25c155d89f65e8e88d7569"
+    },
+    "openwrt-any-amd64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-amd64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-amd64-latest.json": {
+      "bytes": 169,
+      "sha256": "f70f25b06b73db198f75c6c7b2dab976a3d45b664ee7e0db880c21bb23bf3a78"
+    },
+    "openwrt-any-amd64-latest.sig": {
+      "bytes": 64,
+      "sha256": "969c339749bd81dc12e51e1833761ccfb16c093e78b2da4a2e34996ce7ba1068"
+    },
+    "openwrt-any-amd64-luch": {
+      "bytes": 7864480,
+      "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+    },
+    "openwrt-any-amd64-luch-install": {
+      "bytes": 7504032,
+      "sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea"
+    },
+    "openwrt-any-amd64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-amd64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-amd64-manifest.json": {
+      "bytes": 1335,
+      "sha256": "c13dcac7cdd63331f75add7da3e2f806451b60ee212df1e2a07235dd538e9d30"
+    },
+    "openwrt-any-amd64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "dccdc8a330857e175f68f718f393d4f66d371cbfc56950749ff3c20535bdeb6c"
+    },
+    "openwrt-any-amd64-xray": {
+      "bytes": 32534652,
+      "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "openwrt-any-arm64-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23294,
+      "sha256": "65633a1fc8046f50c449982b652cfb7839c3a6e58ff3c3838feb59c7f4473836"
+    },
+    "openwrt-any-arm64-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-arm64-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-arm64-latest.json": {
+      "bytes": 169,
+      "sha256": "d55ce4a401a2a733b2b3923aee8ee9176f70705daebbd205404508f7da9f8f6f"
+    },
+    "openwrt-any-arm64-latest.sig": {
+      "bytes": 64,
+      "sha256": "747e2ab25197724a35955df5e0f3810d6f7b996c8603f0f5d12581665f1c78d8"
+    },
+    "openwrt-any-arm64-luch": {
+      "bytes": 7274656,
+      "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+    },
+    "openwrt-any-arm64-luch-install": {
+      "bytes": 6946976,
+      "sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da"
+    },
+    "openwrt-any-arm64-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-arm64-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-arm64-manifest.json": {
+      "bytes": 1335,
+      "sha256": "bbb8d657310ed35e86e2f722655b68dd82af7c1c8ebeff90b6c3633898707de7"
+    },
+    "openwrt-any-arm64-manifest.sig": {
+      "bytes": 64,
+      "sha256": "1daa8fb6d9617b179c44aa53d5fdb574fabf85b20caf8fa83dd2e21c76f8ec7d"
+    },
+    "openwrt-any-arm64-xray": {
+      "bytes": 30343292,
+      "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+    },
+    "openwrt-any-armv5-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23294,
+      "sha256": "4154367b351a55deb6a39a1f433770e8110b3a5b9232152013cb5d6a6a6f38eb"
+    },
+    "openwrt-any-armv5-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-armv5-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-armv5-latest.json": {
+      "bytes": 169,
+      "sha256": "ba2a34d93416bf4004fa9e17ba1c1a4c2728fce8c946e95583b458dc64a94ba5"
+    },
+    "openwrt-any-armv5-latest.sig": {
+      "bytes": 64,
+      "sha256": "cdf1736f819705a1a629f0e92b572e79440ff74427a573b47f89aa210e119f3e"
+    },
+    "openwrt-any-armv5-luch": {
+      "bytes": 7798944,
+      "sha256": "238484d613b57844eca853642bb9d7e2b240fd8c475b9a22643f95647256bab7"
+    },
+    "openwrt-any-armv5-luch-install": {
+      "bytes": 7471264,
+      "sha256": "6fb79e42a0d692ae197f6a5d4d2ee760a3b0f82a2595ed7b209750be927cf483"
+    },
+    "openwrt-any-armv5-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-armv5-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-armv5-manifest.json": {
+      "bytes": 1335,
+      "sha256": "e83e949e9f7024431bb434b1f50c0dcd0f4aa2bba155e211c5a56f16dd6bb5ba"
+    },
+    "openwrt-any-armv5-manifest.sig": {
+      "bytes": 64,
+      "sha256": "9327eee18160bcb00c84b5cd37568e60ee6dce442f0b5e6f133d20231dce8b79"
+    },
+    "openwrt-any-armv5-xray": {
+      "bytes": 30867580,
+      "sha256": "c58c10184aa69b845ba9b990dcff2609a7252ea9f1f155f77333775cfca9b6bb"
+    },
+    "openwrt-any-armv6-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23294,
+      "sha256": "3b1ba2c478198de998095444a1c19141a19026b19dd0eacdd1195db9a97b3b95"
+    },
+    "openwrt-any-armv6-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-armv6-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-armv6-latest.json": {
+      "bytes": 169,
+      "sha256": "2a305341c4ac76557690cb1d54a1fb27f16a92c7b4113b47240293133294a821"
+    },
+    "openwrt-any-armv6-latest.sig": {
+      "bytes": 64,
+      "sha256": "42aee17ebb7adbb9ea4643692ed606d2976a5800aaff0dc13b52149c1e03bc89"
+    },
+    "openwrt-any-armv6-luch": {
+      "bytes": 7798944,
+      "sha256": "21e1a685ca6ac7ba8e06ff8621814a34bed65429e99eef85ba71ca58a09a5fea"
+    },
+    "openwrt-any-armv6-luch-install": {
+      "bytes": 7471264,
+      "sha256": "a4ecf7f50295720d2eda305430f4046ea5b7c7d1c721856fb0a3d3dc0554795c"
+    },
+    "openwrt-any-armv6-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-armv6-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-armv6-manifest.json": {
+      "bytes": 1335,
+      "sha256": "c2a8c6785c9e085f3dea76f5c0908b3cd12050f39286f0637f9d248e4e478a12"
+    },
+    "openwrt-any-armv6-manifest.sig": {
+      "bytes": 64,
+      "sha256": "b7609ce0feaa03a8f4ae98a90efe51640f9e1c6173e1bc720b3172bf1e4978de"
+    },
+    "openwrt-any-armv6-xray": {
+      "bytes": 30867580,
+      "sha256": "a932c934dd8aa2d44339490748bebe2ce38c24288bc5f0213278d05d026520eb"
+    },
+    "openwrt-any-armv7-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23294,
+      "sha256": "81a7dd34546747eb624a624ed9b601e8d766b2eb5a34f6b1ad76c5394f0233b5"
+    },
+    "openwrt-any-armv7-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-armv7-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-armv7-latest.json": {
+      "bytes": 169,
+      "sha256": "9dc64d9fe9eb1559777c9dd3ccee05382fa8bdfd14cb91a6719220f93ec3cf07"
+    },
+    "openwrt-any-armv7-latest.sig": {
+      "bytes": 64,
+      "sha256": "c43f342aebf3bfe1237bd35d8b450870f90673ae9955888e4814da3f5c9841e0"
+    },
+    "openwrt-any-armv7-luch": {
+      "bytes": 7733408,
+      "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+    },
+    "openwrt-any-armv7-luch-install": {
+      "bytes": 7471264,
+      "sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c"
+    },
+    "openwrt-any-armv7-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-armv7-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-armv7-manifest.json": {
+      "bytes": 1335,
+      "sha256": "5ef8d0463ffe9e8580793b58db5363cd84cbeb69891df8ff4f9757180ca58f3b"
+    },
+    "openwrt-any-armv7-manifest.sig": {
+      "bytes": 64,
+      "sha256": "b360aea1457e994d9ef67c24ad5bbf9399acb1ff1632b4e651ec8e780dea86bd"
+    },
+    "openwrt-any-armv7-xray": {
+      "bytes": 30802044,
+      "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+    },
+    "openwrt-any-mips-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23292,
+      "sha256": "d316e9691439c0b180a3fab6775d1d37a2bd1e50710e4da6fba08208ad233333"
+    },
+    "openwrt-any-mips-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-mips-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-mips-latest.json": {
+      "bytes": 168,
+      "sha256": "86d494ae724ca756f278f1f44ed82da41453332776cfa87c334269cd990c8209"
+    },
+    "openwrt-any-mips-latest.sig": {
+      "bytes": 64,
+      "sha256": "e5e8cf76310aaf0b44f5074fec40d9a3a04339b63bf52522d1f269027c8a366c"
+    },
+    "openwrt-any-mips-luch": {
+      "bytes": 8716479,
+      "sha256": "64001a4248afc8b3c2ff56fa1d6c7390e25c276e2efeff3ea99afd9e68d9de90"
+    },
+    "openwrt-any-mips-luch-install": {
+      "bytes": 8323263,
+      "sha256": "002173b14a056bf84db6850006b88430bd0e2088eea609cdfe43b3a4a082926d"
+    },
+    "openwrt-any-mips-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-mips-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-mips-manifest.json": {
+      "bytes": 1334,
+      "sha256": "4c1e4ec1d8ac65c1183220694ef77fba9256f1eb4294ae346ac2fecb85f0263e"
+    },
+    "openwrt-any-mips-manifest.sig": {
+      "bytes": 64,
+      "sha256": "fe0aefb51dcba86c424384bfecb187b897c9f82d2633880387f68da2bccfad7b"
+    },
+    "openwrt-any-mips-xray": {
+      "bytes": 34603163,
+      "sha256": "f8057081c87f8ba626bc10ce0e0c1b64bf7e4db997c557ba982c716ca7797c4c"
+    },
+    "openwrt-any-mipsle-THIRD_PARTY_NOTICES.txt": {
+      "bytes": 23296,
+      "sha256": "89d3c8323075bb025138fc4f922f5bd7f825ebaf090b284dea8859c2d8fae635"
+    },
+    "openwrt-any-mipsle-geoip.dat": {
+      "bytes": 2,
+      "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+    },
+    "openwrt-any-mipsle-geosite.dat": {
+      "bytes": 67824,
+      "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+    },
+    "openwrt-any-mipsle-latest.json": {
+      "bytes": 170,
+      "sha256": "87f7e30f05b551832a9a683bf4134f6baf92eb15e9ebd9d5eacf2c1b4d6ee016"
+    },
+    "openwrt-any-mipsle-latest.sig": {
+      "bytes": 64,
+      "sha256": "7493fcf90c7b8fc84a853202218f3ed889079124ab9f897f7bd927cc445b95a7"
+    },
+    "openwrt-any-mipsle-luch": {
+      "bytes": 8716479,
+      "sha256": "fec7c954762cdc13f1cf97356db4524e55c4e2a738074a4907e0440b2cd3b2f9"
+    },
+    "openwrt-any-mipsle-luch-install": {
+      "bytes": 8323263,
+      "sha256": "3b287b71abd11da693a41d2394d07814905c727859b0690399a74596772ee7dc"
+    },
+    "openwrt-any-mipsle-luch-xray.init": {
+      "bytes": 692,
+      "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+    },
+    "openwrt-any-mipsle-luch.init": {
+      "bytes": 964,
+      "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+    },
+    "openwrt-any-mipsle-manifest.json": {
+      "bytes": 1336,
+      "sha256": "aab1ce8d8f9ca6fbc4d96b0f66aa7336b628bf634125cf2bdb9a2b54a8a7952a"
+    },
+    "openwrt-any-mipsle-manifest.sig": {
+      "bytes": 64,
+      "sha256": "5e560690124ba7e4b6e756c77b2c07723c77344f729e2b9a7c9f9030cbd2f854"
+    },
+    "openwrt-any-mipsle-xray": {
+      "bytes": 34603163,
+      "sha256": "4ee986f34f9b598e40a86a0a5401b8a1bcfb15868718908f6e2a8d84369a997f"
+    },
+    "xray-source-v26.3.27-luch-v1.2.8.tar.gz": {
+      "bytes": 852920,
+      "sha256": "ca3a437f3cacf6fb9715bfd6b86f43deeedd67393de531c17a408a60cbf79598"
+    }
+  },
+  "scope": "Build and signature verification; not a router or network qualification result.",
+  "python_tests": {
+    "passed": 35
+  },
+  "runtime_component_identity": {
+    "status": "PASS",
+    "scope": "Exact runtime client, Xray, geodata and init scripts in final r7 are byte-identical to r5 used by full-agent QEMU. Installer changed only to restore prepared settings before boot preparation; it receives separate final qualification. This does not claim all release assets identical.",
+    "actual_qemu_source_snapshot_sha256": "5cbcd11f52bf78727a08e18efa85d46d40632b0a34a9f89f82b5421fcfe7662e",
+    "final_source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+    "targets": [
+      {
+        "target": "17.01.7-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "18.06.9-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "19.07.10-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "21.02.7-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "22.03.7-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "22.03.7-aarch64_cortex-a53",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+          },
+          {
+            "name": "xray",
+            "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "23.05.6-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "23.05.6-aarch64_generic",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+          },
+          {
+            "name": "xray",
+            "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+          },
+          {
+            "name": "xray",
+            "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "24.10.8-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "24.10.8-i386_pentium4",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57"
+          },
+          {
+            "name": "xray",
+            "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "24.10.8-aarch64_generic",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+          },
+          {
+            "name": "xray",
+            "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+          },
+          {
+            "name": "xray",
+            "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "25.12.5-x86_64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "25.12.5-aarch64_generic",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+          },
+          {
+            "name": "xray",
+            "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+          },
+          {
+            "name": "xray",
+            "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "25.12.5-i386_pentium4",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57"
+          },
+          {
+            "name": "xray",
+            "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-amd64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec"
+          },
+          {
+            "name": "xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-arm64",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c"
+          },
+          {
+            "name": "xray",
+            "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-armv7",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e"
+          },
+          {
+            "name": "xray",
+            "sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-armv6",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "21e1a685ca6ac7ba8e06ff8621814a34bed65429e99eef85ba71ca58a09a5fea"
+          },
+          {
+            "name": "xray",
+            "sha256": "a932c934dd8aa2d44339490748bebe2ce38c24288bc5f0213278d05d026520eb"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-armv5",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "238484d613b57844eca853642bb9d7e2b240fd8c475b9a22643f95647256bab7"
+          },
+          {
+            "name": "xray",
+            "sha256": "c58c10184aa69b845ba9b990dcff2609a7252ea9f1f155f77333775cfca9b6bb"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-386",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57"
+          },
+          {
+            "name": "xray",
+            "sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-mips",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "64001a4248afc8b3c2ff56fa1d6c7390e25c276e2efeff3ea99afd9e68d9de90"
+          },
+          {
+            "name": "xray",
+            "sha256": "f8057081c87f8ba626bc10ce0e0c1b64bf7e4db997c557ba982c716ca7797c4c"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      },
+      {
+        "target": "any-mipsle",
+        "runtime_files": [
+          {
+            "name": "luch",
+            "sha256": "fec7c954762cdc13f1cf97356db4524e55c4e2a738074a4907e0440b2cd3b2f9"
+          },
+          {
+            "name": "xray",
+            "sha256": "4ee986f34f9b598e40a86a0a5401b8a1bcfb15868718908f6e2a8d84369a997f"
+          },
+          {
+            "name": "geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          }
+        ]
+      }
+    ],
+    "checked_utc": "2026-10-16T14:19:15.612388+00:00"
+  }
+}
