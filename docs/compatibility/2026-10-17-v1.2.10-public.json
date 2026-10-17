@@ -1,0 +1,679 @@
+{
+  "schema_version": 1,
+  "kind": "published-github-one-command-exact-release-qualification",
+  "status": "PASS",
+  "release": "1.2.10",
+  "release_url": "https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.10",
+  "expected_exact_targets": 17,
+  "completed": 17,
+  "passed": 17,
+  "missing": [],
+  "failed": [],
+  "generated_utc": "2026-10-17T10:35:40.702519+00:00",
+  "source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+  "dist_assets_sha256": "4ddefee5ee8a94804a3a4b96588e74d559cdec1cb1cfde99cb4580b3632e4b87",
+  "build_inputs_sha256": "009b3cc79b9c13db80647df7bab4a91674da2e023f22d7c96c379548ba6b180c",
+  "dispatcher": {
+    "exact": 17,
+    "fallback": 8,
+    "filename": "install-528bb5d1ca49d36f535efd2e116a50c3443506d2921dae6d794c155c94f29ae9.sh",
+    "sha256": "528bb5d1ca49d36f535efd2e116a50c3443506d2921dae6d794c155c94f29ae9",
+    "targets": 25
+  },
+  "public_readme_command_sha256": "338387fa8c5627790ad79d43e9cb0cd435748a91483f3ad5cebe915109cef950",
+  "public_readme_command_source": "https://raw.githubusercontent.com/LuchWRT/LuchWrt/265bdb3a7f7be5e51bf9e97b6ddae87c3572e17f/install-v1.2.10.sh",
+  "signing_public_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+  "rows": [
+    {
+      "target": "17.01.7-x86_64",
+      "status": "PASS",
+      "openwrt": "17.01.7",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "2dc896cd0f690994854311ccf6202cf703e636b63fdaad3738e9bb17c124d2e7",
+        "checksum_url": "https://downloads.openwrt.org/releases/17.01.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "7436b5681e5b1db634ebf2e054133427a9946893a3930dc6a70524e71f4adb63",
+        "source_url": "https://downloads.openwrt.org/releases/17.01.7/targets/x86/64/lede-17.01.7-x86-64-combined-ext4.img.gz"
+      },
+      "candidate": {
+        "bundle": "17.01.7-x86_64",
+        "manifest_sha256": "733ce0eccdc40dc12d37f316c79103105f178f9536d16a68480e8620b45faf7c",
+        "bootstrap_sha256": "54424714f74f1ecf9daffa1a33c4b83dd4f2aaa912839cf6d34c98919b34fba7",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:20:06.073617+00:00",
+      "evidence_json_sha256": "3e83fb99bd963318d288c15a9791f20440d643cbfb438e1a457cd1cd69771015",
+      "prepared_filesystem_receipt_sha256": "979dc21ef3115ec5872046297641e882df1a25921a1df10069eeb2e5ab68ffb0",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "18.06.9-x86_64",
+      "status": "PASS",
+      "openwrt": "18.06.9",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "483a38be503b2ce8d90bba973a46b0e89771532bb12c74ce39d9037046824311",
+        "checksum_url": "https://downloads.openwrt.org/releases/18.06.9/targets/x86/64/sha256sums",
+        "checksum_sha256": "4f815f6682417cc8032a7a36f12f80f0e4093b365e4d3a10aeb53e25ff353dce",
+        "source_url": "https://downloads.openwrt.org/releases/18.06.9/targets/x86/64/openwrt-18.06.9-x86-64-combined-ext4.img.gz"
+      },
+      "candidate": {
+        "bundle": "18.06.9-x86_64",
+        "manifest_sha256": "1b74b2f7c56d5dd7c870b2375da225771f816e67c38a509fadac665a81f8fe71",
+        "bootstrap_sha256": "e92d64262fba2b27e73f80c9ba36f6955a5fa5ec11b12b784bbf31e7d7d50cd4",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:20:06.073802+00:00",
+      "evidence_json_sha256": "047285e9c00eb057cf85013a28da2fd54add95f60af527c4714cbf452215a830",
+      "prepared_filesystem_receipt_sha256": "55113f743e224eb6c522f8f373dd1a8a523e1a350073900e2e50a84d8a32e408",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "19.07.10-x86_64",
+      "status": "PASS",
+      "openwrt": "19.07.10",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "b27750176d9c91b8624c9a5f37b627c40efe65ece7779f54fd917ba8c8e028c3",
+        "checksum_url": "https://downloads.openwrt.org/releases/19.07.10/targets/x86/64/sha256sums",
+        "checksum_sha256": "914075ce0626680455e9469748f6adeecf7fbafd477d48013384fe93cc61b35c",
+        "source_url": "https://downloads.openwrt.org/releases/19.07.10/targets/x86/64/openwrt-19.07.10-x86-64-combined-ext4.img.gz"
+      },
+      "candidate": {
+        "bundle": "19.07.10-x86_64",
+        "manifest_sha256": "80dfe9b243e0f339cd761e2e6d0b7490b59df26ae5516036fe0f0dab9152b21c",
+        "bootstrap_sha256": "c14280c62a3c7685a5df082444892b4defef166561984964bb0281eb6eff6771",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:20:06.074216+00:00",
+      "evidence_json_sha256": "ad6de3a1c0477b0645b2d27cdf5b5cae27f813c23787aa9acbf5a93ec00d0fdc",
+      "prepared_filesystem_receipt_sha256": "0454d918991eec6db8889a6657d10c04d9d3356ee351e558f418090ee78fed64",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "21.02.7-x86_64",
+      "status": "PASS",
+      "openwrt": "21.02.7",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "39f8e1f629cfe1db985809639c2cd1de88db119544144740d968d0b6784a9d6f",
+        "checksum_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "260c0dc424645173f047329a8ea8db63ae2a81b30f8e5c766a346b6a52dc042c",
+        "source_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/openwrt-21.02.7-x86-64-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "21.02.7-x86_64",
+        "manifest_sha256": "d4749cf1bf7d8918bc000e08c0172258052f06dcba2dbc7d6c1e87cb89ede768",
+        "bootstrap_sha256": "bb88dd5a780bf5d5524fb5912733920c2d9ea380f53c92ca697424e7840cb85c",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:20:06.074280+00:00",
+      "evidence_json_sha256": "c8bd0d50258d22137007f33aca63255810292a1fbde03a80e2612936b4234b55",
+      "prepared_filesystem_receipt_sha256": "4839a541fedd3410bf5fd518de54a71353878c07f52b1938acebe886a5c497f3",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "22.03.7-x86_64",
+      "status": "PASS",
+      "openwrt": "22.03.7",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "e83d2091a836693ef421de7048bd58a568eeacf1e09ba46c4245c50deb377c0c",
+        "checksum_url": "https://downloads.openwrt.org/releases/22.03.7/targets/x86/64/sha256sums",
+        "checksum_sha256": "15656345e423b9436e046dea656e75116160115306b2992bceae3af819970e9f",
+        "source_url": "https://downloads.openwrt.org/releases/22.03.7/targets/x86/64/openwrt-22.03.7-x86-64-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "22.03.7-x86_64",
+        "manifest_sha256": "9f8165e12b93edf6fd973648bbf05ab949c2609649149c0ba52246d180b4e37d",
+        "bootstrap_sha256": "c90cbf5deee6d6b5de2adfde003850a6bb4912b60252be58c86b35916aaaa23b",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:23:00.271448+00:00",
+      "evidence_json_sha256": "396d5abb0ce4158585755e1aeec19fd123912b8405bb16e91a75e66e785164e1",
+      "prepared_filesystem_receipt_sha256": "1dbb331c18c596c07d1dc9bb1810dd842ec35be5bf632a7e3afb51e290f7aaaf",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "22.03.7-aarch64_cortex-a53",
+      "status": "PASS",
+      "openwrt": "22.03.7",
+      "package_arch": "aarch64_cortex-a53",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/sha256sums",
+        "checksum_sha256": "77dd1b150429b108be72279b1649cbb0e689bb53280c210cc4d7bcba709de1bb",
+        "source_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/openwrt-22.03.7-armvirt-64-rootfs-ext4.img.gz",
+        "sha256": "ba068d60c3155e3eebd0d5eabcca4c5d0026a416f4384f78fbabb12699646cea",
+        "kernel_url": "https://downloads.openwrt.org/releases/22.03.7/targets/armvirt/64/openwrt-22.03.7-armvirt-64-Image",
+        "kernel_sha256": "a932a389ce820cbaea01060b2fba07bcd38a4600aa80b72bec3a67f2ad451bdf"
+      },
+      "candidate": {
+        "bundle": "22.03.7-aarch64_cortex-a53",
+        "manifest_sha256": "1525f5dd5b04c5fe4207930ebe9c332015c6578bb3214ad5d50165ca0bea36b0",
+        "bootstrap_sha256": "bb588311a7eb45abca95782d75f8c1d77e20c56d29ca2445301409ffaf46e848",
+        "installer_sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da",
+        "client_sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c",
+        "xray_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+      },
+      "started_utc": "2026-10-17T10:23:00.812185+00:00",
+      "evidence_json_sha256": "15265e8fb285741a31b5e84028f095ad916b344366ac576adb7e23670cfe33ac",
+      "prepared_filesystem_receipt_sha256": "d9a1c1b998dbdf7a10bbea0e4acaec30c8c8b934f3a038ee7d06931f6c55eaf6",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "23.05.6-x86_64",
+      "status": "PASS",
+      "openwrt": "23.05.6",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "c6e22b6f58ba721f15f3ccdbc26d4a85da64b7e3c564cd5bc70676eb91eeec51",
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/x86/64/sha256sums",
+        "checksum_sha256": "b9901e6e08539fcc5f0411fa805b053733875a3744ba3b16cc4784d88832360a",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/x86/64/openwrt-23.05.6-x86-64-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "23.05.6-x86_64",
+        "manifest_sha256": "28e2bb0a08f62049269877f6b884312bf469316e7542e1b2a0d05a0045fabfdd",
+        "bootstrap_sha256": "983694174e8418004f1bd908e1f2b79e9773de38ae777bf1cf2cf52d89336967",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:23:06.277003+00:00",
+      "evidence_json_sha256": "3e9da4f163ecc2d2da32c4dbb87f0177e26ab86f9ff4b6ba2ee0c9063b8e1df7",
+      "prepared_filesystem_receipt_sha256": "149bda924424a5943a55373741fff0e58e973da3a99689223b851d6eb53a9919",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "23.05.6-aarch64_generic",
+      "status": "PASS",
+      "openwrt": "23.05.6",
+      "package_arch": "aarch64_generic",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "6a5599213f8700aba045e34ca3e17f73646fc9c6cbcd05dc49044a7d655c67d2",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "sha256": "b5ed1ac919e4096ef7e688734a9f7cfba38ea2b3c6e6a8fc37303c383b7eea18",
+        "kernel_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv8/openwrt-23.05.6-armsr-armv8-generic-kernel.bin",
+        "kernel_sha256": "243159d98fa1b42db9c0b3182386528e3041c41c40066b083f2c1099eca9b358"
+      },
+      "candidate": {
+        "bundle": "23.05.6-aarch64_generic",
+        "manifest_sha256": "b000cd8d531852cf7fd1655901a7f6552e07ec7a1120899cef97a4abe3278d59",
+        "bootstrap_sha256": "a885ce800be199d22b814bf156d616f37a477d6ce59dff7b4320804cb378f6fb",
+        "installer_sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da",
+        "client_sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c",
+        "xray_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+      },
+      "started_utc": "2026-10-17T10:23:08.357331+00:00",
+      "evidence_json_sha256": "5f6d879c6935a99204c56ae033f933f313bd06a4bd5180ab9b0ab9b91b1af4f5",
+      "prepared_filesystem_receipt_sha256": "cc4d12780f3b26373699cd02d905b66ef0b8c94e3c1efefb2d93a2b0b4484ca3",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+      "status": "PASS",
+      "openwrt": "23.05.6",
+      "package_arch": "arm_cortex-a15_neon-vfpv4",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "0f69f8b6dadd4ef714cff6a37031119f3035862bd947668991a40172a2bdec54",
+        "source_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/openwrt-23.05.6-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "sha256": "e9a1245c9f0eddf3ac514c7e684cc53feb28d0f16bd47dc096c0e52eb3046925",
+        "kernel_url": "https://downloads.openwrt.org/releases/23.05.6/targets/armsr/armv7/openwrt-23.05.6-armsr-armv7-generic-kernel.bin",
+        "kernel_sha256": "b14e20a17a3a450f08091570bb44d76a987cf1ac30638074c225f3729e829889"
+      },
+      "candidate": {
+        "bundle": "23.05.6-arm_cortex-a15_neon-vfpv4",
+        "manifest_sha256": "3ad44f26074917fab8a65425ce18dea4bb1c721e91f224e5b65e0ce840e23a3a",
+        "bootstrap_sha256": "384ccd6cbc2a5572ecd1950b2f3f296c8ed7bbce120ede8e447db6cb12ade053",
+        "installer_sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c",
+        "client_sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e",
+        "xray_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+      },
+      "started_utc": "2026-10-17T10:26:06.287810+00:00",
+      "evidence_json_sha256": "36dac6325d29e3d5d9744af27daae929ae50d9b366f9e77bb92cc3759d107d70",
+      "prepared_filesystem_receipt_sha256": "06bc8735bab620e5ec91a9a760e6dae4aedd70cdd686dd168fc16a552fdea908",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "24.10.8-x86_64",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "23872c64fdb66d0765e0d17f71453a66e7a91e9ecb10606d5f738e6d166e14ae",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/sha256sums",
+        "checksum_sha256": "5c1d5d6a7fc1acd34fd5ed8014cc28039b122569a87161889a1fa23b03a03df8",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/openwrt-24.10.8-x86-64-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "24.10.8-x86_64",
+        "manifest_sha256": "4a89c0b918489fc51aefbc5d7ff340152cf4d211c21eba8880477ce79069f286",
+        "bootstrap_sha256": "4be85823e7373831c1115198a327fa4b624a4b77fddeb6d5d4b7b9f2bb20f1a9",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:26:26.911423+00:00",
+      "evidence_json_sha256": "3d52ac3ba11e68d881964ee662cda2ff90af26f294cfcac57a37b4281a4f62b6",
+      "prepared_filesystem_receipt_sha256": "986c2cb7fff9e7ff1ee73974b7b6dae54aa3e33d73465921fe2f10625d1ad393",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "24.10.8-i386_pentium4",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "i386_pentium4",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "3f06519a0ede0c050b43ec02032d345922d274e53f0a28a1935245d3e3f21595",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/generic/sha256sums",
+        "checksum_sha256": "802f799bd228e3aa9628550f89218cc5656cc91903949b137af7ae269ed5c0f4",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/generic/openwrt-24.10.8-x86-generic-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "24.10.8-i386_pentium4",
+        "manifest_sha256": "852ddf536fe83540c5b7e57ca39a3b95b1f679c1133190353d8ac842b79da87f",
+        "bootstrap_sha256": "d81f1aa17969f785408434d76ad49fb7ab650cf39a4601e8197f343e5c5dc6b4",
+        "installer_sha256": "06243398b8816f22ce6e116a54cd5edf5953fa889b0949007797fe198a320dea",
+        "client_sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57",
+        "xray_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+      },
+      "started_utc": "2026-10-17T10:26:41.195083+00:00",
+      "evidence_json_sha256": "b5601459e483568f28e086e3f54374d321a1dc328cd5fe43e0f0aeff3621cbe0",
+      "prepared_filesystem_receipt_sha256": "9d25fe5bcb54293a1b22ec047ecf1155536697e3b217fa3c60e78fa98841acd1",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "24.10.8-aarch64_generic",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "aarch64_generic",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "1d829b6087d561f9e278679a5525ae4fdd68716d8d2a4e1525500b247d99aada",
+        "kernel_sha256": "ccc97f1598224e73a5f75fb1612c284db037f02fa050d1a18b5b2ee93631e37e",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "108da481773a0c4fdb09642272f4a207358101423af26b67166c9347f12fb33e",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv8/openwrt-24.10.8-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "kernel_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv8/openwrt-24.10.8-armsr-armv8-generic-kernel.bin"
+      },
+      "candidate": {
+        "bundle": "24.10.8-aarch64_generic",
+        "manifest_sha256": "2bbd37f64d60a5c241b29f5245a28797d4ae8e5d5a808ff5703a9a1bdeed07b1",
+        "bootstrap_sha256": "834e3667b759e5305e3004c965fcb43ed3d51247a696f9814b8b5a20c861b912",
+        "installer_sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da",
+        "client_sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c",
+        "xray_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+      },
+      "started_utc": "2026-10-17T10:26:46.989393+00:00",
+      "evidence_json_sha256": "5cf5fd456324000906b170a893ddf07c8bc0184163d239448bb05a80118bdc0e",
+      "prepared_filesystem_receipt_sha256": "38281bfdc033abe234dcf602e74277a7cf1e36df5a577eea0661cf73c5b4786d",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+      "status": "PASS",
+      "openwrt": "24.10.8",
+      "package_arch": "arm_cortex-a15_neon-vfpv4",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "3d4ffdc4cbc3188525b69ad5d905cc8a4a68aa768692d521e9ccc2f5085dafbe",
+        "kernel_sha256": "6b91c8b0d7edd47594a243eb1fa52018c61ab7bd998f568065e6cbee08ca0138",
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "d4f969ac2272d47709b5c4f82c91a37562350734c53d48578afc3a9fa4f8f67d",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv7/openwrt-24.10.8-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "kernel_url": "https://downloads.openwrt.org/releases/24.10.8/targets/armsr/armv7/openwrt-24.10.8-armsr-armv7-generic-kernel.bin"
+      },
+      "candidate": {
+        "bundle": "24.10.8-arm_cortex-a15_neon-vfpv4",
+        "manifest_sha256": "f66bb1b61bc99edf34495f5da2e512e8ce4d2a9e89431e3ee125b82d0e229b9d",
+        "bootstrap_sha256": "e24627486ba98f213e92ca5fd6404b8b09f928bada1e38d174164f3b774e0180",
+        "installer_sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c",
+        "client_sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e",
+        "xray_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+      },
+      "started_utc": "2026-10-17T10:29:49.345619+00:00",
+      "evidence_json_sha256": "f7f1a57d32dcf91930bf2b4cda34146942a1f4e37eb376f10e3efb8a697d7d41",
+      "prepared_filesystem_receipt_sha256": "b8b649fb5ebfa6c8711b4bf76a10585b1c086ba5551572980556e60849d46c13",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "25.12.5-x86_64",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "x86_64",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "23e2538e8ab0eb52dfed1c65d608ecdb71ffd432dd54885da138ae67cd9e4461",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/64/sha256sums",
+        "checksum_sha256": "0787db220cdc4a2e2d0ba8c19e8e28f2ee88e67d464a159e78974e323824d5b5",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/64/openwrt-25.12.5-x86-64-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "25.12.5-x86_64",
+        "manifest_sha256": "acf761e791a9758b60a622e30df1286591fb7bd57ac2071a61878e4c6e3eddfd",
+        "bootstrap_sha256": "642e6c6fb62509853a9f60580058a30db1e9e6cd325a379ad42739d5d60de649",
+        "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+        "client_sha256": "12c8127ad902c7c9493f88a658780797e6e6f251883d3295f26b18bde14a71ec",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "started_utc": "2026-10-17T10:30:25.795820+00:00",
+      "evidence_json_sha256": "f9dd955f2828ad3d7c0096992e8f4106a9d6e6047ebbc822c2cc0f102b00bffe",
+      "prepared_filesystem_receipt_sha256": "a53cbd908fad9872f714ce8975e369efeeb3257dea31e3323629d8ec23b9de09",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "25.12.5-aarch64_generic",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "aarch64_generic",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "03172dd9a91e7cb477ab73bcb5de544bfe19f42698d7f66d9b2bb80ca692eaa6",
+        "kernel_sha256": "8cf43c4901efae72b0a04bb655158e03335067e8757926bca4c81d5c952aca51",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "2ba9c990e6f05b9875aa54992171f6a2cd447ab01c64ed11b02c6c7116cc31ec",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/openwrt-25.12.5-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/openwrt-25.12.5-armsr-armv8-generic-kernel.bin"
+      },
+      "candidate": {
+        "bundle": "25.12.5-aarch64_generic",
+        "manifest_sha256": "e0213a57462637edc29a76102a9467868077cb7efb6a40f47214a5542f841a1e",
+        "bootstrap_sha256": "73b29e5d02f8a8ff184e6e8b22b3a4fb88e0a6580fbf5b952e7733e661f01152",
+        "installer_sha256": "098ca666a57ff179d75c79e9d85c3377f8d578b6e200d4fd8fa9d4fe09b3f3da",
+        "client_sha256": "3b998c0322c7936e08b07ef50ad38dc4f82702b6309073a46bc932e02d9e9a3c",
+        "xray_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+      },
+      "started_utc": "2026-10-17T10:30:26.189085+00:00",
+      "evidence_json_sha256": "6458c311929fad0a1827971297b288b1649db6f55782a9a12a70c7888eb2dca5",
+      "prepared_filesystem_receipt_sha256": "cde8bf5d8c4d1c1667170f6dfdf9e7f70ad1b984a0a54b383b00cc1cd1b72864",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "arm_cortex-a15_neon-vfpv4",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/sha256sums",
+        "checksum_sha256": "f4fe8375f9b284f1c65b6414ba10bcd8b0d30ce9aed4f31a04833721a5b43056",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-ext4-rootfs.img.gz",
+        "sha256": "34f278f88460c8156f9c91b31f476457685f5463d1e883586d334676302afc7a",
+        "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv7/openwrt-25.12.5-armsr-armv7-generic-kernel.bin",
+        "kernel_sha256": "0dadb3ce2b41787f44094490175496f64c875b45b603e3f53463d74141c08356"
+      },
+      "candidate": {
+        "bundle": "25.12.5-arm_cortex-a15_neon-vfpv4",
+        "manifest_sha256": "a3379e0b515718493cae41e382f89d6fd13e9b0293412c912a57948241b2b9b8",
+        "bootstrap_sha256": "39e496d32b30718c8d5c0d36717255dedf47081e9110b8e9e4c526f54ded11bc",
+        "installer_sha256": "bc28afe241204a751bde336b650030fa1707b92f18202d503714fcaa3659751c",
+        "client_sha256": "2dde2a10da54729090b803b8232ed1da4a3caa00500db78bedffddab67816d9e",
+        "xray_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+      },
+      "started_utc": "2026-10-17T10:31:02.520374+00:00",
+      "evidence_json_sha256": "f8ebe5e2939cc943904a56169d15f09c41a53bab38c59dc573bcbf52578b6e09",
+      "prepared_filesystem_receipt_sha256": "d87cfd9252e8e19d7845c6ae985aaa65bec27c45d6210e44926e2bffe5de4007",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    },
+    {
+      "target": "25.12.5-i386_pentium4",
+      "status": "PASS",
+      "openwrt": "25.12.5",
+      "package_arch": "i386_pentium4",
+      "release": "1.2.10",
+      "package_kind": "exact",
+      "memory_mib": 512,
+      "prepared_disk_mib": 512,
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/generic/sha256sums",
+        "checksum_sha256": "e18f5784006d34c5693efc1bfe51a69de4a9d9b371673dc45afe49adca6416e4",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/x86/generic/openwrt-25.12.5-x86-generic-generic-ext4-combined.img.gz",
+        "sha256": "f20d8a508907d6447a84fd8336c3b4db725ff0c396492addaf5fc1bc5e9b79f1"
+      },
+      "candidate": {
+        "bundle": "25.12.5-i386_pentium4",
+        "manifest_sha256": "fc7e6f4db5edbdd128acbacf028be528d8016fb8dae1b5c3569bb0353d6921cb",
+        "bootstrap_sha256": "f687d342f6639fe09bf24afb1cc597053c5e3639807befdb4fe50610ca1fcb5c",
+        "installer_sha256": "06243398b8816f22ce6e116a54cd5edf5953fa889b0949007797fe198a320dea",
+        "client_sha256": "e80a7dd6c7458b0b3ea5cccd27a598253f1f4bbcff8917444f454b9457217b57",
+        "xray_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+      },
+      "started_utc": "2026-10-17T10:32:38.356274+00:00",
+      "evidence_json_sha256": "0c7772cda29539b388c80793c87a43474fad5650f479577ecac9a1db71cccc98",
+      "prepared_filesystem_receipt_sha256": "133afec071b0c9ea2d3068715b86c946baf741724f6fd7288b55ccaa99473788",
+      "filesystem_preparation": "Post-resize offline repair followed by a clean read-only filesystem check; receipt bound in raw evidence."
+    }
+  ],
+  "scope": {
+    "installation": "Published HTTPS command, real package dependencies, signature/hash verification, exact target, menu/CRLF/pause/resume, actual reboot/autostart, uninstall preserving foreign settings.",
+    "vpn_subscription": false,
+    "full_network": "Reported separately; not inferred from installation tests.",
+    "physical_hardware": false,
+    "24_hour_soak": false,
+    "ram_minimum": "Not established by this 512 MiB installation matrix."
+  }
+}

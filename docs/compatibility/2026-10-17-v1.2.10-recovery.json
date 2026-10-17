@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "kind": "final-release-update-backup-and-sysupgrade-qualification",
+  "status": "PASS",
+  "release": "1.2.10",
+  "source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+  "generated_utc": "2026-10-17T10:21:20.425666+00:00",
+  "power": {
+    "schema": 1,
+    "kind": "signed-installer-recovery-QEMU",
+    "status": "PASS",
+    "release": "v1.2.10",
+    "source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+    "target": "25.12.5-x86_64",
+    "started_utc": "2026-10-17T10:07:43.814063+00:00",
+    "finished_utc": "2026-10-17T10:14:21.647665+00:00",
+    "candidate": {
+      "manifest_sha256": "acf761e791a9758b60a622e30df1286591fb7bd57ac2071a61878e4c6e3eddfd",
+      "installer_sha256": "0664c0af6e804c2e036d65eae487dbd634635147ffc5e9fc83d47f29439d8bea",
+      "every_signed_file_verified_after_upgrade": true
+    },
+    "environment": {
+      "official_OpenWrt": "25.12.5",
+      "architecture": "x86_64",
+      "root_filesystem": "ext4",
+      "RAM_MiB": 512,
+      "resized_root_disk_MiB": 512,
+      "post_resize_readonly_fsck_exit_code": 0
+    },
+    "check_count": 8,
+    "checks": [
+      "public-signed-previous-release-installed-and-running",
+      "synthetic-private-settings-paused-no-process-no-autostart",
+      "full-persistent-root-rejects-update-before-stop-preserves-current-settings-and-startup",
+      "fixture-settings-downloads-and-empty-log-synced-before-updater",
+      "power-loss-recovery-old-slot-and-original-startup-mode",
+      "signed-upgrade-to-candidate",
+      "candidate-every-signed-file-and-real-reboot-keeps-startup-mode",
+      "candidate-uninstall-removes-owned-policy-and-installation"
+    ],
+    "persistent_space_refusal": {
+      "actual_ENOSPC": true,
+      "failed_update_exit": 1,
+      "refused_before_stop": true,
+      "current_settings_and_boot_link_inodes_unchanged": true,
+      "transaction_absent": true,
+      "paused_mode_preserved": true
+    },
+    "power_interruption": {
+      "observed_phase": "selected",
+      "QEMU_killed_without_guest_sync": true,
+      "power_removed_after_phase_observed_and_updater_stopped": true,
+      "baseline_fixture_synced_before_updater_only": true,
+      "reboot_observed": true,
+      "recovery_invoked": "new verified installer -recover explicitly",
+      "previous_v1_2_9_init_has_recovery_hook": false,
+      "recovered_previous_signed_slot_and_paused_mode": true,
+      "arbitrary_crash_consistency_guarantee": false,
+      "durability_barrier_completion_instrumented": false
+    },
+    "readonly_crash_snapshot": {
+      "sha256": "909228f22d951b6e69457723e573fd6c2a6d4dd6de5740f3b7d2abb2e9d24fa2",
+      "e2fsck_readonly_exit_code": 0,
+      "transaction_inode": 6674,
+      "transaction_inode_allocated": true,
+      "transaction_block": 7764,
+      "transaction_block_allocated": true,
+      "snapshot_and_extracted_root_unchanged": true
+    },
+    "scope": {
+      "production_installer": true,
+      "previous_release_publicly_available_signed_assets": true,
+      "candidate_public_bootstrap_test": false,
+      "paused_unconfigured_synthetic_settings": true,
+      "full_production_VPN_traffic": false,
+      "physical_power_cut": false,
+      "real_firmware_sysupgrade": false,
+      "interpretation": "One observed selected-phase interruption on a disposable official x86_64 guest. Recovery was explicitly invoked using the new verified installer because the historical v1.2.9 init script has no recovery hook. This case qualifies paused, unconfigured installer recovery and full-root refusal; it does not qualify full VPN traffic, physical flash, or arbitrary crash timing."
+    },
+    "raw_evidence_sha256": {
+      "installer_result": "dd9a79dd052733be3fc4ad2239d0df3f4d4620dccf703d382f020cab845b1c5a",
+      "readonly_forensic_receipt": "38d11ad70ee21aaecd8cf6534f6be00d209b4dab19ce690d3e6d2bedb212de48"
+    }
+  },
+  "backup_and_firmware": {
+    "kind": "final-signed-backup-and-real-firmware-transition-qualification",
+    "status": "PASS",
+    "recorded_utc": "2026-10-17T10:19:07.232880+00:00",
+    "final_source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+    "version": "1.2.10",
+    "backup_repair": {
+      "status": "PASS",
+      "target": "24.10.8-x86_64",
+      "check_count": 17,
+      "checks": [
+        "public-signed-previous-release-installed-and-running",
+        "synthetic-private-settings-paused-no-process-no-autostart",
+        "signed-upgrade-to-candidate",
+        "Linux-root-ext4-backup-tests-real-owner-atomic-policy-and-process-crashes",
+        "Linux-root-ext4-installer-tests-owner-types-and-before-stop-guards",
+        "Linux-root-ext4-securefs-tests-real-descriptor-and-allocation-durability",
+        "Linux-root-overlayfs-backup-tests-real-owner-atomic-policy-and-process-crashes",
+        "Linux-root-overlay-installer-tests-owner-types-and-before-stop-guards",
+        "Linux-root-overlay-securefs-tests-real-descriptor-and-allocation-durability",
+        "Linux-root-tmpfs-securefs-tests-real-descriptor-and-allocation-durability",
+        "Linux-root-tmpfs-runtimeauth-tests-denial-cross-process-and-private-descriptor-guards",
+        "CLI-private-backup-restore-pause-identity-language-fresh-fetch-required",
+        "actual-sysupgrade-backup-excludes-cached-secrets-runtime-binaries",
+        "explicit-signed-same-version-repair-missing-client-keeps-private-settings",
+        "foreign-sysupgrade-policy-preserved-and-repair-refused",
+        "candidate-every-signed-file-and-real-reboot-keeps-startup-mode",
+        "candidate-uninstall-removes-owned-policy-and-installation"
+      ],
+      "raw_result_sha256": "6d23504142073cb2555175a4f79a6a496a006a9406938fab6b63ab6b05b830f6",
+      "filesystems": {
+        "backup_and_installer": [
+          "persistent-ext4",
+          "overlayfs"
+        ],
+        "securefs": [
+          "persistent-ext4",
+          "overlayfs",
+          "tmpfs"
+        ],
+        "runtimeauth": [
+          "tmpfs"
+        ]
+      },
+      "linux_root_required_test_markers": [
+        {
+          "test": "TestWrongOwnerBackupIsRejected",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestPostSysupgradeDirectoryRejectsForeignOwnership",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestPolicyInterruptedPublicationCanBeRetried",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestRemoveRefusesForeignOwnedKnownFile",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestRemoveRefusesForeignOwnedReleaseArtifactBeforeStop",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestRemoveRefusesForeignOwnedAuthorizationBeforeStop",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestPruneInactiveSlotsRefusesForeignOwnedSlotData",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestAllocationDurabilityRejectsClosedDescriptor",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs",
+            "tmpfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestAllocationDurabilityOnOpenDirectory",
+          "filesystems": [
+            "persistent-ext4",
+            "overlayfs",
+            "tmpfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestLifecycleAcrossStoreValues",
+          "filesystems": [
+            "tmpfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        },
+        {
+          "test": "TestFaultsAfterInvalidationNeverAuthorizeNewStore",
+          "filesystems": [
+            "tmpfs"
+          ],
+          "status": "PASS",
+          "required_pass_marker_enforced_by_harness": true
+        }
+      ],
+      "final_signed_repair_reboot_uninstall": "PASS"
+    },
+    "firmware_transition": {
+      "status": "PASS",
+      "scope": "Chained proof: the prior actual official24.10.8→25.12.5 transition preserved thin settings. A verified copy of that exact destination disk then passed final signed r7 reinstall, real reboot and removal without manual settings repair. No second firmware flash is claimed. The prior r5 failed reinstall result is preserved unchanged.",
+      "prior_actual_transition": {
+        "from": "24.10.8",
+        "to": "25.12.5",
+        "completed_check_count": 5,
+        "completed_checks": [
+          "public-signed-previous-release-installed-and-running",
+          "synthetic-private-settings-paused-no-process-no-autostart",
+          "signed-upgrade-to-candidate",
+          "official-destination-firmware-checksum-and-sysupgrade-image-validation",
+          "actual-firmware-sysupgrade-boot-keeps-thin-settings-language-and-pause"
+        ],
+        "raw_result_status": "FAIL",
+        "raw_result_sha256": "385162e4e58e16eba349342664db32f0adfa81a3e2d1d31c8c9da0a870d59f62",
+        "official_image_sha256_and_sysupgrade_T": "PASS",
+        "forced_upgrade": false
+      },
+      "final_signed_postflash_continuation": {
+        "status": "PASS",
+        "check_count": 5,
+        "checks": [
+          "original-disk-and-prior-real-sysupgrade-proof-bound-unchanged-working-copy-verified",
+          "actual-destination-firmware-retains-original-0755-thin-settings-language-pause-and-HWID",
+          "final-signed-reinstall-adopts-settings-without-manual-repair-and-preserves-thin-English-paused-HWID",
+          "every-final-signed-file-and-real-reboot-preserve-paused-settings",
+          "final-uninstall-removes-owned-policy-and-installation"
+        ],
+        "raw_result_sha256": "7907e2610bb9779f5d2f8f1e3ae7bdfe82936f9547bdbfd6fb4165ef91140752",
+        "new_firmware_flash_in_this_run": false,
+        "manual_settings_chmod_or_repair": false,
+        "original_disk_unchanged": true,
+        "original_disk_sha256": "5e0a761d1cc511036baf755b5e5d47fc59068a48cbdd9a906af538e258d22eb5",
+        "virtual_disk_copy_compare": "PASS"
+      }
+    },
+    "limits": {
+      "full_production_vpn_traffic_qualified_here": false,
+      "physical_flash_hardware_qualified_here": false,
+      "arbitrary_power_loss_guarantee": false
+    }
+  },
+  "scope": "Official QEMU images. The power test uses explicit recovery by the new verified installer because historical v1.2.9 init lacks its recovery hook. The firmware test links the preserved real24→25 flash result to final signed reinstallation on a byte-identical postflash clone; no new final-build flash is claimed. No physical-router power-loss claim."
+}

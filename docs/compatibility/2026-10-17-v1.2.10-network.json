@@ -1,0 +1,212 @@
+{
+  "schema": 1,
+  "version": "1.2.10",
+  "kind": "scoped-network-qualification",
+  "updated_utc": "2026-10-17T10:29:24.797895+00:00",
+  "final_source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+  "status": "SCOPED_RESULTS",
+  "scope": {
+    "environment": "QEMU",
+    "router_RAM_mib": 512,
+    "router_ext4_root_mib": 512,
+    "controlled_canonical_subscription": true,
+    "real_VLESS_TLS": true,
+    "live_user_subscription": false,
+    "physical_router": false,
+    "stock_SquashFS_overlay_qualified": false,
+    "measured_24h_soak": false,
+    "hard_minimum_RAM_qualified": false,
+    "official_PBR_packages_qualified": false,
+    "official_mwan3_packages_qualified": false
+  },
+  "runtime_identity": {
+    "status": "PASS",
+    "sha256": "9d60449ad807f6a6d056ac95071822df3991671b97f2932c50db57f29453ab32",
+    "files_per_target": 6,
+    "targets": 25,
+    "meaning": "Runtime client, Xray, geodata, and two init scripts are byte-identical between actual r5 QEMU runs and final r7; this does not qualify the changed installer."
+  },
+  "ARM64": {
+    "target": "25.12.5-aarch64_generic",
+    "status": "PASS_RUNTIME_SCOPES",
+    "accepted_runtime_checks": 14,
+    "checks": [
+      "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+      "real-ext4-ENOSPC-retains-committed-state-and-working-VPN-then-recovers",
+      "first-canonical-health-host-unavailable-second-host-still-proves-real-VPN",
+      "three-unchanged-health-probes-no-persistent-state-replacement",
+      "selected-location-failure-switches-to-second-real-VLESS-endpoint",
+      "temporary-panel-failure-retains-verified-unexpired-access",
+      "all-real-VPN-endpoints-down-stops-Xray-and-detaches-own-policy",
+      "VPN-return-recovers-through-normal-health-after-bounded-cooldown",
+      "real-WAN-flap-recovers-production-routing",
+      "actual-zero-TTL-DNS-upstream-outage-and-TCP-UDP-dual-stack-recovery",
+      "firewall-reload-recovered-by-production-health-not-adapter-helper",
+      "real-reboot-fresh-canonical-check-autostart-and-dual-stack-LAN",
+      "authoritative-panel-denial-purges-secrets-then-renewal-recovers-same-HWID",
+      "natural-expiry-stops-without-helper-state-mutation-renewal-recovers"
+    ],
+    "actual_raw_status": "PASS",
+    "actual_raw_checks_passed": 15,
+    "actual_qemu_source_snapshot_sha256": "5cbcd11f52bf78727a08e18efa85d46d40632b0a34a9f89f82b5421fcfe7662e",
+    "raw_result_sha256": "b75f156e21e234b87b73a33112d69aefa9cd87eca3af8023201060ca7798d3a7",
+    "historical_install_check_excluded_from_final_runtime_count": true,
+    "final_installer_qualification": "Separate r7 installation matrix."
+  },
+  "adapter_helpers": {
+    "status": "PASS",
+    "checks_passed": 20,
+    "final_binding_sha256": "3da1fea81144ae6f7082ccf523a454090541e97b7d799d5bc9c2b7e312e63c14",
+    "production_and_module_inputs_compared": 14,
+    "full_production_agent": false,
+    "rows": [
+      {
+        "firewall": "fw3",
+        "target": "21.02.7-x86_64",
+        "status": "PASS",
+        "checks_passed": 10,
+        "checks": [
+          "ipv4-initial-TCP-UDP-DNS-and-foreign-policy",
+          "ipv6-add-TCP-UDP-DNS-and-foreign-policy",
+          "ipv6-change-TCP-UDP-DNS-and-foreign-policy",
+          "ipv6-remove-TCP-UDP-DNS-and-foreign-policy",
+          "ipv4-subnet-change-with-ipv6-TCP-UDP-DNS-and-foreign-policy",
+          "real-firewall-reload-repaired-IPv4-IPv6",
+          "real-WAN-flap-recovered",
+          "real-reboot-dual-stack-fixture-autostart",
+          "altered-own-named-plan-rejected-and-preserved-on-stop",
+          "disable-preserves-foreign-policy-and-native-IPv4-IPv6-WAN-route"
+        ],
+        "raw_result_sha256": "3a94d66afa958b7a34396a1c7b24e724784197a1651c4485fc84ce9cfbb9a14d",
+        "scope": {
+          "real_netifd": true,
+          "real_firewall": true,
+          "separate_LAN_client": true,
+          "ipv6_transparent_TCP_UDP_DNS": true,
+          "direct_IPv6_WAN_after_disable": true,
+          "full_production_agent": false,
+          "live_subscription": false,
+          "physical_router": false,
+          "official_PBR_or_mwan3_packages": false,
+          "router_memory_mib": 512,
+          "rootfs_mib": 512
+        }
+      },
+      {
+        "firewall": "fw4",
+        "target": "25.12.5-x86_64",
+        "status": "PASS",
+        "checks_passed": 10,
+        "checks": [
+          "ipv4-initial-TCP-UDP-DNS-and-foreign-policy",
+          "ipv6-add-TCP-UDP-DNS-and-foreign-policy",
+          "ipv6-change-TCP-UDP-DNS-and-foreign-policy",
+          "ipv6-remove-TCP-UDP-DNS-and-foreign-policy",
+          "ipv4-subnet-change-with-ipv6-TCP-UDP-DNS-and-foreign-policy",
+          "real-firewall-reload-repaired-IPv4-IPv6",
+          "real-WAN-flap-recovered",
+          "real-reboot-dual-stack-fixture-autostart",
+          "altered-own-named-plan-rejected-and-preserved-on-stop",
+          "disable-preserves-foreign-policy-and-native-IPv4-IPv6-WAN-route"
+        ],
+        "raw_result_sha256": "937b68f40572e76a99ad267e0f80275d74f553d13454e0cb3bf87accb3f0d999",
+        "scope": {
+          "real_netifd": true,
+          "real_firewall": true,
+          "separate_LAN_client": true,
+          "ipv6_transparent_TCP_UDP_DNS": true,
+          "direct_IPv6_WAN_after_disable": true,
+          "full_production_agent": false,
+          "live_subscription": false,
+          "physical_router": false,
+          "official_PBR_or_mwan3_packages": false,
+          "router_memory_mib": 512,
+          "rootfs_mib": 512
+        }
+      }
+    ]
+  },
+  "x86_64_fw4": {
+    "target": "25.12.5-x86_64",
+    "status": "PARTIAL_RUNTIME_SCOPES",
+    "accepted_runtime_checks": 13,
+    "checks": [
+      "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+      "real-ext4-ENOSPC-retains-committed-state-and-working-VPN-then-recovers",
+      "authoritative-denial-with-real-ENOSPC-survives-independent-health-temporary-and-uncommitted-fresh-renewal",
+      "first-canonical-health-host-unavailable-second-host-still-proves-real-VPN",
+      "three-unchanged-health-probes-no-persistent-state-replacement",
+      "selected-location-failure-switches-to-second-real-VLESS-endpoint",
+      "temporary-panel-failure-retains-verified-unexpired-access",
+      "all-real-VPN-endpoints-down-stops-Xray-and-detaches-own-policy",
+      "VPN-return-recovers-through-normal-health-after-bounded-cooldown",
+      "real-WAN-flap-recovers-production-routing",
+      "actual-zero-TTL-DNS-upstream-outage-and-TCP-UDP-dual-stack-recovery",
+      "firewall-reload-recovered-by-production-health-not-adapter-helper",
+      "real-reboot-fresh-canonical-check-autostart-and-dual-stack-LAN"
+    ],
+    "actual_raw_status": "FAIL",
+    "actual_raw_checks_passed": 14,
+    "actual_qemu_source_snapshot_sha256": "5cbcd11f52bf78727a08e18efa85d46d40632b0a34a9f89f82b5421fcfe7662e",
+    "raw_result_sha256": "5525e7bc7dc23764cbc7aae94874b9bc96166e86b34c1fdd77c31251ed675471",
+    "historical_install_check_excluded_from_final_runtime_count": true,
+    "failure": "After the reboot scenario passed, the asynchronous metrics sampler had not yet produced its first row. The raw run remains FAIL; no complete-run PASS is assigned.",
+    "official_PBR_mwan3": "Requested but not reached or qualified in this raw run."
+  },
+  "ARMv7": {
+    "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+    "status": "PASS",
+    "actual_qemu_source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+    "checks_passed": 15,
+    "checks": [
+      "signed-clean-install-all-eight-artifacts-verified",
+      "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+      "real-ext4-ENOSPC-retains-committed-state-and-working-VPN-then-recovers",
+      "first-canonical-health-host-unavailable-second-host-still-proves-real-VPN",
+      "three-unchanged-health-probes-no-persistent-state-replacement",
+      "selected-location-failure-switches-to-second-real-VLESS-endpoint",
+      "temporary-panel-failure-retains-verified-unexpired-access",
+      "all-real-VPN-endpoints-down-stops-Xray-and-detaches-own-policy",
+      "VPN-return-recovers-through-normal-health-after-bounded-cooldown",
+      "real-WAN-flap-recovers-production-routing",
+      "actual-zero-TTL-DNS-upstream-outage-and-TCP-UDP-dual-stack-recovery",
+      "firewall-reload-recovered-by-production-health-not-adapter-helper",
+      "real-reboot-fresh-canonical-check-autostart-and-dual-stack-LAN",
+      "authoritative-panel-denial-purges-secrets-then-renewal-recovers-same-HWID",
+      "natural-expiry-stops-without-helper-state-mutation-renewal-recovers"
+    ],
+    "raw_result_sha256": "130b7328eb5bb4ad612acf3225ab78ef9cf99ff9c1d18b52622d3d852ad7d2d4",
+    "complete_run_pass": true,
+    "scope": {
+      "full_production_agent": true,
+      "controlled_canonical_subscription": true,
+      "real_VLESS_TLS": true,
+      "public_bootstrap": false,
+      "live_subscription": false,
+      "physical_router": false,
+      "helper_state_injection": false,
+      "helper_firewall_activation": false,
+      "RAM_mib": 512,
+      "ext4_root_mib": 512,
+      "squashfs_overlayfs": false,
+      "requested_soak_seconds": 0,
+      "measured_24h_soak": false,
+      "resource_measurements": "sampled observations; no instantaneous peak or hard minimum claim",
+      "soak_time_basis": "minimum verified continuous host and all three guest uptime spans",
+      "requested_flash_ENOSPC": true,
+      "requested_denial_ENOSPC": false,
+      "required_persistence_error_exit": true,
+      "requested_official_routing": false
+    },
+    "test_fixture_corrections": [
+      "Bounded readiness waits for a real first sampler row.",
+      "Peer reverse IPv4/IPv6 routes are owned by netifd UCI and checked in the actual kernel after setup."
+    ],
+    "earlier_r7_v1": "Preserved FAIL after seven checks: fixture peer reverse IPv6 route absent; no PASS assigned."
+  },
+  "limitations": [
+    "Only the listed scenarios are qualified. Installation compatibility is a separate matrix.",
+    "RAM measurements are sampled observations and do not establish a hard minimum or instantaneous peak.",
+    "Physical hardware, stock SquashFS, 24-hour soak, official PBR and mwan3 packages remain unqualified."
+  ]
+}
