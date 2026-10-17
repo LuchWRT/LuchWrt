@@ -1657,7 +1657,8 @@
   },
   "scope": "Build and signature verification; not a router or network qualification result.",
   "python_tests": {
-    "passed": 35
+    "passed": 39,
+    "scope": "Qualification tooling including bounded first-sampler-sample readiness and persistent peer return routes."
   },
   "runtime_component_identity": {
     "status": "PASS",
