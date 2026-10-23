@@ -1,0 +1,457 @@
+{
+  "schema": 1,
+  "kind": "independent-read-only-v1.2.10-resource-stock-acceptance",
+  "accepted_on": "2026-10-23",
+  "status": "PARTIAL",
+  "release": "1.2.10",
+  "source_snapshot_sha256": "c363d57dad5558996e1ce1fb4b004dea2705b6e303768ee02220e72141baa68c",
+  "freeze_sha256": "64aa8421a3d21d0e3a359d9ae3c8d2087b0dad56cc39b299df1e93ae1cbc765e",
+  "scope": "Bounded three-VM tests of the immutable v1.2.10 artifacts. This report accepts completed observations only and does not qualify a later release.",
+  "evidence_guards": {
+    "raw_receipt_hashes_recomputed": true,
+    "candidate_freeze_hash_recomputed": true,
+    "frozen_framework_manifest_and_all_file_hashes_recomputed": true,
+    "every_bound_immutable_input_hash_recomputed": true,
+    "prepared_filesystem_receipt_hashes_and_content_recomputed": true,
+    "preboot_QCOW2_identity_checked_against_hashed_filesystem_receipts": true,
+    "preboot_QCOW2_current_bytes_rehashed": false,
+    "QCOW2_scope": "Preboot image identities are retained in immutable filesystem receipts. Mutable or compacted guest images are not substituted as new preboot hashes.",
+    "Ed25519_manifest_signatures_verified": true,
+    "all_eight_artifacts_in_each_used_bundle_size_and_hash_verified": true,
+    "complete_ordered_checkpoints_and_measured_reboot_required_for_PASS": true,
+    "raw_receipts_modified": false
+  },
+  "workload": {
+    "controlled_canonical_subscription": true,
+    "subscription_locations": 2,
+    "real_VLESS_TLS_endpoints": 2,
+    "base_geodata_bytes": {
+      "geoip.dat": 136,
+      "geosite.dat": 67824
+    },
+    "daily_geodata_bytes": {
+      "geoip.dat": 177,
+      "geosite.dat": 67865
+    },
+    "geodata_content_hashes": {
+      "base_sha256": {
+        "geoip.dat": "939ef8fb630eaf6386b51ad79726d3415890fc1b7985fefccea754dffc4cbd96",
+        "geosite.dat": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+      },
+      "daily_sha256": {
+        "geoip.dat": "d191a4430efa2a9dd219d1e4c1074782b09128b7ca270c3be6b3b26eaacc7bcd",
+        "geosite.dat": "467788e22f3f6bb280be84dec128d996756be27a0e2df2144f05e45f7bf3aade"
+      }
+    },
+    "installation": "Signed offline bundle staged in tmpfs; this is distinct from the public HTTPS bootstrap. The recorded dependency order is part of each row.",
+    "RSS_scope": "Sampled sum of VmRSS for luch, luch-install and xray; shared pages can be counted more than once."
+  },
+  "checkpoint_sets": {
+    "ext4-strict-denial-ENOSPC": [
+      "signed-clean-install-all-eight-artifacts-verified",
+      "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+      "real-ext4-ENOSPC-retains-committed-state-and-working-VPN-then-recovers",
+      "authoritative-denial-with-real-ENOSPC-survives-independent-health-temporary-and-uncommitted-fresh-renewal",
+      "first-canonical-health-host-unavailable-second-host-still-proves-real-VPN",
+      "three-unchanged-health-probes-no-persistent-state-replacement",
+      "selected-location-failure-switches-to-second-real-VLESS-endpoint",
+      "temporary-panel-failure-retains-verified-unexpired-access",
+      "all-real-VPN-endpoints-down-stops-Xray-and-detaches-own-policy",
+      "VPN-return-recovers-through-normal-health-after-bounded-cooldown",
+      "real-WAN-flap-recovers-production-routing",
+      "actual-zero-TTL-DNS-upstream-outage-and-TCP-UDP-dual-stack-recovery",
+      "firewall-reload-recovered-by-production-health-not-adapter-helper",
+      "real-reboot-fresh-canonical-check-autostart-and-dual-stack-LAN",
+      "authoritative-panel-denial-purges-secrets-then-renewal-recovers-same-HWID",
+      "natural-expiry-stops-without-helper-state-mutation-renewal-recovers"
+    ],
+    "stock-native-purge": [
+      "signed-clean-install-all-eight-artifacts-verified",
+      "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+      "real-persistent-overlay-ENOSPC-retains-committed-state-and-working-VPN-then-recovers",
+      "authoritative-denial-under-overlay-ENOSPC-persists-purge-survives-independent-health-and-temporary-fetch",
+      "first-canonical-health-host-unavailable-second-host-still-proves-real-VPN",
+      "three-unchanged-health-probes-no-persistent-state-replacement",
+      "selected-location-failure-switches-to-second-real-VLESS-endpoint",
+      "temporary-panel-failure-retains-verified-unexpired-access",
+      "all-real-VPN-endpoints-down-stops-Xray-and-detaches-own-policy",
+      "VPN-return-recovers-through-normal-health-after-bounded-cooldown",
+      "real-WAN-flap-recovers-production-routing",
+      "actual-zero-TTL-DNS-upstream-outage-and-TCP-UDP-dual-stack-recovery",
+      "firewall-reload-recovered-by-production-health-not-adapter-helper",
+      "real-reboot-fresh-canonical-check-autostart-and-dual-stack-LAN",
+      "authoritative-panel-denial-purges-secrets-then-renewal-recovers-same-HWID",
+      "natural-expiry-stops-without-helper-state-mutation-renewal-recovers"
+    ]
+  },
+  "runs": [
+    {
+      "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+      "RAM_mib": 128,
+      "root_filesystem": "ext4",
+      "ext4_root_mib": 512,
+      "status": "PASS",
+      "raw_receipt_sha256": "1226aba48b7beaf718d9d2640fb51c40ab594c3b455beeebcac368031647333c",
+      "framework_manifest_sha256": "be774d6f1eb95ef1af4958b307cb259b8e1c7a64b4ef7c6584d479e8c2dd5d8b",
+      "started_utc": "2026-10-19T12:12:06.351184+00:00",
+      "finished_utc": "2026-10-19T12:26:16.848873+00:00",
+      "offline_fixture_dependency_order": "bundle-before-dependencies",
+      "checks_passed": 16,
+      "expected_functional_checks": 16,
+      "observed_oom_event": false,
+      "unique_retained_resource_samples": 267,
+      "sampled_extrema": {
+        "available_kb": {
+          "observed_min": 13964,
+          "observed_max": 71612
+        },
+        "processes": {
+          "observed_min": 0,
+          "observed_max": 4
+        },
+        "rss_kb": {
+          "observed_min": 0,
+          "observed_max": 72940
+        },
+        "fds": {
+          "observed_min": 0,
+          "observed_max": 58
+        },
+        "tmp_kb": {
+          "observed_min": 84,
+          "observed_max": 46668
+        },
+        "free_kb": {
+          "observed_min": 0,
+          "observed_max": 487672
+        }
+      },
+      "checkpoint_set": "ext4-strict-denial-ENOSPC",
+      "actual_reboot_changed_boot_id": true,
+      "denial_scope": {
+        "persisted_purge_under_pressure": false,
+        "failed_purge_ENOSPC": true,
+        "uncommitted_fresh_grant": true
+      },
+      "router_filesystem_receipt_sha256": "8659e3ba2e520ce27a3392986a9de8d06decbe1f142d367539eee69db2ad9a5c"
+    },
+    {
+      "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+      "RAM_mib": 256,
+      "root_filesystem": "ext4",
+      "ext4_root_mib": 512,
+      "status": "PASS",
+      "raw_receipt_sha256": "440362afa22d4d490c57d835b00225df34a894481994efe73f90562d659850ed",
+      "framework_manifest_sha256": "be774d6f1eb95ef1af4958b307cb259b8e1c7a64b4ef7c6584d479e8c2dd5d8b",
+      "started_utc": "2026-10-19T12:26:21.887852+00:00",
+      "finished_utc": "2026-10-19T12:40:37.427318+00:00",
+      "offline_fixture_dependency_order": "bundle-before-dependencies",
+      "checks_passed": 16,
+      "expected_functional_checks": 16,
+      "observed_oom_event": false,
+      "unique_retained_resource_samples": 261,
+      "sampled_extrema": {
+        "available_kb": {
+          "observed_min": 137748,
+          "observed_max": 201140
+        },
+        "processes": {
+          "observed_min": 0,
+          "observed_max": 4
+        },
+        "rss_kb": {
+          "observed_min": 0,
+          "observed_max": 74976
+        },
+        "fds": {
+          "observed_min": 0,
+          "observed_max": 55
+        },
+        "tmp_kb": {
+          "observed_min": 84,
+          "observed_max": 46636
+        },
+        "free_kb": {
+          "observed_min": 0,
+          "observed_max": 487672
+        }
+      },
+      "checkpoint_set": "ext4-strict-denial-ENOSPC",
+      "actual_reboot_changed_boot_id": true,
+      "denial_scope": {
+        "persisted_purge_under_pressure": false,
+        "failed_purge_ENOSPC": true,
+        "uncommitted_fresh_grant": true
+      },
+      "router_filesystem_receipt_sha256": "d483e6f74ac4f1c7a713da35117746ce4f3488971f54da6dd66d6aee155b6e98"
+    },
+    {
+      "target": "25.12.5-x86_64",
+      "RAM_mib": 128,
+      "root_filesystem": "ext4",
+      "ext4_root_mib": 512,
+      "status": "FAIL",
+      "raw_receipt_sha256": "959eff4d1b3ccf27e4afec853d60b153ce0eed4529f71de2153a5fb869399b2b",
+      "framework_manifest_sha256": "efa1c4413fd3162ba7b7ff06fb357c2567a198e679178b41490f6109a6087fc5",
+      "started_utc": "2026-10-19T21:34:43.434438+00:00",
+      "finished_utc": "2026-10-19T21:38:06.568806+00:00",
+      "offline_fixture_dependency_order": "dependencies-before-bundle",
+      "checks_passed": 0,
+      "expected_functional_checks": 16,
+      "observed_oom_event": false,
+      "unique_retained_resource_samples": 0,
+      "sampled_extrema": {},
+      "failure": {
+        "stage": "signed-offline-install-Xray-version-smoke",
+        "reason": "Xray smoke process terminated with signal killed",
+        "exact_termination_cause_confirmed": false,
+        "retained_OOM_entries": 0
+      },
+      "router_filesystem_receipt_sha256": "f73ecb0ba8069948a3a3ae3eb3d9b2591ee2a8b207b962608c4e74f6f06a4e1a"
+    },
+    {
+      "target": "25.12.5-x86_64",
+      "RAM_mib": 256,
+      "root_filesystem": "ext4",
+      "ext4_root_mib": 512,
+      "status": "PASS",
+      "raw_receipt_sha256": "4ae822508e7bbcf86028b92549f733af27be96894d77d339eddd576c0a7d4185",
+      "framework_manifest_sha256": "efa1c4413fd3162ba7b7ff06fb357c2567a198e679178b41490f6109a6087fc5",
+      "started_utc": "2026-10-19T21:38:13.596994+00:00",
+      "finished_utc": "2026-10-19T21:53:37.125833+00:00",
+      "offline_fixture_dependency_order": "dependencies-before-bundle",
+      "checks_passed": 16,
+      "expected_functional_checks": 16,
+      "observed_oom_event": false,
+      "unique_retained_resource_samples": 233,
+      "sampled_extrema": {
+        "available_kb": {
+          "observed_min": 103212,
+          "observed_max": 168120
+        },
+        "processes": {
+          "observed_min": 0,
+          "observed_max": 3
+        },
+        "rss_kb": {
+          "observed_min": 0,
+          "observed_max": 58708
+        },
+        "fds": {
+          "observed_min": 0,
+          "observed_max": 50
+        },
+        "tmp_kb": {
+          "observed_min": 88,
+          "observed_max": 48556
+        },
+        "free_kb": {
+          "observed_min": 0,
+          "observed_max": 463140
+        }
+      },
+      "checkpoint_set": "ext4-strict-denial-ENOSPC",
+      "actual_reboot_changed_boot_id": true,
+      "denial_scope": {
+        "persisted_purge_under_pressure": false,
+        "failed_purge_ENOSPC": true,
+        "uncommitted_fresh_grant": true
+      },
+      "router_filesystem_receipt_sha256": "fc8b99a5f2b5fd3b3e048f077e26dab3abac6a3852221b0441359d9758944d00"
+    },
+    {
+      "target": "25.12.5-x86_64",
+      "RAM_mib": 512,
+      "root_filesystem": "stock-squashfs-persistent-overlay",
+      "ext4_root_mib": null,
+      "status": "PASS",
+      "raw_receipt_sha256": "be6b68dd164854daad729cd58d5967aca3f3d4841dbb2e30d6a8b8376acfe179",
+      "framework_manifest_sha256": "f1cefd72f16fb071cf600ced81c2afa3ef671bfe2584c983fd6b1948bb8be02c",
+      "started_utc": "2026-10-19T12:51:39.403877+00:00",
+      "finished_utc": "2026-10-19T13:06:10.612747+00:00",
+      "offline_fixture_dependency_order": "bundle-before-dependencies",
+      "checks_passed": 16,
+      "expected_functional_checks": 16,
+      "observed_oom_event": false,
+      "unique_retained_resource_samples": 231,
+      "sampled_extrema": {
+        "available_kb": {
+          "observed_min": 347828,
+          "observed_max": 414196
+        },
+        "processes": {
+          "observed_min": 0,
+          "observed_max": 4
+        },
+        "rss_kb": {
+          "observed_min": 0,
+          "observed_max": 83928
+        },
+        "fds": {
+          "observed_min": 0,
+          "observed_max": 57
+        },
+        "tmp_kb": {
+          "observed_min": 96,
+          "observed_max": 48556
+        },
+        "free_kb": {
+          "observed_min": 0,
+          "observed_max": 81419
+        }
+      },
+      "checkpoint_set": "stock-native-purge",
+      "actual_reboot_changed_boot_id": true,
+      "denial_scope": {
+        "persisted_purge_under_pressure": true,
+        "failed_purge_ENOSPC": false,
+        "uncommitted_fresh_grant": false
+      },
+      "router_filesystem_receipt_sha256": "4eef557e6133860e24debea4643147819b43de6ad379dcf79e4bcfb7d3a8754e"
+    },
+    {
+      "target": "25.12.5-x86_64",
+      "RAM_mib": 256,
+      "root_filesystem": "stock-squashfs-persistent-overlay",
+      "ext4_root_mib": null,
+      "status": "PASS",
+      "raw_receipt_sha256": "0a0e3472c77e52a2e7c680ec8fa7ca036b305678206ac536d049fec59b820182",
+      "framework_manifest_sha256": "f1cefd72f16fb071cf600ced81c2afa3ef671bfe2584c983fd6b1948bb8be02c",
+      "started_utc": "2026-10-19T13:36:42.133189+00:00",
+      "finished_utc": "2026-10-19T13:51:13.488919+00:00",
+      "offline_fixture_dependency_order": "bundle-before-dependencies",
+      "checks_passed": 16,
+      "expected_functional_checks": 16,
+      "observed_oom_event": false,
+      "unique_retained_resource_samples": 234,
+      "sampled_extrema": {
+        "available_kb": {
+          "observed_min": 93408,
+          "observed_max": 156880
+        },
+        "processes": {
+          "observed_min": 0,
+          "observed_max": 3
+        },
+        "rss_kb": {
+          "observed_min": 0,
+          "observed_max": 58416
+        },
+        "fds": {
+          "observed_min": 0,
+          "observed_max": 54
+        },
+        "tmp_kb": {
+          "observed_min": 88,
+          "observed_max": 48556
+        },
+        "free_kb": {
+          "observed_min": 0,
+          "observed_max": 81419
+        }
+      },
+      "checkpoint_set": "stock-native-purge",
+      "actual_reboot_changed_boot_id": true,
+      "denial_scope": {
+        "persisted_purge_under_pressure": true,
+        "failed_purge_ENOSPC": false,
+        "uncommitted_fresh_grant": false
+      },
+      "router_filesystem_receipt_sha256": "d264923efbb8cfd2cfe2ca6732139e6823a2f167d7e04793ba93794a44239fe7"
+    },
+    {
+      "target": "25.12.5-x86_64",
+      "RAM_mib": 128,
+      "root_filesystem": "stock-squashfs-persistent-overlay",
+      "ext4_root_mib": null,
+      "status": "FAIL",
+      "raw_receipt_sha256": "f9da0c604ac3b79fca9f52479a9a0d3cacc52cee8a34aeb028dbb488261032e6",
+      "framework_manifest_sha256": "78bcaa2b200f6ef8df26eb5d905583e722eacb2c560949263f215c0e0705f48a",
+      "started_utc": "2026-10-19T21:37:54.532755+00:00",
+      "finished_utc": "2026-10-19T21:42:11.660293+00:00",
+      "offline_fixture_dependency_order": "dependencies-before-bundle",
+      "checks_passed": 0,
+      "expected_functional_checks": 16,
+      "observed_oom_event": true,
+      "unique_retained_resource_samples": 0,
+      "sampled_extrema": {},
+      "failure": {
+        "stage": "signed-offline-install-before-first-checkpoint",
+        "reason": "Kernel OOM killed luch-install, rpcd and dnsmasq in this configured 128 MiB offline fixture",
+        "kernel_OOM_killed_processes": [
+          "dnsmasq",
+          "luch-install",
+          "rpcd"
+        ],
+        "retained_OOM_entries": 9
+      },
+      "router_filesystem_receipt_sha256": "fbbc69c97e8ed406491a69ad42747ada99d06e989521f2eb44226c33b0d869db"
+    }
+  ],
+  "aggregate": {
+    "accepted_short_functional_rows": 5,
+    "unsuccessful_128MiB_retries": 2,
+    "full_128_256_512MiB_resource_matrix_accepted": false,
+    "stock_128_256_512MiB_matrix_accepted": false,
+    "resource_matrix_raw_status": "BASELINE_NOT_ACCEPTED",
+    "resource_matrix_receipt_sha256": "b728aa2adc9276d0d21568f63ac20c73b7e02be6a1979e43cfc40dff8c2196c2"
+  },
+  "larger_workload": {
+    "status": "NOT_QUALIFIED",
+    "completed_runs": 0,
+    "locations_planned": 32,
+    "reason": "The baseline acceptance gate failed before larger-workload runs were launched.",
+    "preserved_queue_receipt_sha256": "5e30fa148c526656044c1e7cbb459338c029fd0aa42b960b59cd9408c034abbf"
+  },
+  "continuous_24h_soak": {
+    "status": "INTERRUPTED",
+    "requested_seconds": 86400,
+    "observed_qualifying_seconds": 7220.846113100943,
+    "baseline_checks_passed": 16,
+    "raw_status_preserved": "RUNNING",
+    "raw_result_sha256": "c30aea3793a6b06edaa9114cf0369bf5ae6eb0f8cd5670afb4d06efbf967a445",
+    "interruption_receipt_sha256": "e77a9ca22bb305073223e0a5f1931389dcf1f2bdbcbfa3200f9a162bb49b652b",
+    "measured_24h_soak": false,
+    "reason": "The prior supervisor and guests were no longer running at acceptance; the interruption cause is unproven. No product failure is inferred and no elapsed time is carried into a new run."
+  },
+  "limitations": [
+    "These functional rows do not establish a hard RAM minimum or instantaneous resource peaks.",
+    "A failed 128 MiB signed offline installation does not by itself determine the production HTTPS bootstrap or runtime outcome.",
+    "The small controlled workload does not qualify larger subscriptions or production-size geodata.",
+    "The report contains no successful continuous 24-hour endurance qualification.",
+    "PBR, mwan3 and existing software-offloaded flow compatibility are not accepted by these rows.",
+    "Guest RAM covers the router VM only; the separate peer/client and physical routers are outside the scope.",
+    "Update and uninstall on the stock SquashFS overlay are outside this report.",
+    "The immutable v1.2.10 evidence must be requalified when production artifacts change."
+  ],
+  "stock_image": {
+    "official_compressed_image_sha256": "4b12d707ad34cdad0e53a6191e8c69eb6c0c09bfa6f9a0a05a65fc64a49096df",
+    "root_partition_bytes": 109051904,
+    "squashfs_bytes_used": 6104070,
+    "overlay_offset_in_root_partition": 6160384,
+    "official_partition_layout_preserved": true,
+    "filesystem_resized": false
+  },
+  "preserved_earlier_128MiB_attempts": [
+    {
+      "root_filesystem": "ext4",
+      "status": "FAIL",
+      "checks_passed": 0,
+      "raw_receipt_sha256": "41e78c571fa77b9d0437cff91c8c7bfd761df49df1bf9464439514538ee0af9e",
+      "phase": "dependency-installation",
+      "observed_kernel_OOM_killed_process": "apk",
+      "offline_fixture_dependency_order": "bundle-before-dependencies",
+      "scope": "The full bundle was staged in tmpfs before package dependency installation. This earlier unsuccessful attempt was preserved when correcting the fixture order."
+    },
+    {
+      "root_filesystem": "stock-squashfs-persistent-overlay",
+      "status": "FAIL",
+      "checks_passed": 0,
+      "raw_receipt_sha256": "2a04e055fa17028bfc305423c1e6c7052157fca9c302ddbd808b6487004d12f6",
+      "phase": "dependency-installation",
+      "observed_kernel_OOM_killed_process": "apk",
+      "offline_fixture_dependency_order": "bundle-before-dependencies",
+      "scope": "The full bundle was staged in tmpfs before package dependency installation. This earlier unsuccessful attempt was preserved when correcting the fixture order."
+    }
+  ]
+}
