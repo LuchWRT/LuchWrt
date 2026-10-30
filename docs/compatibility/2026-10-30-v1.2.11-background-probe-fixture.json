@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "all-down-background-probe-drain-observation-scope",
+  "status": "FIXTURE_SETTLE_DEADLINE_FAIL_PRESERVED",
+  "raw_sha256": "ff2e5eb73965d1b4b5d8ed2e89401fb748e93cb5c9ab1b9a3da94891e68f3b57",
+  "raw_aggregate_status": "FAIL",
+  "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+  "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+  "prior_checks_passed": [
+    "signed-clean-install-all-eight-artifacts-verified",
+    "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+    "real-ext4-ENOSPC-retains-committed-state-and-working-VPN-then-recovers",
+    "authoritative-denial-with-real-ENOSPC-survives-independent-health-temporary-and-uncommitted-fresh-renewal",
+    "first-canonical-health-host-unavailable-second-host-still-proves-real-VPN",
+    "three-unchanged-health-probes-no-persistent-state-replacement",
+    "selected-location-failure-switches-to-second-real-VLESS-endpoint",
+    "temporary-panel-failure-retains-verified-unexpired-access"
+  ],
+  "prior_check_count": 8,
+  "observations_after_failure": {
+    "IPv4_and_IPv6_Luch_policy_absent": true,
+    "Luch_firewall_rules_absent": true,
+    "observation_kind": "point-in-time diagnostic snapshots only",
+    "continuous_LAN_policy_absence_proven_by_these_snapshots": false,
+    "Xray_processes_still_observed": true
+  },
+  "interpretation": "The 90-second stopped-core assertion expired while the existing background probe could still be within its five-minute budget. The diagnostic snapshots establish absence of LAN interception at those observations; they do not establish continuous absence or settle completion. This does not establish a product LAN cleanup bug. The aggregate FAIL remains unchanged.",
+  "correction": {
+    "fixture_commit": "dae4471",
+    "background_probe_existing_budget_seconds": 300,
+    "all_servers_down_settle_budget_seconds": 330,
+    "required_stable_core_and_config_off_observations": 3,
+    "default_denial_and_expiry_deadlines_unchanged": true,
+    "product_and_all7_helper_bytes_unchanged": true,
+    "focused_tests": 52,
+    "log_sha256": "fad584356e5aedf3a8a5567add3186b54305fb866565628f7cd413682608fe09",
+    "new_framework_manifest_sha256": "d9cd81609e25850aea58db97a71f30654c4263c53bb02a081bf79993350189e1",
+    "LAN_observation_scope": "At each polling iteration, approximately one-second sleeps plus command time; no uninterrupted trace between observations.",
+    "LAN_policy_reappearance_fails_immediately": true,
+    "LAN_policy_reappearance_fails_immediately_scope": "at the next observation"
+  },
+  "new_full_runtime_PASS_claimed": false,
+  "raw_private_output_published": false
+}

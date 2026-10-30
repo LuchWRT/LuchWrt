@@ -1,0 +1,46 @@
+{
+  "ARM_execution_interrupted_after_15_checks": true,
+  "ARM_raw_RUNNING_status_preserved": true,
+  "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+  "expiry_or_denial_deadlines_changed": false,
+  "framework_manifest_sha256": "d9cd81609e25850aea58db97a71f30654c4263c53bb02a081bf79993350189e1",
+  "guard_module_sha256": "df0889ec929fe0eefa4491fc3ff39221dd25a193a45cc054d7a7542e8ff8ec3d",
+  "kind": "actual-bounded-all-down-cleanup-components-ARM15-interrupted-and-stock16",
+  "poll_count_is_elapsed_seconds": false,
+  "product_timeouts_changed": false,
+  "rows": [
+    {
+      "IPv4_and_IPv6_own_policy_absence_at_every_guard_poll": true,
+      "all_down_checkpoint": "all-real-VPN-endpoints-down-stops-Xray-and-detaches-own-policy",
+      "guard_poll_count": 169,
+      "limit_polls": 330,
+      "name": "arm256",
+      "native_dual_stack_TCP_UDP_after_cleanup": "PASS",
+      "no_between_poll_changes_guaranteed": false,
+      "raw_sha256": "bfeb24b6a7c6aee1e6cb1a88f9d75bd4d5c542f3faad2271684b9066c9479c8b",
+      "requested_sleep_seconds": 1,
+      "router_serial_log_sha256": "9221b23fe6f2241d4364442c2921828a765f5f4f840186e8af0f1fc8666d782a",
+      "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+      "three_consecutive_Xray_and_runtime_absent": true
+    },
+    {
+      "IPv4_and_IPv6_own_policy_absence_at_every_guard_poll": true,
+      "all_down_checkpoint": "all-real-VPN-endpoints-down-stops-Xray-and-detaches-own-policy",
+      "guard_poll_count": 148,
+      "limit_polls": 330,
+      "name": "stock256",
+      "native_dual_stack_TCP_UDP_after_cleanup": "PASS",
+      "no_between_poll_changes_guaranteed": false,
+      "raw_sha256": "6156137e544124611c430adaf66e6f058ce05f7c09e75169cd76f9a85c311b61",
+      "requested_sleep_seconds": 1,
+      "router_serial_log_sha256": "e38b16258c0209e28aed0c0447d8ccfef1d148eac210285a19feca45c446dffa",
+      "target": "25.12.5-x86_64",
+      "three_consecutive_Xray_and_runtime_absent": true
+    }
+  ],
+  "schema": 1,
+  "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+  "status": "PASS",
+  "stock_acceptance_sha256": "f1d9a43f0029850ebd3d44c3891184596df9963a450767a13a1d80820da20186",
+  "verified_utc": "2026-10-30T06:57:42.250496+00:00"
+}

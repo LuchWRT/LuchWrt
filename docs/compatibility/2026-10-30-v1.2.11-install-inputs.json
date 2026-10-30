@@ -1,0 +1,1280 @@
+{
+  "schema": 1,
+  "kind": "R1-to-R4-installation-input-comparison-not-new-runtime-matrix",
+  "status": "COMPARISON_PASS_NOT_RUNTIME_ACCEPTANCE",
+  "version": "1.2.11",
+  "preliminary_candidate": {
+    "source_snapshot_sha256": "a12caf70cca2beaec26f774f388a33656dd05fd4665f7ca599e15892cc661612",
+    "freeze_sha256": "8cd98d6edeee5530f06abb2aedf1179eac0d0477fdb4333ccd546b8eb1bee3ae",
+    "exact_installation": {
+      "status": "PASS",
+      "passed": 17,
+      "scope": "local signed offline installation; eight checks and actual reboot each; no subscription/VPN/public HTTPS",
+      "public_receipt": "2026-10-25-v1.2.11-r1-install.json",
+      "public_receipt_sha256": "9e069a122e84b09b0232aa8a4134a96726de3770bd25f1cf79b772726473a434"
+    }
+  },
+  "intermediate_R3_reference": {
+    "public_receipt": "2026-10-28-v1.2.11-install-inputs.json",
+    "sha256": "e23b0de28d5fa3aa2d3b05c6a7ceee6d4dce7b0d079b1a293cf7485dd33fa717"
+  },
+  "final_candidate": {
+    "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+    "freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+    "all17_final_installation_PASS_claimed": false,
+    "all17_full_VPN_PASS_claimed": false
+  },
+  "bundle_artifacts": {
+    "luch-install": {
+      "count": 25,
+      "identical_r1_to_r4": 25,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r3_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r4_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r3_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r4_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r3_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r4_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r3_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r4_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r3_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r4_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c",
+          "r3_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c",
+          "r4_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r3_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r4_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r3_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r4_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c",
+          "r3_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c",
+          "r4_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c",
+          "r3_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c",
+          "r4_sha256": "0685d7fe92ffee489a5e762c8a4fc4000dd6a6d48d84b3a96520871932fb5e3c"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r3_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+          "r4_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r3_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0",
+          "r4_sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "c16126209b2cd090a71e10ead0dc6427e0ad68b661236f16b180d89c2be06847",
+          "r3_sha256": "c16126209b2cd090a71e10ead0dc6427e0ad68b661236f16b180d89c2be06847",
+          "r4_sha256": "c16126209b2cd090a71e10ead0dc6427e0ad68b661236f16b180d89c2be06847"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "83ef793b61bc236b3c0f4e47786f1ad9c1b03a546159cc8c23244996525c52e8",
+          "r3_sha256": "83ef793b61bc236b3c0f4e47786f1ad9c1b03a546159cc8c23244996525c52e8",
+          "r4_sha256": "83ef793b61bc236b3c0f4e47786f1ad9c1b03a546159cc8c23244996525c52e8"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r3_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609",
+          "r4_sha256": "cc118f689d2924586f48162b889f980e2cfb426e264691e71692a83119411609"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "035a960ddcee9bf32955dfc9747a79e6ebbc967d4f85062c3c051b2d368424a5",
+          "r3_sha256": "035a960ddcee9bf32955dfc9747a79e6ebbc967d4f85062c3c051b2d368424a5",
+          "r4_sha256": "035a960ddcee9bf32955dfc9747a79e6ebbc967d4f85062c3c051b2d368424a5"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "55ec7ff873859839803548454b40aefdc0956918861a544fbd9df84e866fe8e8",
+          "r3_sha256": "55ec7ff873859839803548454b40aefdc0956918861a544fbd9df84e866fe8e8",
+          "r4_sha256": "55ec7ff873859839803548454b40aefdc0956918861a544fbd9df84e866fe8e8"
+        }
+      ]
+    },
+    "luch": {
+      "count": 25,
+      "identical_r1_to_r4": 0,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "a2248a28bd3d5bbb857b0439a6dd0bf0512cd205d6328c0601e3053dbe979dd7",
+          "r3_sha256": "de4272b50070d0751b3b4d6a0b39434824cd2831f9b258905b540c733c8be9b1",
+          "r4_sha256": "63433d8d2445726dd385a3abd340b0267cd295aa1e7e555956ddbbb55f64e433"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "a2248a28bd3d5bbb857b0439a6dd0bf0512cd205d6328c0601e3053dbe979dd7",
+          "r3_sha256": "de4272b50070d0751b3b4d6a0b39434824cd2831f9b258905b540c733c8be9b1",
+          "r4_sha256": "63433d8d2445726dd385a3abd340b0267cd295aa1e7e555956ddbbb55f64e433"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "64c3b52e4c7a09e2c21e5e026335317d1f6bae92d3637e3098a85c9a2471e706",
+          "r3_sha256": "1009c5dd0525c552c29692e3c67e61343c422fabb305e2c797d71c13b317ec17",
+          "r4_sha256": "9617103191d41aaf4672ece78946c681b364082aa2d92d5e94210ace04b32008"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "a2248a28bd3d5bbb857b0439a6dd0bf0512cd205d6328c0601e3053dbe979dd7",
+          "r3_sha256": "de4272b50070d0751b3b4d6a0b39434824cd2831f9b258905b540c733c8be9b1",
+          "r4_sha256": "63433d8d2445726dd385a3abd340b0267cd295aa1e7e555956ddbbb55f64e433"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "64c3b52e4c7a09e2c21e5e026335317d1f6bae92d3637e3098a85c9a2471e706",
+          "r3_sha256": "1009c5dd0525c552c29692e3c67e61343c422fabb305e2c797d71c13b317ec17",
+          "r4_sha256": "9617103191d41aaf4672ece78946c681b364082aa2d92d5e94210ace04b32008"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "2409a8c61dbdea7b4ed7c41d9be3acface866621f30edacb292da19a68f51cb6",
+          "r3_sha256": "4d3bcf02e5d3e35acf41ec8bfd48f5b40a6f372730fafb9b691481d7294e43ec",
+          "r4_sha256": "56bcb193f8b7319ef2510a194f56abe38f967b6684c9fcd0d738b853cd529c94"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "a2248a28bd3d5bbb857b0439a6dd0bf0512cd205d6328c0601e3053dbe979dd7",
+          "r3_sha256": "de4272b50070d0751b3b4d6a0b39434824cd2831f9b258905b540c733c8be9b1",
+          "r4_sha256": "63433d8d2445726dd385a3abd340b0267cd295aa1e7e555956ddbbb55f64e433"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "64c3b52e4c7a09e2c21e5e026335317d1f6bae92d3637e3098a85c9a2471e706",
+          "r3_sha256": "1009c5dd0525c552c29692e3c67e61343c422fabb305e2c797d71c13b317ec17",
+          "r4_sha256": "9617103191d41aaf4672ece78946c681b364082aa2d92d5e94210ace04b32008"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "2409a8c61dbdea7b4ed7c41d9be3acface866621f30edacb292da19a68f51cb6",
+          "r3_sha256": "4d3bcf02e5d3e35acf41ec8bfd48f5b40a6f372730fafb9b691481d7294e43ec",
+          "r4_sha256": "56bcb193f8b7319ef2510a194f56abe38f967b6684c9fcd0d738b853cd529c94"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "2409a8c61dbdea7b4ed7c41d9be3acface866621f30edacb292da19a68f51cb6",
+          "r3_sha256": "4d3bcf02e5d3e35acf41ec8bfd48f5b40a6f372730fafb9b691481d7294e43ec",
+          "r4_sha256": "56bcb193f8b7319ef2510a194f56abe38f967b6684c9fcd0d738b853cd529c94"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "e26aca36690ce79edb078cadd6323bab9877feee060caeae16d56f6e1435a8ae",
+          "r3_sha256": "f9ff086bcb693079002831e9feb6489f9a70e3d19f514ea3a68a80ec51639886",
+          "r4_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "a2248a28bd3d5bbb857b0439a6dd0bf0512cd205d6328c0601e3053dbe979dd7",
+          "r3_sha256": "de4272b50070d0751b3b4d6a0b39434824cd2831f9b258905b540c733c8be9b1",
+          "r4_sha256": "63433d8d2445726dd385a3abd340b0267cd295aa1e7e555956ddbbb55f64e433"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "8b389d0f3fc241e33007dca60ef1e9cc5de348f21b135eaf5944958ef14a516a",
+          "r3_sha256": "31e0d3627ae000e7eb394b9b7d59d627643a46c1b648510ef1e6daa361d80dd9",
+          "r4_sha256": "baad90f45bacd01e817735520b1822f949b70d12b43315544d324509c0bc363f"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "e694f6a6da0bfd6b654d0e98893da98a4137de6695ab1b82f5175aeec30cb9f4",
+          "r3_sha256": "850687a47cf7aec216326a6dba37dc0d4757516da1db30f2d71e6f53b95fa123",
+          "r4_sha256": "e13a4f7a59926f383c2994d6fddaf960652930f4e8b1c615483286f6f08a523b"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "64c3b52e4c7a09e2c21e5e026335317d1f6bae92d3637e3098a85c9a2471e706",
+          "r3_sha256": "1009c5dd0525c552c29692e3c67e61343c422fabb305e2c797d71c13b317ec17",
+          "r4_sha256": "9617103191d41aaf4672ece78946c681b364082aa2d92d5e94210ace04b32008"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "bc12faff792bfbde542c9a391e0b0724b8be9e8d751b19643ce1af4677ee3985",
+          "r3_sha256": "68d48ddd3eb3e40a0d2a19877776a08ad005f29aa6f2a1609ca92d07235aa541",
+          "r4_sha256": "1e56c6d78fdfd8700f7d677cf9baef7adfb5873d3a2b7477c9427fbd6879c5b8"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "bbba35ccc4dbcbf525ac2386c27b647ac85272e697293b400b13cd709a81ace4",
+          "r3_sha256": "312a8cad8a6a609addf5a1bde0a9b8ec230254a880dcadc13e7c8a6a028fa10d",
+          "r4_sha256": "7bc5f0c9c0f32715418b98520497693393e8a2e6fc3ba7f8b582ff3c51702d3a"
+        }
+      ]
+    },
+    "xray": {
+      "count": 25,
+      "identical_r1_to_r4": 25,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r3_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r4_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r3_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r4_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r3_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r4_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r3_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r4_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r3_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r4_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459",
+          "r3_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459",
+          "r4_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r3_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r4_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r3_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r4_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459",
+          "r3_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459",
+          "r4_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459",
+          "r3_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459",
+          "r4_sha256": "2bc80e7c6006a1a957670a431763adc6bcee8169d1a96f7dcce36f8748daf459"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r3_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+          "r4_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r3_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+          "r4_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "c58c10184aa69b845ba9b990dcff2609a7252ea9f1f155f77333775cfca9b6bb",
+          "r3_sha256": "c58c10184aa69b845ba9b990dcff2609a7252ea9f1f155f77333775cfca9b6bb",
+          "r4_sha256": "c58c10184aa69b845ba9b990dcff2609a7252ea9f1f155f77333775cfca9b6bb"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "a932c934dd8aa2d44339490748bebe2ce38c24288bc5f0213278d05d026520eb",
+          "r3_sha256": "a932c934dd8aa2d44339490748bebe2ce38c24288bc5f0213278d05d026520eb",
+          "r4_sha256": "a932c934dd8aa2d44339490748bebe2ce38c24288bc5f0213278d05d026520eb"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r3_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18",
+          "r4_sha256": "b12862df27355db12d5653c2df6d1a4d74d3972323c9a3083cfbaec296ddea18"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "f8057081c87f8ba626bc10ce0e0c1b64bf7e4db997c557ba982c716ca7797c4c",
+          "r3_sha256": "f8057081c87f8ba626bc10ce0e0c1b64bf7e4db997c557ba982c716ca7797c4c",
+          "r4_sha256": "f8057081c87f8ba626bc10ce0e0c1b64bf7e4db997c557ba982c716ca7797c4c"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "4ee986f34f9b598e40a86a0a5401b8a1bcfb15868718908f6e2a8d84369a997f",
+          "r3_sha256": "4ee986f34f9b598e40a86a0a5401b8a1bcfb15868718908f6e2a8d84369a997f",
+          "r4_sha256": "4ee986f34f9b598e40a86a0a5401b8a1bcfb15868718908f6e2a8d84369a997f"
+        }
+      ]
+    },
+    "geoip.dat": {
+      "count": 25,
+      "identical_r1_to_r4": 25,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r3_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+          "r4_sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        }
+      ]
+    },
+    "geosite.dat": {
+      "count": 25,
+      "identical_r1_to_r4": 25,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r3_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+          "r4_sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        }
+      ]
+    },
+    "luch.init": {
+      "count": 25,
+      "identical_r1_to_r4": 25,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r3_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+          "r4_sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        }
+      ]
+    },
+    "luch-xray.init": {
+      "count": 25,
+      "identical_r1_to_r4": 25,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r3_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+          "r4_sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        }
+      ]
+    },
+    "THIRD_PARTY_NOTICES.txt": {
+      "count": 25,
+      "identical_r1_to_r4": 25,
+      "rows": [
+        {
+          "target": "17.01.7-x86_64",
+          "r1_sha256": "ceea81cf1c6ae1a1ac1252598e4fec82b5f74fde2751725bef0db6bbac76e23f",
+          "r3_sha256": "ceea81cf1c6ae1a1ac1252598e4fec82b5f74fde2751725bef0db6bbac76e23f",
+          "r4_sha256": "ceea81cf1c6ae1a1ac1252598e4fec82b5f74fde2751725bef0db6bbac76e23f"
+        },
+        {
+          "target": "18.06.9-x86_64",
+          "r1_sha256": "763cbbd5ee201158b427ea09c0690f02a463874f0cb117f6a1bafd08add20775",
+          "r3_sha256": "763cbbd5ee201158b427ea09c0690f02a463874f0cb117f6a1bafd08add20775",
+          "r4_sha256": "763cbbd5ee201158b427ea09c0690f02a463874f0cb117f6a1bafd08add20775"
+        },
+        {
+          "target": "19.07.10-x86_64",
+          "r1_sha256": "943d6e4c0f19c0116e1f0321eaf6709369e43e9eeb03a852d1067862a078679d",
+          "r3_sha256": "943d6e4c0f19c0116e1f0321eaf6709369e43e9eeb03a852d1067862a078679d",
+          "r4_sha256": "943d6e4c0f19c0116e1f0321eaf6709369e43e9eeb03a852d1067862a078679d"
+        },
+        {
+          "target": "21.02.7-x86_64",
+          "r1_sha256": "2e4990750e838ce8d70c07b6f61452232a94b0c9098e6cdd517c3938c42f119d",
+          "r3_sha256": "2e4990750e838ce8d70c07b6f61452232a94b0c9098e6cdd517c3938c42f119d",
+          "r4_sha256": "2e4990750e838ce8d70c07b6f61452232a94b0c9098e6cdd517c3938c42f119d"
+        },
+        {
+          "target": "22.03.7-aarch64_cortex-a53",
+          "r1_sha256": "475f0a9dc0dd55f9a58c935a1c5ffa71f005ba14f0f1cce7177111704db6893d",
+          "r3_sha256": "475f0a9dc0dd55f9a58c935a1c5ffa71f005ba14f0f1cce7177111704db6893d",
+          "r4_sha256": "475f0a9dc0dd55f9a58c935a1c5ffa71f005ba14f0f1cce7177111704db6893d"
+        },
+        {
+          "target": "22.03.7-x86_64",
+          "r1_sha256": "5322e628bc926ce873d4cf73aba144aea36c4980562c99f967ae899164d89a13",
+          "r3_sha256": "5322e628bc926ce873d4cf73aba144aea36c4980562c99f967ae899164d89a13",
+          "r4_sha256": "5322e628bc926ce873d4cf73aba144aea36c4980562c99f967ae899164d89a13"
+        },
+        {
+          "target": "23.05.6-aarch64_generic",
+          "r1_sha256": "377e2cb3aab183b01f358dcaeee9ee8f177218484d34697c50e5f33dc2a54f9c",
+          "r3_sha256": "377e2cb3aab183b01f358dcaeee9ee8f177218484d34697c50e5f33dc2a54f9c",
+          "r4_sha256": "377e2cb3aab183b01f358dcaeee9ee8f177218484d34697c50e5f33dc2a54f9c"
+        },
+        {
+          "target": "23.05.6-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "1fefd6a04d46aa49a17ad21f4da6a6b2c18c3382164700b50f2f456842d7a662",
+          "r3_sha256": "1fefd6a04d46aa49a17ad21f4da6a6b2c18c3382164700b50f2f456842d7a662",
+          "r4_sha256": "1fefd6a04d46aa49a17ad21f4da6a6b2c18c3382164700b50f2f456842d7a662"
+        },
+        {
+          "target": "23.05.6-x86_64",
+          "r1_sha256": "0d8a5347ae23034b973d2e5147106cecc78f806baf940278614bca6c10156407",
+          "r3_sha256": "0d8a5347ae23034b973d2e5147106cecc78f806baf940278614bca6c10156407",
+          "r4_sha256": "0d8a5347ae23034b973d2e5147106cecc78f806baf940278614bca6c10156407"
+        },
+        {
+          "target": "24.10.8-aarch64_generic",
+          "r1_sha256": "fd8a455b3b2310fea25614a1746ff0dbc4ce30b31201f1d6bcc40f1a77928753",
+          "r3_sha256": "fd8a455b3b2310fea25614a1746ff0dbc4ce30b31201f1d6bcc40f1a77928753",
+          "r4_sha256": "fd8a455b3b2310fea25614a1746ff0dbc4ce30b31201f1d6bcc40f1a77928753"
+        },
+        {
+          "target": "24.10.8-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "aa1500fb84b68371021c2e157a1aed176e32dc4052c26b4be2fdd88497395a57",
+          "r3_sha256": "aa1500fb84b68371021c2e157a1aed176e32dc4052c26b4be2fdd88497395a57",
+          "r4_sha256": "aa1500fb84b68371021c2e157a1aed176e32dc4052c26b4be2fdd88497395a57"
+        },
+        {
+          "target": "24.10.8-i386_pentium4",
+          "r1_sha256": "ef4bb104e7418111bd79939a85aca40abafe3c5e82e3f02babcfae5a7001120e",
+          "r3_sha256": "ef4bb104e7418111bd79939a85aca40abafe3c5e82e3f02babcfae5a7001120e",
+          "r4_sha256": "ef4bb104e7418111bd79939a85aca40abafe3c5e82e3f02babcfae5a7001120e"
+        },
+        {
+          "target": "24.10.8-x86_64",
+          "r1_sha256": "de0942ef8b56243e92f48a89fa2ff2cdc8702448b5c8a63e17e2d428215fb5d6",
+          "r3_sha256": "de0942ef8b56243e92f48a89fa2ff2cdc8702448b5c8a63e17e2d428215fb5d6",
+          "r4_sha256": "de0942ef8b56243e92f48a89fa2ff2cdc8702448b5c8a63e17e2d428215fb5d6"
+        },
+        {
+          "target": "25.12.5-aarch64_generic",
+          "r1_sha256": "18aca6468aee4295da0c858ca2362a2ac8020c6e2e501fe17c95f45531808b3f",
+          "r3_sha256": "18aca6468aee4295da0c858ca2362a2ac8020c6e2e501fe17c95f45531808b3f",
+          "r4_sha256": "18aca6468aee4295da0c858ca2362a2ac8020c6e2e501fe17c95f45531808b3f"
+        },
+        {
+          "target": "25.12.5-arm_cortex-a15_neon-vfpv4",
+          "r1_sha256": "098946eebd53c9cc1d0f864f87268003d123b498826508666a1ee5a0f004fb67",
+          "r3_sha256": "098946eebd53c9cc1d0f864f87268003d123b498826508666a1ee5a0f004fb67",
+          "r4_sha256": "098946eebd53c9cc1d0f864f87268003d123b498826508666a1ee5a0f004fb67"
+        },
+        {
+          "target": "25.12.5-i386_pentium4",
+          "r1_sha256": "30a007892c1f28a231908f6da306668f6be3003a0c29ce7e32c7828d6c346ac2",
+          "r3_sha256": "30a007892c1f28a231908f6da306668f6be3003a0c29ce7e32c7828d6c346ac2",
+          "r4_sha256": "30a007892c1f28a231908f6da306668f6be3003a0c29ce7e32c7828d6c346ac2"
+        },
+        {
+          "target": "25.12.5-x86_64",
+          "r1_sha256": "7122899685d0dffb8868b6c8c687798627c4c696c755f65e5bff348d80a78128",
+          "r3_sha256": "7122899685d0dffb8868b6c8c687798627c4c696c755f65e5bff348d80a78128",
+          "r4_sha256": "7122899685d0dffb8868b6c8c687798627c4c696c755f65e5bff348d80a78128"
+        },
+        {
+          "target": "any-386",
+          "r1_sha256": "fb81e7821d8a960c78f5f584a6f8882088393b33182718afc67277ec27e409e6",
+          "r3_sha256": "fb81e7821d8a960c78f5f584a6f8882088393b33182718afc67277ec27e409e6",
+          "r4_sha256": "fb81e7821d8a960c78f5f584a6f8882088393b33182718afc67277ec27e409e6"
+        },
+        {
+          "target": "any-amd64",
+          "r1_sha256": "fdfae781652f02777ad011642307056758d4fd2f80b22284547bcb9b949b008b",
+          "r3_sha256": "fdfae781652f02777ad011642307056758d4fd2f80b22284547bcb9b949b008b",
+          "r4_sha256": "fdfae781652f02777ad011642307056758d4fd2f80b22284547bcb9b949b008b"
+        },
+        {
+          "target": "any-arm64",
+          "r1_sha256": "fd5a6fd5642c650ddf0789d63c4c87a257a80c7e48a09e2e9029e0e75ca42838",
+          "r3_sha256": "fd5a6fd5642c650ddf0789d63c4c87a257a80c7e48a09e2e9029e0e75ca42838",
+          "r4_sha256": "fd5a6fd5642c650ddf0789d63c4c87a257a80c7e48a09e2e9029e0e75ca42838"
+        },
+        {
+          "target": "any-armv5",
+          "r1_sha256": "f9e053bf969f4f8604df4f7e64fec2946aa8c1ca1831d3de9622eaeb16ac2d3e",
+          "r3_sha256": "f9e053bf969f4f8604df4f7e64fec2946aa8c1ca1831d3de9622eaeb16ac2d3e",
+          "r4_sha256": "f9e053bf969f4f8604df4f7e64fec2946aa8c1ca1831d3de9622eaeb16ac2d3e"
+        },
+        {
+          "target": "any-armv6",
+          "r1_sha256": "572d88047808e8f0de6b5c0576f166d8302dc74d2401a366589f72f2dd5025fc",
+          "r3_sha256": "572d88047808e8f0de6b5c0576f166d8302dc74d2401a366589f72f2dd5025fc",
+          "r4_sha256": "572d88047808e8f0de6b5c0576f166d8302dc74d2401a366589f72f2dd5025fc"
+        },
+        {
+          "target": "any-armv7",
+          "r1_sha256": "6b105047eb2400f2f9f1781a18b333189db8659adcf1a2f029a2f0b985025b6a",
+          "r3_sha256": "6b105047eb2400f2f9f1781a18b333189db8659adcf1a2f029a2f0b985025b6a",
+          "r4_sha256": "6b105047eb2400f2f9f1781a18b333189db8659adcf1a2f029a2f0b985025b6a"
+        },
+        {
+          "target": "any-mips",
+          "r1_sha256": "fe320114a77cfc4ca8efb8ff0df1b107138c26f401499e71803cb84945d9f661",
+          "r3_sha256": "fe320114a77cfc4ca8efb8ff0df1b107138c26f401499e71803cb84945d9f661",
+          "r4_sha256": "fe320114a77cfc4ca8efb8ff0df1b107138c26f401499e71803cb84945d9f661"
+        },
+        {
+          "target": "any-mipsle",
+          "r1_sha256": "bf0cea4e4223c9c4277e6c6c0da65fc21accd46836ee87fc187b71ec1fc611ac",
+          "r3_sha256": "bf0cea4e4223c9c4277e6c6c0da65fc21accd46836ee87fc187b71ec1fc611ac",
+          "r4_sha256": "bf0cea4e4223c9c4277e6c6c0da65fc21accd46836ee87fc187b71ec1fc611ac"
+        }
+      ]
+    }
+  },
+  "all25_bootstrap_identical": true,
+  "dispatcher_sha256": "caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f",
+  "interpretation": "Only the runtime client and its signed metadata changed. Earlier installations retain their actual version and bytes. Final R4 gets representative runtime checks, not a new 17/17 installation claim."
+}

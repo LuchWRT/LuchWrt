@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "kind": "installation-input-comparison-not-final-matrix-retest",
+  "version": "1.2.11",
+  "status": "COMPARISON_PASS_NOT_RUNTIME_ACCEPTANCE",
+  "observed_utc": "2026-10-28T20:34:07.974359+00:00",
+  "original_comparison_sha256": "f0b1cb7ed9c21cd8285a5047a57711ea254d6572233b092e4b2424866013f251",
+  "preliminary_candidate": {
+    "source_snapshot_sha256": "a12caf70cca2beaec26f774f388a33656dd05fd4665f7ca599e15892cc661612",
+    "freeze_sha256": "8cd98d6edeee5530f06abb2aedf1179eac0d0477fdb4333ccd546b8eb1bee3ae",
+    "exact_installation": {
+      "status": "PASS",
+      "passed": 17,
+      "scope": "local signed offline installation; eight checks and actual reboot each; no subscription/VPN/public HTTPS",
+      "public_receipt": "2026-10-25-v1.2.11-r1-install.json",
+      "public_receipt_sha256": "9e069a122e84b09b0232aa8a4134a96726de3770bd25f1cf79b772726473a434"
+    }
+  },
+  "final_candidate": {
+    "source_snapshot_sha256": "cc0780e9e6c56fc38b4e2fe31c2f091c62f79dbd369b6fa5b5f08b45c7e7ad5b",
+    "freeze_sha256": "77373f42c8086962f3642eb027b89ef974669a49c321b0458f7205a5ae0e559e",
+    "all17_final_installation_PASS_claimed": false,
+    "all17_full_VPN_PASS_claimed": false
+  },
+  "dispatcher": {
+    "filename": "install-caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f.sh",
+    "r1_sha256": "caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f",
+    "r3_sha256": "caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f",
+    "identical": true
+  },
+  "targets_catalog": {
+    "r1_sha256": "519c2165dcab5ed0efde0fd1134457d14a3552f2114ca2df667ef72edeef42ce",
+    "r3_sha256": "519c2165dcab5ed0efde0fd1134457d14a3552f2114ca2df667ef72edeef42ce",
+    "identical": true
+  },
+  "bootstrap": {
+    "count": 25,
+    "identical_count": 25
+  },
+  "bundle_artifacts": {
+    "luch-install": {
+      "count": 25,
+      "identical_count": 25,
+      "r1_unique_hashes": 8,
+      "r3_unique_hashes": 8
+    },
+    "luch": {
+      "count": 25,
+      "identical_count": 0,
+      "r1_unique_hashes": 8,
+      "r3_unique_hashes": 8
+    },
+    "xray": {
+      "count": 25,
+      "identical_count": 25,
+      "r1_unique_hashes": 8,
+      "r3_unique_hashes": 8
+    },
+    "geoip.dat": {
+      "count": 25,
+      "identical_count": 25,
+      "r1_unique_hashes": 1,
+      "r3_unique_hashes": 1
+    },
+    "geosite.dat": {
+      "count": 25,
+      "identical_count": 25,
+      "r1_unique_hashes": 1,
+      "r3_unique_hashes": 1
+    },
+    "luch.init": {
+      "count": 25,
+      "identical_count": 25,
+      "r1_unique_hashes": 1,
+      "r3_unique_hashes": 1
+    },
+    "luch-xray.init": {
+      "count": 25,
+      "identical_count": 25,
+      "r1_unique_hashes": 1,
+      "r3_unique_hashes": 1
+    },
+    "THIRD_PARTY_NOTICES.txt": {
+      "count": 25,
+      "identical_count": 25,
+      "r1_unique_hashes": 25,
+      "r3_unique_hashes": 25
+    }
+  },
+  "interpretation": "Installation executable, dispatcher, 25 bootstrap procedures and all other bundled components except luch are byte-identical. Changed final luch requires separate final runtime acceptance; previous17 installation PASS is not relabelled."
+}

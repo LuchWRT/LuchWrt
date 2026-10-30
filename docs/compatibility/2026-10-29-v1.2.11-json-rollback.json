@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "kind": "procd-whitespace-only-restoration-host-regression",
+  "status": "PASS",
+  "verified_utc": "2026-10-29T11:48:49.426286+00:00",
+  "commit": "02712357db8e5de1fc8fbb7ceb219c5d26557884",
+  "before_commit": "42675d2632bd01e3db264aa378802fa2cbe29f95",
+  "production_files_changed": [
+    "internal/openwrt/procd/service.go"
+  ],
+  "test_files_changed": [
+    "internal/openwrt/procd/service_test.go"
+  ],
+  "source_before_sha256": "9431911fd26124610f2d6c26e3833640d43c9530b37b3a28bf7ff14a6037f43d",
+  "source_after_sha256": "03affeb027f262454508087cff137758372543c6ead59404249c9e28984ca78f",
+  "logs": {
+    "rollback-whitespace-before.log": {
+      "status": "EXPECTED_FAIL_REPRODUCED",
+      "exit_code": 1,
+      "sha256": "27e4f8a49e8ac1e70932db9901b073acd4ef9ca866e6a00434991c3ddf61a134",
+      "bytes": 315
+    },
+    "rollback-whitespace-targeted.log": {
+      "status": "PASS",
+      "exit_code": 0,
+      "sha256": "e9018d0f3be0169345bdf0bfc0bde189da1ba52ffd317f3d82af9be0e975fea4",
+      "bytes": 164
+    },
+    "rollback-whitespace-race.log": {
+      "status": "PASS",
+      "exit_code": 0,
+      "sha256": "56f106f644be95a4486ed9fa97db983387ce7e92d5c426fa34ba0d52900d02df",
+      "bytes": 165
+    },
+    "rollback-whitespace-vet.log": {
+      "status": "PASS",
+      "exit_code": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "reproduction": "Real state.Store compacts a pretty RawMessage. Old MatchesRunning rejects it and fake init records a second validation/restart. Fixed service reuses the same running configuration and retains runtime file identity.",
+  "comparison": "Ignores only insignificant JSON whitespace; exact byte fast path after size bounds; does not normalize numbers, strings, array/key order, duplicate keys or escapes. Candidate JSON validity remains required by existing callers.",
+  "unchanged_guards": [
+    "8MiB size bound",
+    "running service state",
+    "current geodata target and loaded marker",
+    "runtime file owner/mode/path checks",
+    "independent rollback RecoveryProbe and deadlines"
+  ],
+  "coverage": [
+    "actual state.Store formatting round-trip",
+    "no validation/restart/runtime rewrite for formatting only",
+    "changed config still restarts",
+    "stopped process still starts",
+    "string whitespace, number representation, large numbers, key/array order, duplicate keys and escape forms stay distinct",
+    "invalid/empty candidate or invalid current JSON rejected by MatchesRunning",
+    "oversize comparison rejected"
+  ],
+  "scope": {
+    "host_unit_tests": true,
+    "real_state_store": true,
+    "actual_Xray_process_or_QEMU": false,
+    "full_Go_all_rerun": false,
+    "targeted_packages": [
+      "internal/openwrt/procd",
+      "internal/controller",
+      "internal/openwrt/managed"
+    ],
+    "original_ARM_ENOSPC_failure_cause_proven": false,
+    "candidate_built": false,
+    "frozen_r3_modified": false,
+    "geodata_guard_changed": false,
+    "absolute_production_geodata_store_modified": false
+  }
+}
