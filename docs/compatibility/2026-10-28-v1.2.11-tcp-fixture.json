@@ -1,0 +1,44 @@
+{
+  "kind": "local-two-requests-on-one-existing-TCP-socket-no-QEMU",
+  "actual_imported_handler": {
+    "same_socket": true,
+    "responses": [
+      {
+        "request": 1,
+        "response_version": 10,
+        "status": 200,
+        "body": "QEMU_TCP_OK",
+        "server_will_close": true
+      },
+      {
+        "request": 2,
+        "error_type": "RemoteDisconnected",
+        "error": "Remote end closed connection without response"
+      }
+    ]
+  },
+  "same_handler_with_only_HTTP_1_1": {
+    "same_socket": true,
+    "responses": [
+      {
+        "request": 1,
+        "response_version": 11,
+        "status": 200,
+        "body": "QEMU_TCP_OK",
+        "server_will_close": false
+      },
+      {
+        "request": 2,
+        "response_version": 11,
+        "status": 200,
+        "body": "QEMU_TCP_OK",
+        "server_will_close": false
+      }
+    ]
+  },
+  "source_sha256": "bda1f7a0a4e7483ca3feac8a4f8d0e609162904d125a1d03daa837681f9315a4",
+  "fixture_fix_commit": "42675d2632bd01e3db264aa378802fa2cbe29f95",
+  "fresh_focused_tests": 66,
+  "product_binaries_changed": false,
+  "source_proof_sha256": "13076c0770273944bae69e9ba5502e1d065e2d2b204b07e3823f8aa493864531"
+}

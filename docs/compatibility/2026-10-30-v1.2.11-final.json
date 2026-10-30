@@ -1,0 +1,289 @@
+{
+  "schema": 2,
+  "kind": "R4-runtime-and-explicitly-reused-R3-component-evidence",
+  "version": "1.2.11",
+  "status": "RUNTIME_ACCEPTED_ASSETS_VERIFIED",
+  "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+  "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+  "framework_manifest_sha256": "d9cd81609e25850aea58db97a71f30654c4263c53bb02a081bf79993350189e1",
+  "host_receipt_sha256": "0c75b2c1a7f3e72569b6c6c9492d8440dcc8b4f8e93df37b54626d682190984d",
+  "runtime": {
+    "arm256": {
+      "status": "PASS_COMBINED_15_PLUS_1",
+      "checks_passed": 16,
+      "single_cold_full_16_PASS_claimed": false,
+      "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+      "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+      "baseline15": {
+        "status": "PASS_COMPONENT_15",
+        "raw_aggregate_status": "RUNNING",
+        "interrupted_original_retained": true,
+        "raw_result_sha256": "bfeb24b6a7c6aee1e6cb1a88f9d75bd4d5c542f3faad2271684b9066c9479c8b",
+        "checks_passed": 15,
+        "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+        "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+        "workload": {
+          "RAM_mib": 256,
+          "subscription_locations": 32,
+          "VPN_endpoints": 2,
+          "fixture_profile_sha256": "513d52889cb1915541362d1c26e7cc238714f5eb8ef63b8db8bbb5c7040aadea",
+          "geodata_base_sha256": {
+            "geoip.dat": "e2e6b653acbae8a50026a9b5c354d99480f74fad78898bc764e47c1f74e88428",
+            "geosite.dat": "6fadc9298116c5523b1e3cfa46c6c5fed5a218b9b6365be831e358f4823ea464"
+          },
+          "geodata_base_bytes": {
+            "geoip.dat": 435822,
+            "geosite.dat": 68423
+          }
+        },
+        "resources": {
+          "sample_count": 2212,
+          "minimum_observed_available_kib": 135184,
+          "maximum_observed_RSS_kib": 89124,
+          "scope": "observed samples only; no instantaneous peak or general RAM minimum"
+        }
+      },
+      "targeted_natural_expiry1": {
+        "status": "PASS_TARGETED_NATURAL_EXPIRY",
+        "checks_passed": 1,
+        "supporting_signed_and_pretraffic_checks": 2,
+        "raw_result_sha256": "f2e0270e0d91b0b134f79cb9ed2d62b558d2401ed633f67b41563e2ba940835a",
+        "acceptance_sha256": "694475a9dc5ee2aab6090b7888b0117a2d53f9813eb34ad9bd19e0da2c933f11",
+        "prior_interrupted_raw_sha256": "bfeb24b6a7c6aee1e6cb1a88f9d75bd4d5c542f3faad2271684b9066c9479c8b",
+        "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+        "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+        "original_disks_preserved": true,
+        "signed_artifact_count": 8,
+        "dual_stack_traffic_before_after": true,
+        "daemon_unchanged": true,
+        "subscription_lifetime_seconds": 45,
+        "default_stop_poll_limit": 8,
+        "cold_full16_baseline_repeated": false,
+        "finished_utc": "2026-10-30T06:59:49.185120+00:00"
+      },
+      "workload": {
+        "RAM_mib": 256,
+        "subscription_locations": 32,
+        "VPN_endpoints": 2,
+        "fixture_profile_sha256": "513d52889cb1915541362d1c26e7cc238714f5eb8ef63b8db8bbb5c7040aadea",
+        "geodata_base_sha256": {
+          "geoip.dat": "e2e6b653acbae8a50026a9b5c354d99480f74fad78898bc764e47c1f74e88428",
+          "geosite.dat": "6fadc9298116c5523b1e3cfa46c6c5fed5a218b9b6365be831e358f4823ea464"
+        },
+        "geodata_base_bytes": {
+          "geoip.dat": 435822,
+          "geosite.dat": 68423
+        }
+      },
+      "resources": {
+        "sample_count": 2212,
+        "minimum_observed_available_kib": 135184,
+        "maximum_observed_RSS_kib": 89124,
+        "scope": "observed samples only; no instantaneous peak or general RAM minimum"
+      },
+      "all_down_cleanup": {
+        "guard_poll_count": 169,
+        "limit_polls": 330,
+        "poll_count_is_elapsed_seconds": false,
+        "IPv4_and_IPv6_own_policy_absence_at_every_guard_poll": true,
+        "no_between_poll_changes_guaranteed": false,
+        "native_dual_stack_TCP_UDP_after_cleanup": "PASS"
+      }
+    },
+    "stock256": {
+      "status": "PASS",
+      "checks_passed": 16,
+      "single_cold_full_16_PASS_claimed": true,
+      "raw_result_sha256": "6156137e544124611c430adaf66e6f058ce05f7c09e75169cd76f9a85c311b61",
+      "acceptance_sha256": "f1d9a43f0029850ebd3d44c3891184596df9963a450767a13a1d80820da20186",
+      "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+      "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+      "workload": {
+        "RAM_mib": 256,
+        "subscription_locations": 32,
+        "VPN_endpoints": 2,
+        "fixture_profile_sha256": "513d52889cb1915541362d1c26e7cc238714f5eb8ef63b8db8bbb5c7040aadea",
+        "geodata_base_sha256": {
+          "geoip.dat": "e2e6b653acbae8a50026a9b5c354d99480f74fad78898bc764e47c1f74e88428",
+          "geosite.dat": "6fadc9298116c5523b1e3cfa46c6c5fed5a218b9b6365be831e358f4823ea464"
+        },
+        "geodata_base_bytes": {
+          "geoip.dat": 435822,
+          "geosite.dat": 68423
+        }
+      },
+      "resources": {
+        "sample_count": 2112,
+        "minimum_observed_available_kib": 94632,
+        "maximum_observed_RSS_kib": 99244,
+        "scope": "observed samples only; no instantaneous peak or general RAM minimum"
+      },
+      "all_down_cleanup": {
+        "guard_poll_count": 148,
+        "limit_polls": 330,
+        "poll_count_is_elapsed_seconds": false,
+        "IPv4_and_IPv6_own_policy_absence_at_every_guard_poll": true,
+        "no_between_poll_changes_guaranteed": false,
+        "native_dual_stack_TCP_UDP_after_cleanup": "PASS"
+      }
+    },
+    "fw3-journal": {
+      "status": "PASS_TARGETED",
+      "raw_result_sha256": "c36544d9731663fa7b72fbe7ce2d00a58ebbb2e975ae35ddfde1f98fadbcb2b6",
+      "acceptance_sha256": "f2f8f83c04fcf2338f539979a0ce7623e73e2769e2496f006ccf540d339bdd2e",
+      "journal_sha256": "5d3a648bde5e95d2d268bdb0b703853b0114a49f4f296a79d4d016b796e67721",
+      "journal_checks_passed": 4,
+      "signed_artifact_count": 8,
+      "real_reboot": true,
+      "wrapper_sha256": "be25107e4022e1d1a546e09c6e37b4cba3720630b69b8443d8d27c862ae43d34",
+      "framework_module_sha256": "07d6684438b3c4bed55ffbee7c8bb2b10bdfcdbdbd788fb6fa7c747f6931489d",
+      "dual_stack_traffic_before_after": true,
+      "full14_cold_fw3_repeated": false,
+      "prior_stat_fixture_FAILURE_preserved": true,
+      "source_snapshot_sha256": "cc0780e9e6c56fc38b4e2fe31c2f091c62f79dbd369b6fa5b5f08b45c7e7ad5b"
+    },
+    "routing": {
+      "status": "PASS_COMBINED",
+      "kind": "independent-baseline14-offload-PBR3-and-MWAN2-evidence",
+      "baseline14": {
+        "raw_result_sha256": "f7cb90545a391fe7f00a2f966a6a402f96fe74862ba149f55e6b538a58ab4abe",
+        "raw_aggregate_status": "FAIL",
+        "checks_passed": 14,
+        "framework_manifest_sha256": "bec6bb4b41d970bbcbcb081045e787fcc0cbb9ea9126872ad15a50ff92980ba9"
+      },
+      "offload_PBR3": {
+        "raw_result_sha256": "0c1a50f1ed34639a5fceb4842763dbe6ed40c33c3fa7818defbe5d23606069f3",
+        "raw_aggregate_status": "FAIL",
+        "checks_passed": 3,
+        "framework_manifest_sha256": "2346b10fea23cf3eb85498e2d659b02feb5e1ba65f213139e2f7fb1792b72f41"
+      },
+      "MWAN2": {
+        "raw_result_sha256": "1b7913592ff2905c01b5de21b7decb88a51acd631efc61ed473bb6ac4f0f3724",
+        "acceptance_sha256": "064547ef6a556bf87d5ccd4422609c1117059f1cfa440197306a14cdd3e9b4c8",
+        "checks_passed": 2,
+        "recovery_budget_seconds": 180,
+        "per_request_timeout_seconds": 5,
+        "DNS_recovered_without_Xray_restart": true,
+        "DNS_first_success_seconds": 120.898
+      },
+      "prior_aggregate_FAILURES_preserved": true,
+      "single_new_cold_full_routing_PASS_claimed": false,
+      "source_snapshot_sha256": "cc0780e9e6c56fc38b4e2fe31c2f091c62f79dbd369b6fa5b5f08b45c7e7ad5b"
+    }
+  },
+  "all_down_cleanup_evidence": {
+    "public_receipt": "2026-10-30-v1.2.11-all-down-cleanup.json",
+    "sha256": "7ae7bb5e73f396c0accc12bed749d81cdd41ab02df08ac2c916ceb9291f0d1e9"
+  },
+  "prior_R4_background_probe_fixture_failure": {
+    "public_receipt": "2026-10-30-v1.2.11-background-probe-fixture.json",
+    "sha256": "0bc70bc2a030a32caf7b81730ffd95210abeec33728f779563637c8fd6e73318",
+    "raw_aggregate_status": "FAIL",
+    "raw_sha256": "ff2e5eb73965d1b4b5d8ed2e89401fb748e93cb5c9ab1b9a3da94891e68f3b57"
+  },
+  "prior_R4_fixture_failure": {
+    "public_receipt": "2026-10-30-v1.2.11-profile-fixture.json",
+    "sha256": "f32039b2cc951f5fcaf745340de99bfa1b59fb8a862e6b8e9bbbc10a44887f3d",
+    "raw_aggregate_status": "FAIL",
+    "raw_sha256": "35717382c665228b36f35c4c346c086680a32c0d672db9a6c0158d4f1d09111b"
+  },
+  "rollback_JSON_regression": {
+    "public_receipt": "2026-10-29-v1.2.11-json-rollback.json",
+    "sha256": "d8c4a16180201c62abc47ba6d65be04f6eba1b2a1df43ddd5ca860009e7e73c3"
+  },
+  "component_source_comparison": {
+    "public_receipt": "2026-10-30-v1.2.11-component-inputs.json",
+    "sha256": "82fac1bcd96cfd304b869c16f777aaf61bc6b2c4c7220de300c1c730d82b49bd",
+    "R3_binaries_relabelled_R4": false
+  },
+  "host_build": {
+    "acceptance_sha256": "72a393e398a605a1522ddc355e184a827e2f402aea73f81ab120d87345a26147",
+    "Go_all_race_vet": {
+      "go-test-r4.log": {
+        "status": "PASS",
+        "command": [
+          "go",
+          "test",
+          "-mod=readonly",
+          "-p",
+          "2",
+          "./..."
+        ],
+        "started_utc": "2026-10-29T11:52:25.360585+00:00",
+        "exit_code": 0,
+        "finished_utc": "2026-10-29T11:53:33.057260+00:00",
+        "duration_seconds": 67.696,
+        "sha256": "76802a6122165e813cce53876576ea81ed8c0ff5b34dff8a72e943ce3b8d2ec0",
+        "bytes": 1763
+      },
+      "go-race-r4.log": {
+        "status": "PASS",
+        "command": [
+          "go",
+          "test",
+          "-mod=readonly",
+          "-race",
+          "-p",
+          "2",
+          "./..."
+        ],
+        "started_utc": "2026-10-29T11:53:33.089840+00:00",
+        "exit_code": 0,
+        "finished_utc": "2026-10-29T11:54:48.718024+00:00",
+        "duration_seconds": 75.627,
+        "sha256": "8fede921549c796e0eecfbb84d0f653aa3dc1bb733db70e7a5ddab9ab1ed18f2",
+        "bytes": 1762
+      },
+      "go-vet-r4.log": {
+        "status": "PASS",
+        "command": [
+          "go",
+          "vet",
+          "-mod=readonly",
+          "-p",
+          "2",
+          "./..."
+        ],
+        "started_utc": "2026-10-29T11:54:48.743714+00:00",
+        "exit_code": 0,
+        "finished_utc": "2026-10-29T11:54:49.849556+00:00",
+        "duration_seconds": 1.106,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "programs": 16,
+    "CPU_families": 8,
+    "assets_verified": 327,
+    "bundle_signatures_verified": true
+  },
+  "installation_evidence": {
+    "public_v1_2_10_exact17": "2026-10-17-v1.2.10-public.json",
+    "preliminary_v1_2_11_exact17": "2026-10-25-v1.2.11-r1-install.json",
+    "input_comparison": "2026-10-30-v1.2.11-install-inputs.json",
+    "input_comparison_sha256": "593527b87485f66ab5507eb878c31737ce18c7e4e88a7ba9384c428e88219de5"
+  },
+  "campaign_finished_utc": "2026-10-30T06:59:49.185120+00:00",
+  "interrupted_original_campaign_status_sha256": "6448c15526e077b4f654ecab7a387c5f301be1a354450fcfa0175bbde33f5350",
+  "installer_commit": "3027c7174bf447d1c8208eb8b54eb7b601572cb6",
+  "dispatcher_sha256": "caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f",
+  "publication": {
+    "status": "UPLOADED_ASSETS_VERIFIED",
+    "expected_assets": 327,
+    "draft_verification_sha256": "156d8e780b9d133e109bcc200a47718e5f63a286a2e7fd4ae7079d9069437bc9",
+    "resume_draft_verification_sha256": "612a58f7940912d1b19543d3f9fc7f1a28c49862d89e2485c967a21ad4892c71"
+  },
+  "scope": {
+    "QEMU_only": true,
+    "full_VPN_all_architectures": false,
+    "all17_final_installations_repeated": false,
+    "public_HTTPS_installation_all17_final": false,
+    "physical_router": false,
+    "hardware_offload": false,
+    "ARM128_expanded_profile_tested": false,
+    "universal_RAM_minimum_established": false,
+    "continuous_24h_soak": false,
+    "old_aggregate_FAILs_preserved": true,
+    "new_full_cold_routing_PASS_claimed": false
+  }
+}

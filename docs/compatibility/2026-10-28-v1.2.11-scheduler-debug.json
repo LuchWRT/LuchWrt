@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "kind": "focused-restored-QEMU-scheduler-debug",
+  "scope": "debug-only; no clean-install/full-LAN/failover qualification",
+  "started_utc": "2026-10-28T20:39:24.103213+00:00",
+  "finished_utc": "2026-10-28T20:40:38.422969+00:00",
+  "status": "DEBUG_COMPLETED",
+  "VMs": 2,
+  "physical_router": false,
+  "measured_24h_soak": false,
+  "source_snapshot_sha256": "cc0780e9e6c56fc38b4e2fe31c2f091c62f79dbd369b6fa5b5f08b45c7e7ad5b",
+  "freeze_sha256": "77373f42c8086962f3642eb027b89ef974669a49c321b0458f7205a5ae0e559e",
+  "original_four_disks_preserved": true,
+  "original_disk_sha256": [
+    "1bee3fe96f4fbcab791938d2ebc67b56bcd40cd88822c77dc9d7f6cf42c5dd67",
+    "b5ad83f0ed4b9dc0c978e60b496043bcf873ec46c8ed11a901e30e2490e250dc",
+    "9ac21b93e3a6db7903f658ed2584d357ff3074371aa6e586c37af1886cf68e34",
+    "083dafc2528f1e03b0327edfb892f5bff2ae73d2d990707c040a4cb192984e4a"
+  ],
+  "product_health_success": true,
+  "product_health_elapsed_seconds": 6.351,
+  "TLS_verification": "default CA+hostname validation; same original valid Oct28 CA+leaf; no skip-verify",
+  "same_product_bytes_and_cached_location": true,
+  "debug_changes": "private peer/client Xray logs; same configuration across all three paired phases",
+  "taskpolicy_flags_and_returncodes": [
+    {
+      "flag": "-b",
+      "exit_code": 0
+    },
+    {
+      "flag": "-b",
+      "exit_code": 0
+    },
+    {
+      "flag": "-B",
+      "exit_code": 0
+    },
+    {
+      "flag": "-B",
+      "exit_code": 0
+    }
+  ],
+  "phases": [
+    {
+      "phase": "foreground-before",
+      "at_utc": "2026-10-28T20:40:28.449289+00:00",
+      "observed_host_priorities": [
+        31,
+        31
+      ],
+      "strict_HTTPS_results": [
+        {
+          "elapsed_seconds": 0.787129941,
+          "limit_seconds": 7,
+          "status": 204
+        },
+        {
+          "elapsed_seconds": 0.138828695,
+          "limit_seconds": 30,
+          "status": 204
+        }
+      ],
+      "private_probe_output_sha256": "84953dbea269cc7f3343ea0504daf347817586813559fb478201b4e0a8a78f3c"
+    },
+    {
+      "phase": "background",
+      "at_utc": "2026-10-28T20:40:29.741856+00:00",
+      "observed_host_priorities": [
+        4,
+        4
+      ],
+      "strict_HTTPS_results": [
+        {
+          "elapsed_seconds": 4.016088108,
+          "limit_seconds": 7,
+          "status": 204
+        },
+        {
+          "elapsed_seconds": 1.065248334,
+          "limit_seconds": 30,
+          "status": 204
+        }
+      ],
+      "private_probe_output_sha256": "87647228fbbf367516d84663bc5eac426f66006c5832d16cbd227bcab193d439"
+    },
+    {
+      "phase": "foreground-after",
+      "at_utc": "2026-10-28T20:40:35.514578+00:00",
+      "observed_host_priorities": [
+        31,
+        31
+      ],
+      "strict_HTTPS_results": [
+        {
+          "elapsed_seconds": 0.423849122,
+          "limit_seconds": 7,
+          "status": 204
+        },
+        {
+          "elapsed_seconds": 0.188983947,
+          "limit_seconds": 30,
+          "status": 204
+        }
+      ],
+      "private_probe_output_sha256": "22793e1e517732d34dc22bd4dc0ece387a013c855fd5914b308f1c1f7431eb63"
+    }
+  ],
+  "interpretation": "Changing only owned QEMU scheduler priority from31 to4 increased first strict HTTPS request latency; restoring31 reduced latency. All six requests returned204. The earlier first-activation failure was not reproduced, and this experiment alone does not prove its sole cause.",
+  "API_query_limitation": "getpriority(PRIO_DARWIN_PROCESS,pid) returned0/errno0 in all phases; actual observed ps priorities31/4/31 establish scheduler change.",
+  "private_result_sha256": "64be5f1dcd883ced2911649485bb3c9d2c0dcd13a030f6f1afecbe4084e568c0",
+  "original_failed_production_result_sha256": "95516ca95ff8f17d70ad2369c2104bf738909bf836b2d8d51ed6b68bc7329bcf"
+}
