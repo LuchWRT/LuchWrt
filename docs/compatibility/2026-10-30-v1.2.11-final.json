@@ -2,7 +2,7 @@
   "schema": 2,
   "kind": "R4-runtime-and-explicitly-reused-R3-component-evidence",
   "version": "1.2.11",
-  "status": "RUNTIME_ACCEPTED_ASSETS_VERIFIED",
+  "status": "ACCEPTED_PUBLISHED_AND_PUBLIC_INSTALL_VERIFIED",
   "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
   "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
   "framework_manifest_sha256": "d9cd81609e25850aea58db97a71f30654c4263c53bb02a081bf79993350189e1",
@@ -268,10 +268,19 @@
   "installer_commit": "3027c7174bf447d1c8208eb8b54eb7b601572cb6",
   "dispatcher_sha256": "caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f",
   "publication": {
-    "status": "UPLOADED_ASSETS_VERIFIED",
+    "status": "PUBLISHED_ASSETS_VERIFIED",
     "expected_assets": 327,
     "draft_verification_sha256": "156d8e780b9d133e109bcc200a47718e5f63a286a2e7fd4ae7079d9069437bc9",
-    "resume_draft_verification_sha256": "612a58f7940912d1b19543d3f9fc7f1a28c49862d89e2485c967a21ad4892c71"
+    "resume_draft_verification_sha256": "612a58f7940912d1b19543d3f9fc7f1a28c49862d89e2485c967a21ad4892c71",
+    "published_verification_sha256": "cde082ff4f27de0fc8230a28b9fa75f891cc6332a7939640fceeae582eebb9d8",
+    "tag_target": "1b1202976f8b9a27d5142f35b1733c1875930d93",
+    "public_installation": {
+      "status": "PASS",
+      "target": "24.10.8-x86_64",
+      "checks_passed": 7,
+      "public_receipt": "2026-10-30-v1.2.11-public.json",
+      "sha256": "1c7c90d1157e7b18ecb82e192a8a4aa1c9274048194489c34b2ad2bdaf4aeece"
+    }
   },
   "scope": {
     "QEMU_only": true,

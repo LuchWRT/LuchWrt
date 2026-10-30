@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "kind": "one-published-HTTPS-command-installation",
+  "status": "PASS",
+  "release": "v1.2.11",
+  "release_url": "https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.11",
+  "target": "24.10.8-x86_64",
+  "openwrt": "24.10.8",
+  "arch": "x86_64",
+  "mode": "public",
+  "RAM_mib": 512,
+  "checks": [
+    "wan-route-DNS-and-clock",
+    "github-one-command-signed-clean-install",
+    "menu-submenus-back-cancel-pause-resume-CRLF",
+    "every-installed-artifact-matches-final-candidate-signed-manifest",
+    "service-start-xray-config-existing-config-preserved",
+    "service-and-language-after-reboot",
+    "full-client-uninstall-existing-config-preserved"
+  ],
+  "checks_passed": 7,
+  "raw_result_sha256": "378be093500bb80d4252c4355b39211d297315ba01c99716be463b8d4b70f4aa",
+  "harness_sha256": "8717636e61dcb688dfee6882a9476166e9977dbc83e75e1fa81c834ec3cc8bcd",
+  "framework_manifest_sha256": "d9cd81609e25850aea58db97a71f30654c4263c53bb02a081bf79993350189e1",
+  "source_snapshot_sha256": "6f62d927da22bcdea38a7cb020218e81404f24b8003a913082ebe7292dbeee0e",
+  "candidate_freeze_sha256": "71eb3bdf0c6acdfd78a1bf7dd1a519284b86eb4ac88120928ccc115393b02400",
+  "candidate": {
+    "bundle": "24.10.8-x86_64",
+    "manifest_sha256": "1249cd8cff4c42c6124b04f7597c2e491aa2415e038f5bab318090578ac66736",
+    "bootstrap_sha256": "5ea1a77f487fa4c5dd701faf9aba58eb21bb8d272599abff59eb6897afbc6d33",
+    "installer_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+    "client_sha256": "fa36b9cd758cfb0ca45d75c11662168300c6ab056bf9828b859c9fa998ca534f",
+    "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+  },
+  "public_command_sha256": "22eb80776a718cbd59ef44d97d4842eb58ce17cdbdca55e57f30c20790c94219",
+  "installer_commit": "3027c7174bf447d1c8208eb8b54eb7b601572cb6",
+  "dispatcher_sha256": "caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f",
+  "official_source_sha256": "23872c64fdb66d0765e0d17f71453a66e7a91e9ecb10606d5f738e6d166e14ae",
+  "prepared_readonly_filesystem_check_passed": true,
+  "boot_id_changed": true,
+  "no_guests_remaining": true,
+  "scope": {
+    "QEMU_only": true,
+    "ext4_test_root_expanded": true,
+    "stock_SquashFS": false,
+    "full_VPN_with_subscription": false,
+    "all17_public_installs_repeated": false,
+    "physical_router": false,
+    "continuous_24h": false
+  },
+  "verified_utc": "2026-10-30T07:09:53.043453+00:00"
+}
