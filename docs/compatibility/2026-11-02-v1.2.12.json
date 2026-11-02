@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "release": "1.2.12",
+  "status": "PUBLISHED_PUBLIC_INSTALL_VERIFIED",
+  "date": "2026-11-02",
+  "build_source_commit": "8b776a2b288af996f81010db2c0a60f33555382c",
+  "source_snapshot_sha256": "b73d68986c39765ae191c3a54c04216b18ab07848cd5ea8b3e97bd9d16b7ae89",
+  "freeze_sha256": "da4b8f4f691acb373c4b4bf495ad3243b06c5675517fbcf42a283ad8573c67a5",
+  "signing_public_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+  "package_set": {
+    "exact_targets": 17,
+    "universal_targets": 8,
+    "assets": 327,
+    "only_rebuilt_artifact": "luch",
+    "reused_artifacts": [
+      "luch-install",
+      "xray",
+      "geoip.dat",
+      "geosite.dat",
+      "luch.init",
+      "luch-xray.init",
+      "THIRD_PARTY_NOTICES.txt"
+    ]
+  },
+  "runtime": {
+    "status": "PASS",
+    "official_openwrt": "25.12.5",
+    "guest_arch": "aarch64_generic",
+    "bundle": "any-arm64",
+    "RAM_mib": 256,
+    "locations": 2,
+    "controlled_VLESS_TLS": true,
+    "physical_Cudy_tested": false,
+    "scope": "targeted manual preference/fallback/renewal/real reboot, not full previous release matrix",
+    "checks": [
+      {
+        "name": "signed-clean-install-all-eight-artifacts-verified",
+        "status": "PASS",
+        "at_utc": "2026-11-02T16:45:14.569374+00:00"
+      },
+      {
+        "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+        "status": "PASS",
+        "at_utc": "2026-11-02T16:45:38.442184+00:00"
+      },
+      {
+        "name": "explicit-second-location-persists-and-carries-real-dual-stack-VPN",
+        "status": "PASS",
+        "at_utc": "2026-11-02T16:45:59.950302+00:00"
+      },
+      {
+        "name": "catalog-renewal-preserves-explicit-second-location",
+        "status": "PASS",
+        "at_utc": "2026-11-02T16:46:16.711140+00:00"
+      },
+      {
+        "name": "automatic-fallback-and-renewal-preserve-manual-preference",
+        "status": "PASS",
+        "at_utc": "2026-11-02T16:47:00.326901+00:00"
+      },
+      {
+        "name": "real-reboot-returns-to-manual-second-location-with-first-also-healthy",
+        "status": "PASS",
+        "at_utc": "2026-11-02T16:48:03.503338+00:00"
+      },
+      {
+        "name": "new-explicit-choice-replaces-saved-preference",
+        "status": "PASS",
+        "at_utc": "2026-11-02T16:48:26.687486+00:00"
+      }
+    ],
+    "boot_ids": {
+      "before": "866c05ce-ec91-4db5-a538-da3fa26e6640",
+      "after": "28ee39ea-8f1e-463d-95c8-3f9ca174706b"
+    },
+    "distinct_HWID_count": 1,
+    "raw_sha256": "6c3b1e7a5f24ca09155750be3e2baf5aef552cee25e72354e250a420b8c02bc6",
+    "frozen_inputs": {
+      "source_snapshot_sha256": "b73d68986c39765ae191c3a54c04216b18ab07848cd5ea8b3e97bd9d16b7ae89",
+      "freeze_sha256": "da4b8f4f691acb373c4b4bf495ad3243b06c5675517fbcf42a283ad8573c67a5",
+      "files": [
+        {
+          "name": "freeze.json",
+          "sha256": "da4b8f4f691acb373c4b4bf495ad3243b06c5675517fbcf42a283ad8573c67a5"
+        },
+        {
+          "name": "qemu_production_qualification.py",
+          "sha256": "f6f613bd5dd830e15701204ff78744afc65c43343f78fe3a837adb63c6160a1f"
+        },
+        {
+          "name": "qemu_compatibility.py",
+          "sha256": "8717636e61dcb688dfee6882a9476166e9977dbc83e75e1fa81c834ec3cc8bcd"
+        },
+        {
+          "name": "qemu_lan_compatibility.py",
+          "sha256": "bda1f7a0a4e7483ca3feac8a4f8d0e609162904d125a1d03daa837681f9315a4"
+        },
+        {
+          "name": "qemu_production_services.py",
+          "sha256": "3e15d302a346ecc3c574b7a9b057e2f34263be52e2b6de3c976499ee1cdfe9a5"
+        },
+        {
+          "name": "qemu_squashfs_fixture.py",
+          "sha256": "674f23407202ce0027ee0f82ee2215975cb18330e0a4997922e01c9f6a3b1605"
+        },
+        {
+          "name": "qemu_soak_evidence.py",
+          "sha256": "993222618b5ccfa562b09eeb150ac2848ee782b1136c9c41648a877001220b1c"
+        },
+        {
+          "name": "bundle/any-arm64/manifest.json",
+          "sha256": "55fcafd245a4e218f9509bb80e5fa637843c0ecaff5503f6ea77185561898dd2"
+        },
+        {
+          "name": "bundle/any-arm64/manifest.sig",
+          "sha256": "f2a64b08603ebe0e46ec41fac59c42c1e4f9b48f6351ade51f0dbc51732f78b3"
+        },
+        {
+          "name": "stage/any-arm64/bootstrap-cfa802c315f950a85270998ed4706b1b85eb34ebe1b3d822199a78ae052b1be1.sh",
+          "sha256": "cfa802c315f950a85270998ed4706b1b85eb34ebe1b3d822199a78ae052b1be1"
+        },
+        {
+          "name": "bundle/any-arm64/luch",
+          "sha256": "b65b06d5db9226987d041446299f2817da94e2e0036f5150e16c8fddd4d2de98"
+        },
+        {
+          "name": "bundle/any-arm64/luch-install",
+          "sha256": "56911ae47d3fc00c943bf13c6ae57388fd923b8a85a38cdcbfacd30b1753d6d0"
+        },
+        {
+          "name": "bundle/any-arm64/xray",
+          "sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+        },
+        {
+          "name": "bundle/any-arm64/geosite.dat",
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "bundle/any-arm64/geoip.dat",
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "bundle/any-arm64/luch.init",
+          "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "name": "bundle/any-arm64/luch-xray.init",
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "bundle/any-arm64/THIRD_PARTY_NOTICES.txt",
+          "sha256": "fd5a6fd5642c650ddf0789d63c4c87a257a80c7e48a09e2e9029e0e75ca42838"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/manifest.json",
+          "sha256": "ed8eaf29d05e610f611a9b72ed1b0afd5f526c9e6b20c0dab4f76b819ad9136d"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/manifest.sig",
+          "sha256": "f078e1b83150b2fa15c557c69e80b93f23e0e52cf7c0dc7540d83e924659ce8d"
+        },
+        {
+          "name": "stage/24.10.8-x86_64/bootstrap-ce779d2a530de2e4dc4c1a1a9cc99bf343f403b4e6ff587a04203bb87a25891e.sh",
+          "sha256": "ce779d2a530de2e4dc4c1a1a9cc99bf343f403b4e6ff587a04203bb87a25891e"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/luch",
+          "sha256": "fe933ad3348d5516e49a5f7c7f106475c3caedeb94f22e0ae1006dff0fc7cb5b"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/luch-install",
+          "sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/xray",
+          "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/geosite.dat",
+          "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/geoip.dat",
+          "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/luch.init",
+          "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/luch-xray.init",
+          "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+        },
+        {
+          "name": "bundle/24.10.8-x86_64/THIRD_PARTY_NOTICES.txt",
+          "sha256": "de0942ef8b56243e92f48a89fa2ff2cdc8702448b5c8a63e17e2d428215fb5d6"
+        },
+        {
+          "name": "runtime-helper-amd64",
+          "sha256": "96ff98c5640cda461930d69f61275b5bda88ed14cc19884f375ecf7db09edd44"
+        },
+        {
+          "name": "dns-smoke-amd64",
+          "sha256": "a522fd6405e4fc305ad6a7c821ed4dcc6dd8e87cc0fd21a9ecd3742f5c668308"
+        },
+        {
+          "name": "peer-helper",
+          "sha256": "7ff0831b6de26e9f64cdd95b9d0de825224f471259897a0ebead5e2020a81615"
+        },
+        {
+          "name": "runtime-helper-arm64",
+          "sha256": "5aebf91ea8453757ab168c74fda6683b8f467bdcb519f165320ca76acc13aefd"
+        },
+        {
+          "name": "targets-arm64.json",
+          "sha256": "64d62ff5011127b9b3c733ad5f984aa784f354b64fcbcea2141e91a12487a8ec"
+        },
+        {
+          "name": "24.10.8-x86_64.filesystem-check.json",
+          "sha256": "2108bebcc2f6b173c9a5bc5835c94e85fd560a5e184dbe917d222ad67f6a072c"
+        },
+        {
+          "name": "24.10.8-x86_64.qcow2",
+          "sha256": "fd414c8f5bb38216a8915290da6e57b1942228169249e6088b34a7700ea3f219"
+        },
+        {
+          "name": "25.12.5-aarch64_generic-universal.filesystem-check.json",
+          "sha256": "8f4167a42675ff12959021619eb63817c1746e4261d3ed7282b579e0d036a6b5"
+        },
+        {
+          "name": "25.12.5-aarch64_generic-universal.qcow2",
+          "sha256": "d5ea60d73f722221d0fd732b602a5f8d2c5eb09f53195e834c3f5023901de9a3"
+        }
+      ]
+    }
+  },
+  "public_install": {
+    "status": "PASS",
+    "target": "24.10.8-x86_64",
+    "openwrt": "24.10.8",
+    "arch": "x86_64",
+    "release": "1.2.12",
+    "checks": [
+      "wan-route-DNS-and-clock",
+      "github-one-command-signed-clean-install",
+      "menu-submenus-back-cancel-pause-resume-CRLF",
+      "every-installed-artifact-matches-final-candidate-signed-manifest",
+      "service-start-xray-config-existing-config-preserved",
+      "service-and-language-after-reboot",
+      "full-client-uninstall-existing-config-preserved"
+    ],
+    "candidate": {
+      "bundle": "24.10.8-x86_64",
+      "manifest_sha256": "ed8eaf29d05e610f611a9b72ed1b0afd5f526c9e6b20c0dab4f76b819ad9136d",
+      "bootstrap_sha256": "ce779d2a530de2e4dc4c1a1a9cc99bf343f403b4e6ff587a04203bb87a25891e",
+      "installer_sha256": "1006d52ecced7fdd55f0f9444f1e24f2c8c0c9bf72e56984f77fc8d053a17ca4",
+      "client_sha256": "fe933ad3348d5516e49a5f7c7f106475c3caedeb94f22e0ae1006dff0fc7cb5b",
+      "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "official_sources": {
+      "sha256": "23872c64fdb66d0765e0d17f71453a66e7a91e9ecb10606d5f738e6d166e14ae",
+      "kernel_sha256": null,
+      "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/sha256sums",
+      "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/openwrt-24.10.8-x86-64-generic-ext4-combined.img.gz"
+    },
+    "public_command_sha256": "9524fabe54fa83d1d32b95bd49c460070c27f18882324965ec887dac3204e80e"
+  },
+  "earlier_x86_runtime": {
+    "raw_status": "FAIL",
+    "completed_PASS_checks": 5,
+    "raw_PASS_entries": 6,
+    "incomplete_checkpoint_not_accepted": "real-reboot-returns-to-manual-second-location-with-first-also-healthy",
+    "raw_sha256": "2bde2309e00a6ac1df2546f661404e279a243be11bf299f35771f2d00c0dcf30",
+    "cause": "After successful reboot endpoint/traffic assertions, the checkpoint sampler had not been restarted and its volatile metrics file was absent. Fixed fixture-only by restarting it; signed product unchanged. This original FAIL is retained."
+  },
+  "host_checks": {
+    "go_test_all": "PASS",
+    "race_controller_agent_CLI": "PASS",
+    "go_vet_all": "PASS",
+    "fixture_tests": 52,
+    "fixture_tests_status": "PASS",
+    "regressions_on_old83ba2a8": "2 expected FAIL; manual preference overwritten and erased on catalog omission",
+    "logs_sha256": {
+      "go-test.log": "0804b5f68dffb913da92651553b7f3de6884b90e48a3ccfd81d18d8fbf0ca47c",
+      "race.log": "2efc1abec982a9b95823c89c9e2e7ecb62305b120bdb6498e25650113ad78469",
+      "vet.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fixture-tests-final.log": "4e432afafea1106bf2e77f7b5ce3cfda566ee6795b600a6d167d6efc47e2d5fb",
+      "before-regression.log": "8c2e1fd069e35e2e987f2cd52195826f6e3dc78f6cf6778e1c873112e478d0cb"
+    }
+  },
+  "public_install_raw_sha256": "57a1db612359af4391399b1ed0471445d9e4068987541e3c77693651ab83ca31",
+  "publication_assets_sha256": "f131ef7a18df13e4d717cacfba2d18190bac00d5f38edd05661f61b73add1876",
+  "installer_commit": "2983db4cdb05b7700b7661c66212bccfb8551d3d",
+  "dispatcher_sha256": "6811faf52da08e337d9e26b8293cf46d2b2455b7cb1bffaa7678a454361e6379",
+  "command_sha256": "9524fabe54fa83d1d32b95bd49c460070c27f18882324965ec887dac3204e80e",
+  "limitations": [
+    "No physical router or hardware offload qualification",
+    "No 24h test requested or performed",
+    "Historic 17-target evidence retains its original versions",
+    "No installation error from the reported Cudy was supplied; forwarded command was corrupted"
+  ],
+  "post_run_harness_fix": {
+    "scope": "checkpoint writes PASS only after metrics collection succeeds; no signed product change",
+    "fixture_tests": "52 PASS",
+    "fixture_tests_log_sha256": "15901ee41060957621551315a2780bcb9b585b3b376bc0f6ea5ecb6ea777e757",
+    "new_harness_sha256": "7a576ac6e0c2625c63cf14fea4f10171a52d7dd5e0f010093ef7f8da15d9f843"
+  }
+}
