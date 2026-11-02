@@ -2,13 +2,13 @@
 
 Клиент [Luch VPN](https://luch.one) для роутеров с OpenWrt. Подключает устройства домашней сети к VPN и управляется через SSH-меню на русском и английском языках.
 
-**Текущий выпуск:** [v1.2.11](https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.11).
+**Текущий выпуск:** [v1.2.12](https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.12).
 
 ## Установка
 
 Понадобятся подключение к интернету, SSH-доступ к роутеру от имени `root` и [подписка Luch VPN](https://t.me/LuchVPN_bot).
 
-Подключитесь к роутеру по SSH и вставьте команду целиком:
+Подключитесь к роутеру по SSH. Скопируйте весь блок кнопкой копирования справа и вставьте в терминал. [Текст команды без форматирования](docs/install-command-v1.2.12.txt).
 
 ```sh
 ( set -eu; umask 077; f=''; log=''; fail() { printf 'Luch VPN: %s\n' "$1" >&2; if [ -n "${log:-}" ]; then printf 'Ошибка: %s\n' "$1" >> "$log"; fi; exit 1; }; retry() { attempts=$1; shift; delay=2; while ! "$@"; do attempts=$((attempts - 1)); [ "$attempts" -gt 0 ] || return 1; sleep "$delay"; delay=$((delay * 2)); done; };
@@ -22,16 +22,18 @@ download_file=$1; download_url=$2; download_limit=${3:-0}; case "$download_limit
 download_with_limit retry 3 wget -T 60 -q -O "$download_file" "$download_url" >> "$log" 2>&1 && return 0; fi; printf 'Luch VPN: устанавливаю поддержку HTTPS из системных пакетов...\n'; if command -v opkg >/dev/null 2>&1; then
 retry 3 opkg update >> "$log" 2>&1 || printf 'Luch VPN: каталог пакетов обновлён не полностью; пробую доступные пакеты.\n'; retry 3 opkg install curl ca-certificates ca-bundle >> "$log" 2>&1 || return 1; elif command -v apk >/dev/null 2>&1; then
 retry 3 apk update >> "$log" 2>&1 || printf 'Luch VPN: каталог пакетов обновлён не полностью; пробую доступные пакеты.\n'; retry 3 apk add curl ca-certificates ca-bundle >> "$log" 2>&1 || return 1; else return 1; fi; command -v curl >/dev/null 2>&1 || return 1;
-download_with_limit retry 3 curl --fail --location --max-time 60 --output "$download_file" "$download_url" >> "$log" 2>&1; }; u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/3027c7174bf447d1c8208eb8b54eb7b601572cb6/install-v1.2.11.sh'; download_https "$f" "$u" 256 || fail 'не удалось загрузить установщик по HTTPS';
+download_with_limit retry 3 curl --fail --location --max-time 60 --output "$download_file" "$download_url" >> "$log" 2>&1; }; u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/2983db4cdb05b7700b7661c66212bccfb8551d3d/install-v1.2.12.sh'; download_https "$f" "$u" 256 || fail 'не удалось загрузить установщик по HTTPS';
 ensure_checksum || fail 'не удалось подготовить SHA256 для проверки установщика'; actual=$(sha256sum "$f") || fail 'не удалось проверить установщик'; actual=${actual%% *};
-[ "$actual" = 'caa95197ea2e227e8ca537782f391a10584126a11da31346dc71e7194a6bf17f' ] || fail 'установщик не прошёл проверку целостности'; sh "$f"; )
+[ "$actual" = '6811faf52da08e337d9e26b8293cf46d2b2455b7cb1bffaa7678a454361e6379' ] || fail 'установщик не прошёл проверку целостности'; sh "$f"; )
 ```
+
+Если команда не запускается или загрузка прервалась, см. [помощь с установкой](docs/INSTALLATION_HELP.md).
 
 После установки меню откроется автоматически. Выберите язык, вставьте ссылку на подписку и выберите локацию. Для повторного открытия меню выполните `luch`.
 
 ## Возможности
 
-- Выбор локации, проверка связи и управление подпиской из меню.
+- Выбор локации, проверка связи и управление подпиской из меню. Ручной выбор сохраняется: после перезагрузки клиент сначала подключается к нему, а при недоступности использует запасную локацию.
 - Автоматическое обновление подписки и локаций.
 - Сохранение маршрутизации, DNS и прямых подключений из конфигурации Xray.
 - Переход на другую локацию при сбое. Если доступных локаций нет, клиент возвращает обычный выход в интернет через роутер.
