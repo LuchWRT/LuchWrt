@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-03",
+  "scope": "extra GeoSite/GeoIP import, Xray validation and owned DAT cleanup",
+  "xray": "26.3.27 macOS ARM64",
+  "downloads": [
+    {
+      "name": "v2fly GeoSite",
+      "kind": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/release/dlc.dat",
+      "categories": [
+        "category-ru",
+        "google@cn"
+      ],
+      "bytes": 2405469,
+      "sha256": "78188a409b130ea5537a56941cca0d2f88d33f4a5e3a1bc0a7c2db5681ff4c0b",
+      "valid": true,
+      "seconds": 0.977929125
+    },
+    {
+      "name": "v2fly GeoIP",
+      "kind": "geoip",
+      "url": "https://raw.githubusercontent.com/v2fly/geoip/release/geoip.dat",
+      "categories": [
+        "ru",
+        "private"
+      ],
+      "bytes": 23258601,
+      "sha256": "4ff4b2ec242a9e87b296ba27ddb85f8311e8d3e071eaebac5be9231c60e408dd",
+      "valid": true,
+      "seconds": 3.5318231669999998
+    },
+    {
+      "name": "Loyalsoldier GeoSite",
+      "kind": "geosite",
+      "url": "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat",
+      "categories": [
+        "category-ru",
+        "youtube"
+      ],
+      "bytes": 11323876,
+      "sha256": "704a1d584d330445350a39d140cf019d06c184b22c59bc4aebaa660b1b6c841f",
+      "valid": true,
+      "seconds": 2.238927667
+    },
+    {
+      "name": "Loyalsoldier GeoIP",
+      "kind": "geoip",
+      "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat",
+      "categories": [
+        "ru",
+        "private"
+      ],
+      "bytes": 16549675,
+      "sha256": "fbf747a085be25eb61ecac8c27140b4ab0bf8181af6fdb104caa325bd93cf117",
+      "valid": true,
+      "seconds": 3.9100245
+    },
+    {
+      "name": "RuNet Freedom GeoSite",
+      "kind": "geosite",
+      "url": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geosite.dat",
+      "categories": [
+        "ru-available-only-inside",
+        "ru-blocked"
+      ],
+      "bytes": 85531063,
+      "sha256": "60c32a2ec79d7ace234782b03654ac37aa114b4736638b7670ac84369e0e3b63",
+      "valid": true,
+      "seconds": 12.836399666
+    },
+    {
+      "name": "RuNet Freedom GeoIP",
+      "kind": "geoip",
+      "url": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat",
+      "categories": [
+        "ru-blocked",
+        "yandex"
+      ],
+      "bytes": 18002139,
+      "sha256": "a82ca3f358c16c4ee195651a790a449adb1e472ecaae119e3e252d202a9f45ac",
+      "valid": true,
+      "seconds": 3.42920525
+    },
+    {
+      "name": "XTLS GeoSite",
+      "kind": "geosite",
+      "url": "https://github.com/XTLS/Xray-rules-dat/releases/latest/download/geosite.dat",
+      "categories": [
+        "category-ru",
+        "youtube"
+      ],
+      "bytes": 7579164,
+      "sha256": "e5073c5e41e22556673c008c3200b9ee37d7abf85cd114c87d5ad194add9bc5f",
+      "valid": true,
+      "seconds": 1.751390666
+    },
+    {
+      "name": "XTLS GeoIP Lite",
+      "kind": "geoip",
+      "url": "https://github.com/XTLS/Xray-rules-dat/releases/latest/download/geoip-lite.dat",
+      "categories": [
+        "in-ru",
+        "private"
+      ],
+      "bytes": 3304614,
+      "sha256": "2017885fedc96c5ef6f795bf38bff95971561961512efa989cba4ddbe7e21b0f",
+      "valid": true,
+      "seconds": 1.488206458
+    }
+  ],
+  "downloaded_bytes": 167954601,
+  "lifecycle": {
+    "all_real_dat_files_removed": true,
+    "cancelled_import_no_partial_files": true,
+    "corrupt_unused_dat_removed": true,
+    "disable_preserves_files": true,
+    "downloaded_dat_files": 8,
+    "eight_sources_together": true,
+    "failed_refresh_keeps_old_and_removes_candidate": true,
+    "foreign_link_target_preserved": true,
+    "interrupted_import_removed": true,
+    "invalid_download_removed": true,
+    "last_reference_frees_file": true,
+    "original_upload_not_deleted": true,
+    "owner_configurations_with_eight_sources": 13,
+    "remaining_managed_files": 0,
+    "shared_dat_kept_until_last_reference": true,
+    "successful_refresh_removes_old_file": true,
+    "wrong_type_and_missing_category_rejected": true
+  },
+  "regressions_fixed": [
+    "unused damaged DAT cleanup",
+    "cleanup errors surfaced after commit",
+    "changed pinned recovery download discarded before publication",
+    "batch refresh budget excludes old revisions still pending refresh",
+    "explicit refresh repairs damaged owned snapshots"
+  ],
+  "validation": {
+    "go_test_all": true,
+    "go_vet_all": true,
+    "race_packages": [
+      "cmd/luch",
+      "internal/routeprofile",
+      "internal/openwrt/procd"
+    ]
+  },
+  "cross_builds": [
+    {
+      "target": "amd64",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "target": "386",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "target": "arm64",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "target": "armv7",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "target": "armv6",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "target": "armv5",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "target": "mips",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "target": "mipsle",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "limits": "No full production VPN connectivity sweep or per-firmware OpenWrt runtime qualification in this audit."
+}

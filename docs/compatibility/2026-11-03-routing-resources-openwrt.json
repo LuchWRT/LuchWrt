@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-03",
+  "kind": "GeoSite/GeoIP resource preflight and targeted OpenWrt runtime",
+  "candidate": {
+    "published": false,
+    "disposable_test_signing_key": true,
+    "metadata_version": "1.2.12",
+    "source_snapshot_sha256": "3cdfef97aca73eaafcede1b9d744dd052eb223c2d165ac29d211dddc933775b6"
+  },
+  "resource_preflight": {
+    "additional_storage_reserve_bytes": 4194304,
+    "known_length_checked_before_temporary_file": true,
+    "unknown_length_bounded_by_free_space": true,
+    "memory_warning": {
+      "always_at_file_bytes": 33554432,
+      "memory_sensitive_from_file_bytes": 8388608,
+      "low_total_RAM_bytes": 268435456
+    },
+    "RAM_warning_is_not_peak_prediction": true
+  },
+  "targets": [
+    {
+      "target": "21.02.7-x86_64",
+      "firewall": "fw3",
+      "status": "PASS",
+      "router_RAM_mib": 256,
+      "checks": [
+        {
+          "name": "signed-clean-install-all-eight-artifacts-verified",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:10:22.324640+00:00"
+        },
+        {
+          "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:10:42.725176+00:00"
+        },
+        {
+          "name": "extra-routing-URL-and-local-DAT-import-preflight-and-real-LAN-traffic",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:11:14.246515+00:00"
+        },
+        {
+          "name": "extra-routing-16MiB-update-warns-on-256MiB-and-prunes-old-revision",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:11:45.684507+00:00"
+        },
+        {
+          "name": "extra-routing-real-reboot-restores-DATs-without-original-tmp-upload",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:12:38.621200+00:00"
+        },
+        {
+          "name": "extra-routing-removal-frees-all-DATs-and-restores-original-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:13:13.084859+00:00"
+        },
+        {
+          "name": "extra-routing-real-low-storage-refusal-before-writing-retains-VPN",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:13:28.849496+00:00"
+        }
+      ],
+      "extra_routing": {
+        "boot_before": "1f7bfa0e-f52d-4684-ad12-ea9eca52f010",
+        "boot_after": "44f55a60-1340-4aed-89a6-9ae63e37bea7",
+        "URL_sources": 1,
+        "local_sources": 1,
+        "updated_DAT_bytes": 16777216,
+        "low_storage_filesystem_bytes": 8388608,
+        "remaining_DAT_files": 0,
+        "RAM_mib": 256
+      },
+      "distinct_hwid_count": 1,
+      "oom_events_observed": false,
+      "official_image": {
+        "sha256": "39f8e1f629cfe1db985809639c2cd1de88db119544144740d968d0b6784a9d6f",
+        "kernel_sha256": null,
+        "checksum_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/sha256sums",
+        "source_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/openwrt-21.02.7-x86-64-generic-ext4-combined.img.gz"
+      },
+      "artifact_hashes": {
+        "luch": "372210e077fa45caf10bb5498d9a5e4ef17dd2ef383ec4bc62c96819b0c8db8e",
+        "luch-install": "97e5f4a8c280506625210cc7cf7316871084f116003ce5ac161921cc8ba7464b",
+        "xray": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+        "geosite.dat": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+        "geoip.dat": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+        "luch.init": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+        "luch-xray.init": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+        "THIRD_PARTY_NOTICES.txt": "2e4990750e838ce8d70c07b6f61452232a94b0c9098e6cdd517c3938c42f119d"
+      }
+    },
+    {
+      "target": "24.10.8-x86_64",
+      "firewall": "fw4",
+      "status": "PASS",
+      "router_RAM_mib": 256,
+      "checks": [
+        {
+          "name": "signed-clean-install-all-eight-artifacts-verified",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:02:54.252722+00:00"
+        },
+        {
+          "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:03:14.854943+00:00"
+        },
+        {
+          "name": "extra-routing-URL-and-local-DAT-import-preflight-and-real-LAN-traffic",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:03:48.398010+00:00"
+        },
+        {
+          "name": "extra-routing-16MiB-update-warns-on-256MiB-and-prunes-old-revision",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:04:19.050506+00:00"
+        },
+        {
+          "name": "extra-routing-real-reboot-restores-DATs-without-original-tmp-upload",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:05:44.004611+00:00"
+        },
+        {
+          "name": "extra-routing-removal-frees-all-DATs-and-restores-original-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:06:29.181651+00:00"
+        },
+        {
+          "name": "extra-routing-real-low-storage-refusal-before-writing-retains-VPN",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:06:45.459160+00:00"
+        }
+      ],
+      "extra_routing": {
+        "boot_before": "5b4c8ca3-6c50-432e-8b0d-8086d9517fae",
+        "boot_after": "0db476fc-32ac-45c2-bdff-00972545cbca",
+        "URL_sources": 1,
+        "local_sources": 1,
+        "updated_DAT_bytes": 16777216,
+        "low_storage_filesystem_bytes": 8388608,
+        "remaining_DAT_files": 0,
+        "RAM_mib": 256
+      },
+      "distinct_hwid_count": 1,
+      "oom_events_observed": false,
+      "official_image": {
+        "sha256": "23872c64fdb66d0765e0d17f71453a66e7a91e9ecb10606d5f738e6d166e14ae",
+        "kernel_sha256": null,
+        "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/sha256sums",
+        "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/openwrt-24.10.8-x86-64-generic-ext4-combined.img.gz"
+      },
+      "artifact_hashes": {
+        "luch": "372210e077fa45caf10bb5498d9a5e4ef17dd2ef383ec4bc62c96819b0c8db8e",
+        "luch-install": "97e5f4a8c280506625210cc7cf7316871084f116003ce5ac161921cc8ba7464b",
+        "xray": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+        "geosite.dat": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+        "geoip.dat": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+        "luch.init": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+        "luch-xray.init": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+        "THIRD_PARTY_NOTICES.txt": "de0942ef8b56243e92f48a89fa2ff2cdc8702448b5c8a63e17e2d428215fb5d6"
+      }
+    }
+  ],
+  "validation": {
+    "go_test_all": true,
+    "go_vet_all": true,
+    "race_packages": [
+      "cmd/luch",
+      "internal/routeprofile"
+    ],
+    "fixture_unit_tests": 52,
+    "cross_builds": [
+      {
+        "target": "amd64",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "target": "386",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "target": "arm64",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "target": "armv7",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "target": "armv6",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "target": "armv5",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "target": "mips",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "target": "mipsle",
+        "passed": true,
+        "error": ""
+      }
+    ]
+  },
+  "limitations": [
+    "official ext4 images with resized 512 MiB disposable roots",
+    "QEMU x86-64, no physical-device qualification",
+    "16 MiB update fixture uses real compact v2fly GeoSite plus a valid unknown protobuf field",
+    "two selected firmware versions; no claim of runtime coverage for all OpenWrt versions"
+  ]
+}

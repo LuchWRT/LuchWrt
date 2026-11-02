@@ -1,0 +1,485 @@
+{
+  "schema": 1,
+  "release": "1.2.13",
+  "date": "2026-11-03",
+  "status": "PUBLISHED_PUBLIC_INSTALL_VERIFIED",
+  "build_source_commit": "85b3da272e023517e41dade06c2b17d5c26ac8d2",
+  "source_snapshot_sha256": "49ae855120110a7ff67f31ed6d0eb6b00f56dca3d98820d4be82a0123a851de6",
+  "freeze_sha256": "a9d879cc6a41bd53fad6c00a875c6199bc40189d1f942682a845e8350d8a5245",
+  "signing_public_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+  "package_set": {
+    "exact_targets": 17,
+    "universal_targets": 8,
+    "assets": 327,
+    "rebuilt": [
+      "luch",
+      "luch-install"
+    ],
+    "reused": [
+      "xray",
+      "geoip.dat",
+      "geosite.dat",
+      "luch.init",
+      "luch-xray.init",
+      "THIRD_PARTY_NOTICES.txt"
+    ]
+  },
+  "runtime": [
+    {
+      "target": "21.02.7-x86_64",
+      "firewall": "fw3",
+      "status": "PASS",
+      "router_RAM_mib": 256,
+      "checks": [
+        {
+          "name": "signed-clean-install-all-eight-artifacts-verified",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:42:33.779334+00:00"
+        },
+        {
+          "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:42:55.181681+00:00"
+        },
+        {
+          "name": "extra-routing-URL-and-local-DAT-import-preflight-and-real-LAN-traffic",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:43:26.425829+00:00"
+        },
+        {
+          "name": "extra-routing-16MiB-update-warns-on-256MiB-and-prunes-old-revision",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:43:57.772394+00:00"
+        },
+        {
+          "name": "extra-routing-real-reboot-restores-DATs-without-original-tmp-upload",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:44:51.025208+00:00"
+        },
+        {
+          "name": "extra-routing-removal-frees-all-DATs-and-restores-original-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:45:24.968949+00:00"
+        },
+        {
+          "name": "extra-routing-real-low-storage-refusal-before-writing-retains-VPN",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:45:40.763192+00:00"
+        }
+      ],
+      "boot_ids": {
+        "before": "ceb487f6-5198-49e5-b8d5-48608125fb86",
+        "after": "54d04e5d-ba20-4959-978c-30594b95c382"
+      },
+      "extra_routing": {
+        "boot_before": "ceb487f6-5198-49e5-b8d5-48608125fb86",
+        "boot_after": "54d04e5d-ba20-4959-978c-30594b95c382",
+        "URL_sources": 1,
+        "local_sources": 1,
+        "updated_DAT_bytes": 16777216,
+        "low_storage_filesystem_bytes": 8388608,
+        "remaining_DAT_files": 0,
+        "RAM_mib": 256
+      },
+      "raw_sha256": "6544568b7c37f12cad8caa25f1a9242d9bdeb04bbc7319cc71c3f898ae5d643b",
+      "frozen_inputs": {
+        "source_snapshot_sha256": "49ae855120110a7ff67f31ed6d0eb6b00f56dca3d98820d4be82a0123a851de6",
+        "freeze_sha256": "a9d879cc6a41bd53fad6c00a875c6199bc40189d1f942682a845e8350d8a5245",
+        "files": [
+          {
+            "name": "freeze.json",
+            "sha256": "a9d879cc6a41bd53fad6c00a875c6199bc40189d1f942682a845e8350d8a5245"
+          },
+          {
+            "name": "qemu_production_qualification.py",
+            "sha256": "28bbb077a31da8cf8e4cb06ed74140ebe8b30a59777d084c8c245ed861b93532"
+          },
+          {
+            "name": "qemu_compatibility.py",
+            "sha256": "8717636e61dcb688dfee6882a9476166e9977dbc83e75e1fa81c834ec3cc8bcd"
+          },
+          {
+            "name": "qemu_lan_compatibility.py",
+            "sha256": "bda1f7a0a4e7483ca3feac8a4f8d0e609162904d125a1d03daa837681f9315a4"
+          },
+          {
+            "name": "qemu_production_services.py",
+            "sha256": "3e15d302a346ecc3c574b7a9b057e2f34263be52e2b6de3c976499ee1cdfe9a5"
+          },
+          {
+            "name": "qemu_squashfs_fixture.py",
+            "sha256": "674f23407202ce0027ee0f82ee2215975cb18330e0a4997922e01c9f6a3b1605"
+          },
+          {
+            "name": "qemu_soak_evidence.py",
+            "sha256": "993222618b5ccfa562b09eeb150ac2848ee782b1136c9c41648a877001220b1c"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/manifest.json",
+            "sha256": "ec23bfaea9032dcc6bb6da1ac63d5139b5adfcb68d5f174d642e08c3ed085cdc"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/manifest.sig",
+            "sha256": "0ff0d377f59a47a497b638cc15db71dcb44912b8904354218f55c69bdda2bcca"
+          },
+          {
+            "name": "stage/21.02.7-x86_64/bootstrap-13978675fcfdf56d5dcb7a5107757899569aed339c1dae0a8a5ad36c2ce540f6.sh",
+            "sha256": "13978675fcfdf56d5dcb7a5107757899569aed339c1dae0a8a5ad36c2ce540f6"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/luch",
+            "sha256": "cdcfb6f85e697dec275bcac532c51f895ac9eedb00fe86c10d0dbdffec2cb783"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/luch-install",
+            "sha256": "338bc5fcf90b43524cd5cd85b9174015c0bc0ad3e9febeae89e569ce064dc533"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          },
+          {
+            "name": "bundle/21.02.7-x86_64/THIRD_PARTY_NOTICES.txt",
+            "sha256": "2e4990750e838ce8d70c07b6f61452232a94b0c9098e6cdd517c3938c42f119d"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/manifest.json",
+            "sha256": "e22ad1c8aab619884efdf316c311eac8c6c36320229bca7129525a390c659780"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/manifest.sig",
+            "sha256": "f53620ceb17becd52299d4627e858c4e4974ec587bd89d239c70fc879a80dd22"
+          },
+          {
+            "name": "stage/24.10.8-x86_64/bootstrap-7ea2f7542119d704acde89599b36310c9d18dac20ef0e9d6fb96adc17e8a5cb7.sh",
+            "sha256": "7ea2f7542119d704acde89599b36310c9d18dac20ef0e9d6fb96adc17e8a5cb7"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch",
+            "sha256": "cdcfb6f85e697dec275bcac532c51f895ac9eedb00fe86c10d0dbdffec2cb783"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch-install",
+            "sha256": "338bc5fcf90b43524cd5cd85b9174015c0bc0ad3e9febeae89e569ce064dc533"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/THIRD_PARTY_NOTICES.txt",
+            "sha256": "de0942ef8b56243e92f48a89fa2ff2cdc8702448b5c8a63e17e2d428215fb5d6"
+          },
+          {
+            "name": "runtime-helper-amd64",
+            "sha256": "96ff98c5640cda461930d69f61275b5bda88ed14cc19884f375ecf7db09edd44"
+          },
+          {
+            "name": "dns-smoke-amd64",
+            "sha256": "a522fd6405e4fc305ad6a7c821ed4dcc6dd8e87cc0fd21a9ecd3742f5c668308"
+          },
+          {
+            "name": "peer-helper",
+            "sha256": "7ff0831b6de26e9f64cdd95b9d0de825224f471259897a0ebead5e2020a81615"
+          },
+          {
+            "name": "qemu_extra_routing.py",
+            "sha256": "ddf3f1c057b26f9e025a90259355bf883fd1da175869e612b7be9ae1a39c54e6"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "78188a409b130ea5537a56941cca0d2f88d33f4a5e3a1bc0a7c2db5681ff4c0b"
+          },
+          {
+            "name": "targets.json",
+            "sha256": "72e71d9bb42b09f8eb56b96cf65be09c653a1c9321a64145a53212830b8a9047"
+          },
+          {
+            "name": "24.10.8-x86_64.filesystem-check.json",
+            "sha256": "50cf883cf850a046968552da78b1f90b7a12b7d33320b191804cccca90721b36"
+          },
+          {
+            "name": "24.10.8-x86_64.qcow2",
+            "sha256": "785e834d0411739d884d01e2294db81f71146b37f8994ef9122c4d1d75dad1cf"
+          },
+          {
+            "name": "21.02.7-x86_64.filesystem-check.json",
+            "sha256": "ed0d7bcd1ef1ef4ee41d3fa3306bc7955dfb5b50a35f903c8807fd028b6b0f18"
+          },
+          {
+            "name": "21.02.7-x86_64.qcow2",
+            "sha256": "cb505c0a31ce6a61cea40c480fe2187493ca447e5d457ed55edf92e010d99377"
+          }
+        ]
+      }
+    },
+    {
+      "target": "24.10.8-x86_64",
+      "firewall": "fw4",
+      "status": "PASS",
+      "router_RAM_mib": 256,
+      "checks": [
+        {
+          "name": "signed-clean-install-all-eight-artifacts-verified",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:49:40.028975+00:00"
+        },
+        {
+          "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:50:00.819385+00:00"
+        },
+        {
+          "name": "extra-routing-URL-and-local-DAT-import-preflight-and-real-LAN-traffic",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:50:33.139083+00:00"
+        },
+        {
+          "name": "extra-routing-16MiB-update-warns-on-256MiB-and-prunes-old-revision",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:51:04.687531+00:00"
+        },
+        {
+          "name": "extra-routing-real-reboot-restores-DATs-without-original-tmp-upload",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:52:25.835988+00:00"
+        },
+        {
+          "name": "extra-routing-removal-frees-all-DATs-and-restores-original-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:53:10.331936+00:00"
+        },
+        {
+          "name": "extra-routing-real-low-storage-refusal-before-writing-retains-VPN",
+          "status": "PASS",
+          "at_utc": "2026-11-02T22:53:26.599968+00:00"
+        }
+      ],
+      "boot_ids": {
+        "before": "86841744-d37b-4712-95e8-77921bdf2fe1",
+        "after": "75c3d19d-2bc0-4b0b-875d-4b7dec9517bf"
+      },
+      "extra_routing": {
+        "boot_before": "86841744-d37b-4712-95e8-77921bdf2fe1",
+        "boot_after": "75c3d19d-2bc0-4b0b-875d-4b7dec9517bf",
+        "URL_sources": 1,
+        "local_sources": 1,
+        "updated_DAT_bytes": 16777216,
+        "low_storage_filesystem_bytes": 8388608,
+        "remaining_DAT_files": 0,
+        "RAM_mib": 256
+      },
+      "raw_sha256": "7bacc7dbd2805ab5e210d59b35758bb499255347dc9c8034c66f8a512f306cea",
+      "frozen_inputs": {
+        "source_snapshot_sha256": "49ae855120110a7ff67f31ed6d0eb6b00f56dca3d98820d4be82a0123a851de6",
+        "freeze_sha256": "a9d879cc6a41bd53fad6c00a875c6199bc40189d1f942682a845e8350d8a5245",
+        "files": [
+          {
+            "name": "freeze.json",
+            "sha256": "a9d879cc6a41bd53fad6c00a875c6199bc40189d1f942682a845e8350d8a5245"
+          },
+          {
+            "name": "qemu_production_qualification.py",
+            "sha256": "28bbb077a31da8cf8e4cb06ed74140ebe8b30a59777d084c8c245ed861b93532"
+          },
+          {
+            "name": "qemu_compatibility.py",
+            "sha256": "8de7a4b66a351f6dca7b0936e15573cd6da26af8fb53f89edff1cfad9d4d879b"
+          },
+          {
+            "name": "qemu_lan_compatibility.py",
+            "sha256": "bda1f7a0a4e7483ca3feac8a4f8d0e609162904d125a1d03daa837681f9315a4"
+          },
+          {
+            "name": "qemu_production_services.py",
+            "sha256": "3e15d302a346ecc3c574b7a9b057e2f34263be52e2b6de3c976499ee1cdfe9a5"
+          },
+          {
+            "name": "qemu_squashfs_fixture.py",
+            "sha256": "674f23407202ce0027ee0f82ee2215975cb18330e0a4997922e01c9f6a3b1605"
+          },
+          {
+            "name": "qemu_soak_evidence.py",
+            "sha256": "993222618b5ccfa562b09eeb150ac2848ee782b1136c9c41648a877001220b1c"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/manifest.json",
+            "sha256": "e22ad1c8aab619884efdf316c311eac8c6c36320229bca7129525a390c659780"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/manifest.sig",
+            "sha256": "f53620ceb17becd52299d4627e858c4e4974ec587bd89d239c70fc879a80dd22"
+          },
+          {
+            "name": "stage/24.10.8-x86_64/bootstrap-7ea2f7542119d704acde89599b36310c9d18dac20ef0e9d6fb96adc17e8a5cb7.sh",
+            "sha256": "7ea2f7542119d704acde89599b36310c9d18dac20ef0e9d6fb96adc17e8a5cb7"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch",
+            "sha256": "cdcfb6f85e697dec275bcac532c51f895ac9eedb00fe86c10d0dbdffec2cb783"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch-install",
+            "sha256": "338bc5fcf90b43524cd5cd85b9174015c0bc0ad3e9febeae89e569ce064dc533"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/xray",
+            "sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/geosite.dat",
+            "sha256": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/geoip.dat",
+            "sha256": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch.init",
+            "sha256": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/luch-xray.init",
+            "sha256": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027"
+          },
+          {
+            "name": "bundle/24.10.8-x86_64/THIRD_PARTY_NOTICES.txt",
+            "sha256": "de0942ef8b56243e92f48a89fa2ff2cdc8702448b5c8a63e17e2d428215fb5d6"
+          },
+          {
+            "name": "runtime-helper-amd64",
+            "sha256": "96ff98c5640cda461930d69f61275b5bda88ed14cc19884f375ecf7db09edd44"
+          },
+          {
+            "name": "dns-smoke-amd64",
+            "sha256": "a522fd6405e4fc305ad6a7c821ed4dcc6dd8e87cc0fd21a9ecd3742f5c668308"
+          },
+          {
+            "name": "peer-helper",
+            "sha256": "7ff0831b6de26e9f64cdd95b9d0de825224f471259897a0ebead5e2020a81615"
+          },
+          {
+            "name": "qemu_extra_routing.py",
+            "sha256": "ddf3f1c057b26f9e025a90259355bf883fd1da175869e612b7be9ae1a39c54e6"
+          },
+          {
+            "name": "geosite.dat",
+            "sha256": "78188a409b130ea5537a56941cca0d2f88d33f4a5e3a1bc0a7c2db5681ff4c0b"
+          },
+          {
+            "name": "targets.json",
+            "sha256": "72e71d9bb42b09f8eb56b96cf65be09c653a1c9321a64145a53212830b8a9047"
+          },
+          {
+            "name": "24.10.8-x86_64.filesystem-check.json",
+            "sha256": "6f59aa085fea1f61ded0280ea8bea1b2fadc6c28625f84c7498e0e845ec3ba78"
+          },
+          {
+            "name": "24.10.8-x86_64.qcow2",
+            "sha256": "8ada25a17a2d9b9e3f12ed85022f61bede56e3ea2086270ae986fa7c9662f1f2"
+          }
+        ]
+      }
+    }
+  ],
+  "public_install": {
+    "status": "PASS",
+    "target": "24.10.8-x86_64",
+    "openwrt": "24.10.8",
+    "arch": "x86_64",
+    "release": "1.2.13",
+    "checks": [
+      "wan-route-DNS-and-clock",
+      "github-one-command-signed-clean-install",
+      "menu-submenus-back-cancel-pause-resume-CRLF",
+      "every-installed-artifact-matches-final-candidate-signed-manifest",
+      "service-start-xray-config-existing-config-preserved",
+      "service-and-language-after-reboot",
+      "full-client-uninstall-existing-config-preserved"
+    ],
+    "candidate": {
+      "bundle": "24.10.8-x86_64",
+      "manifest_sha256": "e22ad1c8aab619884efdf316c311eac8c6c36320229bca7129525a390c659780",
+      "bootstrap_sha256": "7ea2f7542119d704acde89599b36310c9d18dac20ef0e9d6fb96adc17e8a5cb7",
+      "installer_sha256": "338bc5fcf90b43524cd5cd85b9174015c0bc0ad3e9febeae89e569ce064dc533",
+      "client_sha256": "cdcfb6f85e697dec275bcac532c51f895ac9eedb00fe86c10d0dbdffec2cb783",
+      "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "official_sources": {
+      "sha256": "23872c64fdb66d0765e0d17f71453a66e7a91e9ecb10606d5f738e6d166e14ae",
+      "kernel_sha256": null,
+      "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/sha256sums",
+      "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/openwrt-24.10.8-x86-64-generic-ext4-combined.img.gz"
+    },
+    "public_command_sha256": "239a7ac322e71d44135743e5fa96142967cc4c239e6c37dc58bb68a996af5a1e",
+    "boot_id_before": "dcdd55f0-5754-4065-8139-44af1714da9a",
+    "boot_id_after": "a4671db6-22ec-434a-97d6-ea4d6d137ede"
+  },
+  "public_install_raw_sha256": "de7682bd25d9ea23eca741ab8eec0b485d7b6e2310020192213a91a071b0e395",
+  "publication": {
+    "release_id": 432046044,
+    "assets_verified_by": "GitHub asset names, sizes and SHA256 match every local signed asset; real public download/install separately exercised for x86_64",
+    "upload_manifest_sha256": "366c537e5585a861224638506ea42cb150fcd7151faa0c8210119317941a6891",
+    "installer_commit": "9bbbfc78845544b2158773f7cedef235e875a9db",
+    "dispatcher_sha256": "b5777e95ab0c37eb13d576eb2c241ddfb159567c658afb4ac0d7d7ee70cd7fa2",
+    "command_sha256": "239a7ac322e71d44135743e5fa96142967cc4c239e6c37dc58bb68a996af5a1e",
+    "previous_release": {
+      "tag": "v1.2.12",
+      "id": 431702574,
+      "assets": 327,
+      "unchanged": true
+    }
+  },
+  "host_checks": {
+    "go_test_all_with_native_Xray": "PASS",
+    "race_CLI_routeprofile": "PASS",
+    "go_vet_all": "PASS",
+    "fixture_tests": 52,
+    "fixture_tests_status": "PASS",
+    "Linux_families_built": 8,
+    "logs_sha256": {
+      "go-test.log": "80181cab2e41cb2db3eaed9ce7bf2aaadcf9e9f8058c5b9ad3e489e76c8ed9b1",
+      "race.log": "fa1665ff8cd74b936aba442a12ecfbefbd7e0d443e0f6f25c972683e65579f0a",
+      "vet.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "harness-tests.log": "50858513ad7227b7172f059b0469ed6f615305d75ab7e9c7ba4ba7930c1e1543"
+    }
+  },
+  "limitations": [
+    "No physical router or hardware offload qualification",
+    "Two targeted runtime systems; historical 17-target results retain their original versions",
+    "Large eight-DAT audit ran on native macOS Xray; 256 MiB OpenWrt runtime uses compact DAT and valid padded 16 MiB fixture",
+    "No universal claim for arbitrary DAT format, category, RAM size or every OpenWrt version"
+  ]
+}

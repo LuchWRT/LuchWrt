@@ -2,13 +2,13 @@
 
 Клиент [Luch VPN](https://luch.one) для роутеров с OpenWrt. Подключает устройства домашней сети к VPN и управляется через SSH-меню на русском и английском языках.
 
-**Текущий выпуск:** [v1.2.12](https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.12).
+**Текущий выпуск:** [v1.2.13](https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.13).
 
 ## Установка
 
 Понадобятся подключение к интернету, SSH-доступ к роутеру от имени `root` и [подписка Luch VPN](https://t.me/LuchVPN_bot).
 
-Подключитесь к роутеру по SSH. Скопируйте весь блок кнопкой копирования справа и вставьте в терминал. [Текст команды без форматирования](docs/install-command-v1.2.12.txt).
+Подключитесь к роутеру по SSH. Скопируйте весь блок кнопкой копирования справа и вставьте в терминал. [Текст команды без форматирования](docs/install-command-v1.2.13.txt).
 
 ```sh
 ( set -eu; umask 077; f=''; log=''; fail() { printf 'Luch VPN: %s\n' "$1" >&2; if [ -n "${log:-}" ]; then printf 'Ошибка: %s\n' "$1" >> "$log"; fi; exit 1; }; retry() { attempts=$1; shift; delay=2; while ! "$@"; do attempts=$((attempts - 1)); [ "$attempts" -gt 0 ] || return 1; sleep "$delay"; delay=$((delay * 2)); done; };
@@ -22,9 +22,9 @@ download_file=$1; download_url=$2; download_limit=${3:-0}; case "$download_limit
 download_with_limit retry 3 wget -T 60 -q -O "$download_file" "$download_url" >> "$log" 2>&1 && return 0; fi; printf 'Luch VPN: устанавливаю поддержку HTTPS из системных пакетов...\n'; if command -v opkg >/dev/null 2>&1; then
 retry 3 opkg update >> "$log" 2>&1 || printf 'Luch VPN: каталог пакетов обновлён не полностью; пробую доступные пакеты.\n'; retry 3 opkg install curl ca-certificates ca-bundle >> "$log" 2>&1 || return 1; elif command -v apk >/dev/null 2>&1; then
 retry 3 apk update >> "$log" 2>&1 || printf 'Luch VPN: каталог пакетов обновлён не полностью; пробую доступные пакеты.\n'; retry 3 apk add curl ca-certificates ca-bundle >> "$log" 2>&1 || return 1; else return 1; fi; command -v curl >/dev/null 2>&1 || return 1;
-download_with_limit retry 3 curl --fail --location --max-time 60 --output "$download_file" "$download_url" >> "$log" 2>&1; }; u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/2983db4cdb05b7700b7661c66212bccfb8551d3d/install-v1.2.12.sh'; download_https "$f" "$u" 256 || fail 'не удалось загрузить установщик по HTTPS';
+download_with_limit retry 3 curl --fail --location --max-time 60 --output "$download_file" "$download_url" >> "$log" 2>&1; }; u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/9bbbfc78845544b2158773f7cedef235e875a9db/install-v1.2.13.sh'; download_https "$f" "$u" 256 || fail 'не удалось загрузить установщик по HTTPS';
 ensure_checksum || fail 'не удалось подготовить SHA256 для проверки установщика'; actual=$(sha256sum "$f") || fail 'не удалось проверить установщик'; actual=${actual%% *};
-[ "$actual" = '6811faf52da08e337d9e26b8293cf46d2b2455b7cb1bffaa7678a454361e6379' ] || fail 'установщик не прошёл проверку целостности'; sh "$f"; )
+[ "$actual" = 'b5777e95ab0c37eb13d576eb2c241ddfb159567c658afb4ac0d7d7ee70cd7fa2' ] || fail 'установщик не прошёл проверку целостности'; sh "$f"; )
 ```
 
 Если команда не запускается или загрузка прервалась, см. [помощь с установкой](docs/INSTALLATION_HELP.md).
@@ -36,6 +36,7 @@ ensure_checksum || fail 'не удалось подготовить SHA256 дл�
 - Выбор локации, проверка связи и управление подпиской из меню. Ручной выбор сохраняется: после перезагрузки клиент сначала подключается к нему, а при недоступности использует запасную локацию.
 - Автоматическое обновление подписки и локаций.
 - Сохранение маршрутизации, DNS и прямых подключений из конфигурации Xray.
+- [Дополнительные GeoSite/GeoIP](docs/EXTRA_ROUTING.md): до 16 ссылок или DAT, DIRECT/VPN, обновление и удаление через **7 — Расширенные настройки**. Правила исходной конфигурации имеют приоритет.
 - Переход на другую локацию при сбое. Если доступных локаций нет, клиент возвращает обычный выход в интернет через роутер.
 - Проверка подписей и контрольных сумм обновлений с возможностью отката к предыдущей версии.
 
@@ -66,6 +67,6 @@ ensure_checksum || fail 'не удалось подготовить SHA256 дл�
 
 Программа занимает около **42–50 МиБ** без системных зависимостей и обновляемых баз. Необходимый запас свободного места установщик проверяет перед установкой.
 
-[Подробная совместимость, результаты испытаний и ограничения](docs/COMPATIBILITY_GUIDE.md).
+[Подробная совместимость, результаты испытаний и ограничения](docs/COMPATIBILITY_GUIDE.md). [Проверки v1.2.13](docs/release-v1.2.13-2026-11-03.md).
 
 [Все выпуски](https://github.com/LuchWRT/LuchWrt/releases) · [Luch VPN](https://luch.one) · [Telegram](https://t.me/LuchVPN_bot) · [Веб-приложение](https://app.luch.one/webapp)
