@@ -1,0 +1,121 @@
+{
+  "version": "1.2.14",
+  "status": "PUBLISHED_PUBLIC_INSTALL_VERIFIED",
+  "build_source_commit": "df06c9676d62e3e6c08989e365062c7c4b38e98e",
+  "source_snapshot_sha256": "1ab019b7c97010751750b3302ccd1c5e1a93568aed8339a55c65bb62597520f8",
+  "packages": {
+    "exact": 17,
+    "universal": 8,
+    "assets": 327,
+    "rebuilt": [
+      "luch"
+    ],
+    "reused": [
+      "luch-install",
+      "xray",
+      "geoip.dat",
+      "geosite.dat",
+      "luch.init",
+      "luch-xray.init",
+      "THIRD_PARTY_NOTICES.txt"
+    ]
+  },
+  "upgrade": {
+    "from": "1.2.13",
+    "to": "1.2.14",
+    "target": "25.12.5-aarch64_generic",
+    "RAM_MiB": 256,
+    "checks": [
+      {
+        "name": "signed-clean-install-all-eight-artifacts-verified",
+        "status": "PASS",
+        "at_utc": "2026-11-04T20:47:22.591322+00:00"
+      },
+      {
+        "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+        "status": "PASS",
+        "at_utc": "2026-11-04T20:47:45.591795+00:00"
+      },
+      {
+        "name": "released-v1.2.13-reproduces-both-reported-menu-errors-after-real-reboot",
+        "status": "PASS",
+        "at_utc": "2026-11-04T20:48:26.013649+00:00"
+      },
+      {
+        "name": "in-place-production-signed-v1.2.14-upgrade-verifies-all-eight-artifacts",
+        "status": "PASS",
+        "at_utc": "2026-11-04T20:49:02.500242+00:00"
+      },
+      {
+        "name": "menu-4-refresh-recovers-original-subscription-and-real-LAN-traffic",
+        "status": "PASS",
+        "at_utc": "2026-11-04T20:49:19.308757+00:00"
+      },
+      {
+        "name": "menu-3-selects-observatory-dispatcher-and-preserves-original-routing-and-HWID",
+        "status": "PASS",
+        "at_utc": "2026-11-04T20:49:42.906759+00:00"
+      },
+      {
+        "name": "failed-VPN-pools-cannot-pass-health-via-DIRECT-and-fallback-preserves-choice",
+        "status": "PASS",
+        "at_utc": "2026-11-04T20:50:08.631619+00:00"
+      }
+    ],
+    "boot_ids": {
+      "before": "806a919a-2fca-4372-95c1-ddd415395e38",
+      "after": "51b50e1c-cc08-40d3-904f-4c3c815a178a"
+    },
+    "distinct_Hwid_count": 1,
+    "candidate_hashes": {
+      "geoip.dat": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+      "geosite.dat": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+      "luch": "e787fc8b84125ea1605ca5dab90ef22d58d44c6a0b488d64a524b141b822b1f7",
+      "manifest.sig": "b493d8fd6264da9d8034ff89222c985ba611e2c07104e7cb7fb58bd0694772fc",
+      "luch.init": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+      "luch-install": "058c4c8e62d8546f16b553840f9d8b3b01be9fde036787261e0e215e5b602aa9",
+      "THIRD_PARTY_NOTICES.txt": "18aca6468aee4295da0c858ca2362a2ac8020c6e2e501fe17c95f45531808b3f",
+      "luch-xray.init": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+      "manifest.json": "1996e2fbf603a09c09245af667efe36095e15d1238e2c3b558e425d15f3b0de6",
+      "xray": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+    },
+    "report_sha256": "df8413eebd11bd876a4445591e8af7675c091c2289984a3553328719bae15fa2"
+  },
+  "public_install": {
+    "target": "24.10.8-x86_64",
+    "checks": [
+      "wan-route-DNS-and-clock",
+      "github-one-command-signed-clean-install",
+      "menu-submenus-back-cancel-pause-resume-CRLF",
+      "every-installed-artifact-matches-final-candidate-signed-manifest",
+      "service-start-xray-config-existing-config-preserved",
+      "service-and-language-after-reboot",
+      "full-client-uninstall-existing-config-preserved"
+    ],
+    "candidate": {
+      "bundle": "24.10.8-x86_64",
+      "manifest_sha256": "63b9e86318217cd16b835282b9212a651308862f47ef06bbf77cda2c74dbf28b",
+      "bootstrap_sha256": "5f8efe6b56a605f663d899a5aaa78952b9d657656f5bea501a63d30a1e12ec4e",
+      "installer_sha256": "338bc5fcf90b43524cd5cd85b9174015c0bc0ad3e9febeae89e569ce064dc533",
+      "client_sha256": "a765494fff56d074baae9cb5daec564776bdaae37ac6682f3be07cc1a783064c",
+      "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+    },
+    "official_sources": {
+      "sha256": "23872c64fdb66d0765e0d17f71453a66e7a91e9ecb10606d5f738e6d166e14ae",
+      "kernel_sha256": null,
+      "checksum_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/sha256sums",
+      "source_url": "https://downloads.openwrt.org/releases/24.10.8/targets/x86/64/openwrt-24.10.8-x86-64-generic-ext4-combined.img.gz"
+    },
+    "boot_id_before": "d37b3703-ea94-403e-a2eb-dcddcca09519",
+    "boot_id_after": "ebc44948-2c4a-48ee-9785-f9f1f5dcc634",
+    "public_command_sha256": "36b0bc54e65f1c548d6d3ca2f98c67dde2ede6db797a610797b4ff951bfb9532"
+  },
+  "real_subscription": {
+    "accepted_locations": 13,
+    "native_Xray": "26.3.27",
+    "native_validation": "PASS"
+  },
+  "native_routing_flows": 6,
+  "release_assets_sha256": "6ab0dde837e400b6aadb7f981d00a9cb69c36a73ce8aeb3e088fea0f4b1100d7",
+  "installer_commit": "3e84126a51b4da10e4d1111389fcd1636ab4b87d"
+}
