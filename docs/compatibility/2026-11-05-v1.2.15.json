@@ -1,0 +1,121 @@
+{
+  "release": "v1.2.15",
+  "status": "PUBLISHED_PUBLIC_INSTALL_VERIFIED",
+  "build_source_commit": "5b2ba3ddf67d420a02406e0b69f9c62faec23e66",
+  "source_snapshot_sha256": "8c46185111ae0192d68f8db65f83ff4f2099800629f3a7d51cacbf655a0b2935",
+  "signing_public_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+  "packages": {
+    "exact": 17,
+    "universal": 8,
+    "assets": 327,
+    "rebuilt": [
+      "luch"
+    ],
+    "reused": [
+      "luch-install",
+      "xray",
+      "geoip.dat",
+      "geosite.dat",
+      "luch.init",
+      "luch-xray.init",
+      "THIRD_PARTY_NOTICES.txt"
+    ]
+  },
+  "audited_runtime_binding": [
+    {
+      "target": "21.02.7-x86_64",
+      "result_sha256": "e279aa1ab44e5997ae55b2004b6ea6b8a54d415129674fd494453c0fc8804456",
+      "matching_files": {
+        "luch": "db81924e09565332e137c026dc7e2941b5488ce25d56c6e3935d2ad2915ec94f",
+        "xray": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136",
+        "geosite.dat": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+        "geoip.dat": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+        "luch.init": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+        "luch-xray.init": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+        "THIRD_PARTY_NOTICES.txt": "2e4990750e838ce8d70c07b6f61452232a94b0c9098e6cdd517c3938c42f119d"
+      }
+    },
+    {
+      "target": "25.12.5-aarch64_generic",
+      "result_sha256": "9b849f90dbbf5068da9008e1d9de62e9df328e4fc1d523abf6c51b5aad9c75a8",
+      "matching_files": {
+        "luch": "47633de35eb9ad164fcddf0b9a1ff9ef54ce0644a4dc6d768c0325bf5e451d60",
+        "xray": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897",
+        "geosite.dat": "765b86e4b6aed5da1a206304b5500c7668687fa1df8e8322c8a4961e1b672190",
+        "geoip.dat": "102b51b9765a56a3e899f7cf0ee38e5251f9c503b357b330a49183eb7b155604",
+        "luch.init": "5756f0d2542e9192607a91e224754bdd29955184a8208610c677501e02a97e41",
+        "luch-xray.init": "8b1dbebf5b103c08eb870ac22cb84dc748e43e4c6685639efad3cf9a0ace1027",
+        "THIRD_PARTY_NOTICES.txt": "18aca6468aee4295da0c858ca2362a2ac8020c6e2e501fe17c95f45531808b3f"
+      }
+    }
+  ],
+  "public_install": [
+    {
+      "target": "21.02.7-x86_64",
+      "status": "PASS",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "39f8e1f629cfe1db985809639c2cd1de88db119544144740d968d0b6784a9d6f",
+        "kernel_sha256": null,
+        "checksum_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/sha256sums",
+        "source_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/openwrt-21.02.7-x86-64-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "21.02.7-x86_64",
+        "manifest_sha256": "526f9be375345b1288cdb7f928700bda281aa735f4b1fdeca0f7d2763d761633",
+        "bootstrap_sha256": "8dad438f52eeda46e6d02722f9538cc82a13a7c4219899bf05e133fb30ef263e",
+        "installer_sha256": "338bc5fcf90b43524cd5cd85b9174015c0bc0ad3e9febeae89e569ce064dc533",
+        "client_sha256": "db81924e09565332e137c026dc7e2941b5488ce25d56c6e3935d2ad2915ec94f",
+        "xray_sha256": "2e6c891221f3fcfeaac66180e84c6fdbda3788f84312870b3737e59c5bc4b136"
+      },
+      "public_command_sha256": "f26c91e41599a2cd26797554c11353849912d3d79f36cdc9069c03a55ceac082",
+      "boot_id_before": "640c625e-08ba-40e5-999c-8a7943b7efa9",
+      "boot_id_after": "48818ad6-556e-43a4-bc24-b0be74411806",
+      "report_sha256": "7484082b8cc4f11ec0946c895d5473ffab5e804a13fd7a87f73ff2c44a7f3746"
+    },
+    {
+      "target": "25.12.5-aarch64_generic",
+      "status": "PASS",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "03172dd9a91e7cb477ab73bcb5de544bfe19f42698d7f66d9b2bb80ca692eaa6",
+        "kernel_sha256": "8cf43c4901efae72b0a04bb655158e03335067e8757926bca4c81d5c952aca51",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/sha256sums",
+        "checksum_sha256": "2ba9c990e6f05b9875aa54992171f6a2cd447ab01c64ed11b02c6c7116cc31ec",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/openwrt-25.12.5-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "kernel_url": "https://downloads.openwrt.org/releases/25.12.5/targets/armsr/armv8/openwrt-25.12.5-armsr-armv8-generic-kernel.bin"
+      },
+      "candidate": {
+        "bundle": "25.12.5-aarch64_generic",
+        "manifest_sha256": "752f7acdeed50cdfc62b0b03cae09f52dfd49829a7d5911f365bfc307b6a253f",
+        "bootstrap_sha256": "0feb52a5801d8bf17f3a7f72ffe0c83ba1c3bcd692ad2a3aae42d7e4e7bb08b0",
+        "installer_sha256": "058c4c8e62d8546f16b553840f9d8b3b01be9fde036787261e0e215e5b602aa9",
+        "client_sha256": "47633de35eb9ad164fcddf0b9a1ff9ef54ce0644a4dc6d768c0325bf5e451d60",
+        "xray_sha256": "f0d43855c7657a196e671af326948bf450e41b99eef3fb4fe3ff9635b8768897"
+      },
+      "public_command_sha256": "f26c91e41599a2cd26797554c11353849912d3d79f36cdc9069c03a55ceac082",
+      "boot_id_before": "d3bab8f8-0380-48c1-b4e6-423742b73b5d",
+      "boot_id_after": "ffc3c4a5-0c17-4d54-ba71-c4d37d7729f8",
+      "report_sha256": "83cd873f675e36b5b5189b414b217df1e310511de3b3614d0a88854c57bc5308"
+    }
+  ],
+  "installer_commit": "0d94679b48c20a2574c9dd7edb192c955c9b3bc3",
+  "assets_manifest_sha256": "20a6dbed42b7cfe3a2e8117baa74cd4909f67b6d432a1b5bc5eba33e9ae23ae6",
+  "previous_release_assets_unchanged": true
+}

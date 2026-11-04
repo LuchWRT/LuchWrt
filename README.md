@@ -2,13 +2,13 @@
 
 Клиент [Luch VPN](https://luch.one) для роутеров с OpenWrt. Подключает устройства домашней сети к VPN и управляется через SSH-меню на русском и английском языках.
 
-**Текущий выпуск:** [v1.2.14](https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.14).
+**Текущий выпуск:** [v1.2.15](https://github.com/LuchWRT/LuchWrt/releases/tag/v1.2.15).
 
 ## Установка
 
 Понадобятся подключение к интернету, SSH-доступ к роутеру от имени `root` и [подписка Luch VPN](https://t.me/LuchVPN_bot).
 
-Подключитесь к роутеру по SSH. Скопируйте весь блок кнопкой копирования справа и вставьте в терминал. [Текст команды без форматирования](docs/install-command-v1.2.14.txt).
+Подключитесь к роутеру по SSH. Скопируйте весь блок кнопкой копирования справа и вставьте в терминал. [Текст команды без форматирования](docs/install-command-v1.2.15.txt).
 
 ```sh
 ( set -eu; umask 077; f=''; log=''; fail() { printf 'Luch VPN: %s\n' "$1" >&2; if [ -n "${log:-}" ]; then printf 'Ошибка: %s\n' "$1" >> "$log"; fi; exit 1; }; retry() { attempts=$1; shift; delay=2; while ! "$@"; do attempts=$((attempts - 1)); [ "$attempts" -gt 0 ] || return 1; sleep "$delay"; delay=$((delay * 2)); done; };
@@ -22,9 +22,9 @@ download_file=$1; download_url=$2; download_limit=${3:-0}; case "$download_limit
 download_with_limit retry 3 wget -T 60 -q -O "$download_file" "$download_url" >> "$log" 2>&1 && return 0; fi; printf 'Luch VPN: устанавливаю поддержку HTTPS из системных пакетов...\n'; if command -v opkg >/dev/null 2>&1; then
 retry 3 opkg update >> "$log" 2>&1 || printf 'Luch VPN: каталог пакетов обновлён не полностью; пробую доступные пакеты.\n'; retry 3 opkg install curl ca-certificates ca-bundle >> "$log" 2>&1 || return 1; elif command -v apk >/dev/null 2>&1; then
 retry 3 apk update >> "$log" 2>&1 || printf 'Luch VPN: каталог пакетов обновлён не полностью; пробую доступные пакеты.\n'; retry 3 apk add curl ca-certificates ca-bundle >> "$log" 2>&1 || return 1; else return 1; fi; command -v curl >/dev/null 2>&1 || return 1;
-download_with_limit retry 3 curl --fail --location --max-time 60 --output "$download_file" "$download_url" >> "$log" 2>&1; }; u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/3e84126a51b4da10e4d1111389fcd1636ab4b87d/install-v1.2.14.sh'; download_https "$f" "$u" 256 || fail 'не удалось загрузить установщик по HTTPS';
+download_with_limit retry 3 curl --fail --location --max-time 60 --output "$download_file" "$download_url" >> "$log" 2>&1; }; u='https://raw.githubusercontent.com/LuchWRT/LuchWrt/0d94679b48c20a2574c9dd7edb192c955c9b3bc3/install-v1.2.15.sh'; download_https "$f" "$u" 256 || fail 'не удалось загрузить установщик по HTTPS';
 ensure_checksum || fail 'не удалось подготовить SHA256 для проверки установщика'; actual=$(sha256sum "$f") || fail 'не удалось проверить установщик'; actual=${actual%% *};
-[ "$actual" = '06b06ddec7cd6f50efc1893d72de2662f31ae06cd87140ab699de35ab61a80aa' ] || fail 'установщик не прошёл проверку целостности'; sh "$f"; )
+[ "$actual" = '8f5c26906155cad58cbb6e5209f2c567731ee2f7345a2fc666c0f09b6e6636f4' ] || fail 'установщик не прошёл проверку целостности'; sh "$f"; )
 ```
 
 Если команда не запускается или загрузка прервалась, см. [помощь с установкой](docs/INSTALLATION_HELP.md).
@@ -124,6 +124,6 @@ Luch VPN  ·  OpenWrt
 
 Программа занимает около **42–50 МиБ** без системных зависимостей и обновляемых баз. Необходимый запас свободного места установщик проверяет перед установкой.
 
-[Подробная совместимость, результаты испытаний и ограничения](docs/COMPATIBILITY_GUIDE.md). [Проверки v1.2.14](docs/release-v1.2.14-2026-11-04.md).
+[Подробная совместимость, результаты испытаний и ограничения](docs/COMPATIBILITY_GUIDE.md). [Проверки v1.2.15](docs/release-v1.2.15-2026-11-05.md).
 
 [Все выпуски](https://github.com/LuchWRT/LuchWrt/releases) · [Luch VPN](https://luch.one) · [Telegram](https://t.me/LuchVPN_bot) · [Веб-приложение](https://app.luch.one/webapp)
