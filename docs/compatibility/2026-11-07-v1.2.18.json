@@ -1,0 +1,447 @@
+{
+  "implementation_commit": "54320ee8184879c518b8ff69acbd891db5266eee",
+  "release": "v1.2.18",
+  "status": "PUBLISHED_PUBLIC_INSTALL_AND_UPGRADE_VERIFIED",
+  "source_snapshot_sha256": "69e863920cc232e25a2037390c13341aac42d90e3a7a67496a6fb81936c1e890",
+  "signing_public_key": "77f4c4055ab477daa068e2a8b43993fcdc79bafbbd850d69c422839bcc6e2cda",
+  "assets": 366,
+  "exact_targets": 20,
+  "universal_targets": 8,
+  "public_install": [
+    {
+      "target": "21.02.7-x86_64",
+      "status": "PASS",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "39f8e1f629cfe1db985809639c2cd1de88db119544144740d968d0b6784a9d6f",
+        "kernel_sha256": null,
+        "checksum_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/sha256sums",
+        "source_url": "https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/openwrt-21.02.7-x86-64-generic-ext4-combined.img.gz"
+      },
+      "candidate": {
+        "bundle": "21.02.7-x86_64",
+        "manifest_sha256": "ec6334961259b8968783723838f315d781d504f8a4b141f4437c0c1aece2f2ff",
+        "bootstrap_sha256": "a93ce0932f98c27c2dd31c3a6dc8bff2d23333aba405982dddb609c7e6bd517a",
+        "installer_sha256": "9c5a86749b5ad9941c4f3751a7118ac0775862f52d14ca3b44239f50d23b2c58",
+        "client_sha256": "9c5a86749b5ad9941c4f3751a7118ac0775862f52d14ca3b44239f50d23b2c58",
+        "xray_sha256": "b18a1e10cbb81700e5dd86c0057d8d8f27210dde85a0c44a65e8eab4b4eeac2a"
+      },
+      "public_command_sha256": "4e63e5c8a5083e05f62e43b6c501c0de5f4e307ab9399749a3c80ee1333910f1",
+      "boot_id_before": "3da0cdd7-18b8-4e6e-8d75-5553899f68fe",
+      "boot_id_after": "148002ee-1c52-41c0-8938-5712dd06ce91",
+      "memory_mib": 256,
+      "shared_executable_before_and_after_reboot": true,
+      "initial_free_space_limit_mib": null
+    },
+    {
+      "target": "25.12.4-aarch64_generic",
+      "status": "PASS",
+      "checks": [
+        "wan-route-DNS-and-clock",
+        "github-one-command-signed-clean-install",
+        "menu-submenus-back-cancel-pause-resume-CRLF",
+        "every-installed-artifact-matches-final-candidate-signed-manifest",
+        "service-start-xray-config-existing-config-preserved",
+        "service-and-language-after-reboot",
+        "full-client-uninstall-existing-config-preserved"
+      ],
+      "official_sources": {
+        "sha256": "40ce3ea1b872a4a07b9009b7e8ff949b14ee5680f75655322b9554f3bcb1d6bb",
+        "source_url": "https://downloads.openwrt.org/releases/25.12.4/targets/armsr/armv8/openwrt-25.12.4-armsr-armv8-generic-ext4-rootfs.img.gz",
+        "checksum_url": "https://downloads.openwrt.org/releases/25.12.4/targets/armsr/armv8/sha256sums",
+        "kernel_sha256": "f56d204390dd5edfd3a1b67162bc9b5fa34b80f623a3fbbdf49e10ec3bc7a3cd"
+      },
+      "candidate": {
+        "bundle": "25.12.4-aarch64_generic",
+        "manifest_sha256": "e17c88d0a15a86ad18a6fa84bd88315ac69e88cb4b2cf137aa33fc8fc0b41b58",
+        "bootstrap_sha256": "f68d4c353b5e9cf8fe22631cb2608ca70718750f003b8114eeca4a5c2dd504a3",
+        "installer_sha256": "85a5513cb8036abdcb21253a813cd4017d69a95d418146284d3a47373ce3a34f",
+        "client_sha256": "85a5513cb8036abdcb21253a813cd4017d69a95d418146284d3a47373ce3a34f",
+        "xray_sha256": "978cd8569dc636f356559c9cb8daed0ee91f51b745b931f60f082af9917652cb"
+      },
+      "public_command_sha256": "4e63e5c8a5083e05f62e43b6c501c0de5f4e307ab9399749a3c80ee1333910f1",
+      "boot_id_before": "83b32791-3cca-40d1-ad41-4a8214cc3640",
+      "boot_id_after": "cbe0b4a9-54d7-4908-baca-4142546465ce",
+      "memory_mib": 256,
+      "shared_executable_before_and_after_reboot": true,
+      "initial_free_space_limit_mib": 57
+    }
+  ],
+  "storage_and_routing_qualification": [
+    {
+      "target": "21.02.7-x86_64",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "signed-clean-install-all-eight-artifacts-verified",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:43:26.982388+00:00"
+        },
+        {
+          "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:43:48.926029+00:00"
+        },
+        {
+          "name": "extra-routing-URL-and-local-DAT-import-preflight-and-real-LAN-traffic",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:44:24.369375+00:00"
+        },
+        {
+          "name": "extra-routing-16MiB-update-warns-on-256MiB-and-prunes-old-revision",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:44:54.081505+00:00"
+        },
+        {
+          "name": "extra-routing-real-reboot-restores-DATs-without-original-tmp-upload",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:45:49.138957+00:00"
+        },
+        {
+          "name": "extra-routing-removal-frees-all-DATs-and-restores-original-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:46:24.350605+00:00"
+        },
+        {
+          "name": "extra-routing-real-low-storage-refusal-before-writing-retains-VPN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:46:40.116414+00:00"
+        },
+        {
+          "name": "disabled-routing-rejects-unknown-category-without-changing-settings-core-or-LAN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:47:08.403133+00:00"
+        },
+        {
+          "name": "disabled-routing-saves-valid-edit-without-restarting-Xray",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:47:24.612742+00:00"
+        },
+        {
+          "name": "failed-candidate-health-rolls-back-settings-runtime-and-working-LAN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:47:48.488561+00:00"
+        },
+        {
+          "name": "earlier-Xray-network-array-rejects-shadowed-overlay-and-keeps-live-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:48:20.305851+00:00"
+        },
+        {
+          "name": "routing-webhook-response-rejected-while-verified-LAN-continues",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:48:35.491189+00:00"
+        }
+      ],
+      "report_sha256": "8bef2b221a8a69bbb7de2f3b26e524cad2554844967b478c6eb987f3c6f65e31",
+      "scope": {
+        "full_production_agent": true,
+        "controlled_canonical_subscription": true,
+        "real_VLESS_TLS": true,
+        "public_bootstrap": false,
+        "live_subscription": false,
+        "physical_router": false,
+        "helper_state_injection": false,
+        "helper_firewall_activation": false,
+        "RAM_mib": 256,
+        "ext4_root_mib": 512,
+        "squashfs_overlayfs": false,
+        "requested_soak_seconds": 0,
+        "measured_24h_soak": false,
+        "resource_measurements": "sampled observations; no instantaneous peak or hard minimum claim",
+        "soak_time_basis": "minimum verified continuous host and all three guest uptime spans",
+        "requested_flash_ENOSPC": false,
+        "requested_denial_ENOSPC": false,
+        "denial_pressure_mode": "require-purge-ENOSPC",
+        "required_persistence_error_exit": false,
+        "requested_official_routing": false,
+        "controlled_subscription_location_count": 2,
+        "VPN_endpoint_count": 2,
+        "targeted_extra_routing_only": true
+      },
+      "fixture_distinct_hwid_count": 1
+    },
+    {
+      "target": "25.12.4-aarch64_generic",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "signed-clean-install-all-eight-artifacts-verified",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:42:35.718886+00:00"
+        },
+        {
+          "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:43:00.834791+00:00"
+        },
+        {
+          "name": "57MiB-initial-storage-installs-shared-runtime-and-routes-real-LAN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:43:14.481689+00:00"
+        },
+        {
+          "name": "extra-routing-URL-and-local-DAT-import-preflight-and-real-LAN-traffic",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:43:53.608709+00:00"
+        },
+        {
+          "name": "extra-routing-16MiB-update-warns-on-256MiB-and-prunes-old-revision",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:44:22.298480+00:00"
+        },
+        {
+          "name": "extra-routing-real-reboot-restores-DATs-without-original-tmp-upload",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:45:23.786775+00:00"
+        },
+        {
+          "name": "extra-routing-removal-frees-all-DATs-and-restores-original-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:46:06.610250+00:00"
+        },
+        {
+          "name": "extra-routing-real-low-storage-refusal-before-writing-retains-VPN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:46:22.831418+00:00"
+        },
+        {
+          "name": "disabled-routing-rejects-unknown-category-without-changing-settings-core-or-LAN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:46:57.611218+00:00"
+        },
+        {
+          "name": "disabled-routing-saves-valid-edit-without-restarting-Xray",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:47:15.837433+00:00"
+        },
+        {
+          "name": "failed-candidate-health-rolls-back-settings-runtime-and-working-LAN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:47:45.402088+00:00"
+        },
+        {
+          "name": "earlier-Xray-network-array-rejects-shadowed-overlay-and-keeps-live-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:48:21.053924+00:00"
+        },
+        {
+          "name": "routing-webhook-response-rejected-while-verified-LAN-continues",
+          "status": "PASS",
+          "at_utc": "2026-11-07T18:48:36.554985+00:00"
+        }
+      ],
+      "report_sha256": "b46fc2143c8c2bdc971536f81891e870f4b1568d12c60135492ff78d970b778c",
+      "scope": {
+        "full_production_agent": true,
+        "controlled_canonical_subscription": true,
+        "real_VLESS_TLS": true,
+        "public_bootstrap": false,
+        "live_subscription": false,
+        "physical_router": false,
+        "helper_state_injection": false,
+        "helper_firewall_activation": false,
+        "RAM_mib": 256,
+        "ext4_root_mib": 512,
+        "squashfs_overlayfs": false,
+        "requested_soak_seconds": 0,
+        "measured_24h_soak": false,
+        "resource_measurements": "sampled observations; no instantaneous peak or hard minimum claim",
+        "soak_time_basis": "minimum verified continuous host and all three guest uptime spans",
+        "requested_flash_ENOSPC": false,
+        "requested_denial_ENOSPC": false,
+        "denial_pressure_mode": "require-purge-ENOSPC",
+        "required_persistence_error_exit": false,
+        "requested_official_routing": false,
+        "controlled_subscription_location_count": 2,
+        "VPN_endpoint_count": 2,
+        "targeted_extra_routing_only": true
+      },
+      "fixture_distinct_hwid_count": 1
+    },
+    {
+      "target": "25.12.6-x86_64",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "signed-clean-install-all-eight-artifacts-verified",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:00:28.783507+00:00"
+        },
+        {
+          "name": "real-menu-HWID-subscription-agent-geodata-VLESS-TLS-dual-stack-TCP-UDP-DNS-block",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:00:55.715570+00:00"
+        },
+        {
+          "name": "extra-routing-URL-and-local-DAT-import-preflight-and-real-LAN-traffic",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:01:55.184575+00:00"
+        },
+        {
+          "name": "extra-routing-16MiB-update-warns-on-256MiB-and-prunes-old-revision",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:02:26.490832+00:00"
+        },
+        {
+          "name": "extra-routing-real-reboot-restores-DATs-without-original-tmp-upload",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:03:52.768509+00:00"
+        },
+        {
+          "name": "extra-routing-removal-frees-all-DATs-and-restores-original-routing",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:04:38.909300+00:00"
+        },
+        {
+          "name": "extra-routing-real-low-storage-refusal-before-writing-retains-VPN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:04:56.033667+00:00"
+        },
+        {
+          "name": "installed-client-routing-and-reboot-use-real-USB-ext4-extroot",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:04:58.301807+00:00"
+        },
+        {
+          "name": "boot-with-USB-absent-falls-back-to-internal-root-and-direct-LAN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:05:48.718464+00:00"
+        },
+        {
+          "name": "reattached-USB-restores-original-HWID-autostart-and-VPN-LAN",
+          "status": "PASS",
+          "at_utc": "2026-11-07T19:06:58.128440+00:00"
+        }
+      ],
+      "report_sha256": "c2c399da7f84760732bcdb3ea0c7308987505c17d457d8baee540b08ccb8a02c",
+      "scope": {
+        "full_production_agent": true,
+        "controlled_canonical_subscription": true,
+        "real_VLESS_TLS": true,
+        "public_bootstrap": false,
+        "live_subscription": false,
+        "physical_router": false,
+        "helper_state_injection": false,
+        "helper_firewall_activation": false,
+        "RAM_mib": 256,
+        "ext4_root_mib": null,
+        "squashfs_overlayfs": true,
+        "requested_soak_seconds": 0,
+        "measured_24h_soak": false,
+        "resource_measurements": "sampled observations; no instantaneous peak or hard minimum claim",
+        "soak_time_basis": "minimum verified continuous host and all three guest uptime spans",
+        "requested_flash_ENOSPC": false,
+        "requested_denial_ENOSPC": false,
+        "denial_pressure_mode": "require-purge-ENOSPC",
+        "required_persistence_error_exit": false,
+        "requested_official_routing": false,
+        "controlled_subscription_location_count": 2,
+        "VPN_endpoint_count": 2,
+        "targeted_extra_routing_only": true
+      },
+      "fixture_distinct_hwid_count": 1
+    }
+  ],
+  "upgrades": [
+    {
+      "target": "21.02.7-x86_64",
+      "from": "1.2.17",
+      "to": "1.2.18",
+      "status": "PASS",
+      "checks": [
+        "verified previous public signed slot",
+        "seeded paused fixture settings and stored hashes",
+        "public update preserved state, HWID, language, pause and old slot",
+        "all eight installed artifacts match signed v1.2.18 manifest"
+      ]
+    },
+    {
+      "target": "21.02.7-x86_64",
+      "from": "1.2.17",
+      "to": "1.2.18",
+      "status": "PASS",
+      "checks": [
+        "verified previous public signed slot",
+        "seeded paused fixture settings and stored hashes",
+        "current README command migrates existing settings to one shared executable",
+        "public update preserved state, HWID, language, pause and old slot",
+        "all eight installed artifacts match signed v1.2.18 manifest"
+      ]
+    }
+  ],
+  "universal_arm64": {
+    "target": "25.12.4-arm64-universal",
+    "status": "PASS",
+    "selected_bundle": "any-arm64",
+    "checks": [
+      "wan-route-DNS-and-clock",
+      "actual-bootstrap-dependencies-and-signed-offline-install",
+      "repeat-identical-offline-apply-safely-refused-existing-install-preserved",
+      "menu-submenus-back-cancel-pause-resume-CRLF",
+      "every-installed-artifact-matches-final-candidate-signed-manifest",
+      "service-start-xray-config-existing-config-preserved",
+      "service-and-language-after-reboot",
+      "full-client-uninstall-existing-config-preserved"
+    ],
+    "candidate": {
+      "bundle": "any-arm64",
+      "manifest_sha256": "9ccf63b3e7b22380d269389f0bacefcd55e67c82322180126b0880cd6439b5f8",
+      "bootstrap_sha256": "02846bd4b39b5b39b6d91441d05f5c42c2c0529186b1fd6d987af5ae036945f6",
+      "installer_sha256": "85a5513cb8036abdcb21253a813cd4017d69a95d418146284d3a47373ce3a34f",
+      "client_sha256": "85a5513cb8036abdcb21253a813cd4017d69a95d418146284d3a47373ce3a34f",
+      "xray_sha256": "978cd8569dc636f356559c9cb8daed0ee91f51b745b931f60f082af9917652cb"
+    }
+  },
+  "storage_by_family": {
+    "any-mipsle": {
+      "stored_artifact_bytes": 44394899,
+      "minimum_initial_free_bytes": 61172115
+    },
+    "any-amd64": {
+      "stored_artifact_bytes": 41429333,
+      "minimum_initial_free_bytes": 58206549
+    },
+    "any-armv7": {
+      "stored_artifact_bytes": 39479637,
+      "minimum_initial_free_bytes": 56256853
+    },
+    "any-armv6": {
+      "stored_artifact_bytes": 39610709,
+      "minimum_initial_free_bytes": 56387925
+    },
+    "any-arm64": {
+      "stored_artifact_bytes": 38496597,
+      "minimum_initial_free_bytes": 55273813
+    },
+    "any-armv5": {
+      "stored_artifact_bytes": 39610709,
+      "minimum_initial_free_bytes": 56387925
+    },
+    "any-mips": {
+      "stored_artifact_bytes": 44394899,
+      "minimum_initial_free_bytes": 61172115
+    },
+    "any-386": {
+      "stored_artifact_bytes": 39180629,
+      "minimum_initial_free_bytes": 55957845
+    }
+  },
+  "previous_release_assets_unchanged": true,
+  "xray_source_sha256": "7112e446ba8ee85b0951b0c8d48da4620a7ac496425326ae7ab3d77e6d6021e2",
+  "security_baseline": "Xray bytes match v1.2.17 for all eight families; inherited CA security backport and binary-scanner version limitation documented in v1.2.17 report",
+  "limits": [
+    "QEMU virtual hardware; no physical AX3000T test",
+    "57 MiB test covers initial installation and LAN; artificial pressure removed before unrelated 16 MiB DAT suite",
+    "extroot uses USB ext4 plus real SquashFS overlay; cold removal and reattachment, not live drive removal",
+    "updates retain rollback slot and may need more free space than remains after initial installation"
+  ]
+}
